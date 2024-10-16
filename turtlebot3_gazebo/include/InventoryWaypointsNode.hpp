@@ -8,6 +8,7 @@
 #include <geometry_msgs/msg/point.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
+#include <visualization_msgs/msg/marker.hpp>
 #include "SensorProcessor.hpp"
 #include "WaypointGenerator.hpp"
 #include "WaypointManager.hpp"
@@ -26,6 +27,7 @@ public:
 private:
   // --- ROS Publishers ---
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub_;  // Publisher for waypoints
+  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_; // Publisher for waypoints as markers
 
   // --- ROS Subscribers ---
   rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;     // Subscriber for LIDAR scan data

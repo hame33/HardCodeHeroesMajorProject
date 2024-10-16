@@ -16,7 +16,8 @@ namespace Constants {
 
   // --- Scan Parameters ---
   constexpr int NUM_SCANNERS = 360;                                     // Number of lidar scanning points
-  constexpr int NUM_SCAN_POSITIONS = 6;                               // Number of specific scan angles to be used
+  constexpr int NUM_SCAN_POSITIONS = 60;                               // Number of specific scan angles to be used
+  constexpr int ANGLE_BETWEEN_SCANS = NUM_SCANNERS/NUM_SCAN_POSITIONS;   // Angle between scan positions
   constexpr double MAX_SCAN_DISTANCE = 3.5;                             // Maximum possible scan distance 
 
   // --- Movement Parameters ---

@@ -20,15 +20,12 @@ public:
   WaypointGenerator(std::shared_ptr<SensorProcessor> sensor_processor, std::shared_ptr<WaypointManager> waypoint_manager);
 
   // create_waypoint - creates a waypoint on the map 
-  void create_waypoint();
+  void create_waypoint(int num, std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data, std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data);
 
 private:
   // --- Components --- 
   std::shared_ptr<SensorProcessor> sensor_processor_;   // Ptr to the SensorProcessor instance
   std::shared_ptr<WaypointManager> waypoint_manager_;   // Ptr to the WaypointGenerator instance
-
-  // --- Data ---
-  geometry_msgs::msg::Point::SharedPtr new_waypoint_;  // Ptr to the newly created waypoint
 };
 
 

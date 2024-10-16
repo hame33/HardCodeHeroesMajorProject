@@ -5,6 +5,7 @@
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <cmath>
 #include <utility>
+#include <iostream>
 
 // --- SensorProcessor Implementation ---
 
@@ -12,6 +13,7 @@
 SensorProcessor::SensorProcessor()
 {
   scan_distance_data_.fill(0.0);
+  scan_location_data_.fill(std::make_pair(0.0, 0.0));
 }
 
 // --- process_odom ---
@@ -37,15 +39,16 @@ void SensorProcessor::process_scan(const sensor_msgs::msg::LaserScan::SharedPtr 
 {
   for (int num = 0; num < Constants::NUM_SCAN_POSITIONS; num++) 
   {
-    if (std::isinf(msg->ranges.at(num * Constants::NUM_SCANNERS/Constants::NUM_SCAN_POSITIONS))) 
+    if (std::isinf(msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS))) 
     {
       scan_distance_data_[num] = msg->range_max;
     } 
     else 
     {
-      scan_distance_data_[num] = msg->ranges.at(num * Constants::NUM_SCANNERS/Constants::NUM_SCAN_POSITIONS);
+      scan_distance_data_[num] = msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS);
     }
     calc_global_scan_coord(num);
+    //std::cout << scan_location_data_[num].first << " " << scan_location_data_[num].second << std::endl;
   }
 }
 
@@ -64,7 +67,9 @@ std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> SensorProce
 // --- calc_global_scan_coord ---
 void SensorProcessor::calc_global_scan_coord(int num)
 {
-    scan_location_data_[num].first = robot_x_pos_ + scan_distance_data_[num] * cos(robot_yaw_);
-    scan_location_data_[num].second = robot_y_pos_ + scan_distance_data_[num] * sin(robot_yaw_);
+  scan_location_data_[num].first = robot_x_pos_ + scan_distance_data_[num] * 
+  (cos(robot_yaw_ + (num * (Constants::ANGLE_BETWEEN_SCANS)) * Constants::DEG2RAD));
+  scan_location_data_[num].second = robot_y_pos_ + scan_distance_data_[num] *
+  (sin(robot_yaw_ + (num * (Constants::ANGLE_BETWEEN_SCANS)) * Constants::DEG2RAD));
 }
 

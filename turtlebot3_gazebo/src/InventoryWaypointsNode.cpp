@@ -21,13 +21,11 @@ InventoryWaypointsNode::InventoryWaypointsNode()
 
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
-  waypoint_manager_ = std::make_shared<WaypointManager>();
+  waypoint_manager_ = std::make_shared<WaypointManager>(this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
+                                                        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos));
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
 
   std::cout << "node class components initialised" << std::endl;
-
-  // Initialise Publisher
-  waypoint_pub_ = this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos);
 
   // Initialise Subscribers
   scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
@@ -58,7 +56,16 @@ InventoryWaypointsNode::~InventoryWaypointsNode()
 // --- waypoint_callback ---
 void InventoryWaypointsNode::waypoint_callback()
 {
-  waypoint_generator_->create_waypoint();
+  std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data = sensor_processor_->get_scan_distance_data();
+  std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data = sensor_processor_->get_scan_location_data();
+
+
+  for (int num = 0; num < Constants::NUM_SCAN_POSITIONS; num++ )
+  {
+      waypoint_generator_->create_waypoint(num, scan_distance_data, scan_location_data);
+  }
+  waypoint_manager_->publish_waypoints();
+  waypoint_manager_->publish_markers();
   waypoint_manager_->print_waypoints();
   waypoint_manager_->clear_waypoints();
 }
