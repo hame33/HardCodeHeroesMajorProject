@@ -23,6 +23,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 
@@ -45,6 +46,7 @@ set(dependencies
   "nav_msgs"
   "nav2_msgs"
   "rclcpp"
+  "rclcpp_action"
   "sensor_msgs"
   "tf2"
 )
@@ -53,9 +55,7 @@ set(EXEC_NAME "turtlebot3_shop_navigator")
 
 add_executable(${EXEC_NAME} 
   src/main.cpp
-  src/WaypointFollowerNode.cpp
-  src/StateMachine.cpp
-  src/SensorProcessor.cpp
+  src/GoalNavigatorNode.cpp
   src/MotionController.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 

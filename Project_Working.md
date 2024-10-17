@@ -11,3 +11,11 @@
     1. Mapping Run: Map the whole shop to create that layer around the objects that we will then be clearing throughout the second run. 
         1.1: Begin with nothing but a blank space, take in lidar scans and place waypoints on areas where the scan picks up the furthest explorable points.
             1.1.2: Can use lidar scan at maybe 60 points in a 360 degree radius and place the waypoints at any of those points that read max lidar scan. If there are two or more points within a certain radius of each other, place one waypoint in the centroid of that space
+
+
+- Running everything:
+    1. Rviz and Nav2: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/ros2_practice_ws$ ros2 launch navigation_tb3 navigation.launch.py 
+        This package was downloaded from mohammad luqman's tutorial, this sets nav2 as active because nav2_bringup before wasn't doing that. Nav2 needs to be active so the bot can move towards waypoints
+    2. Gazebo: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py 
+    3. Inventory waypoints node: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 run turtlebot3_gazebo turtlebot3_shop_keeper 
+    4. Goal navigator node: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 run turtlebot3_navigation turtlebot3_shop_navigator 

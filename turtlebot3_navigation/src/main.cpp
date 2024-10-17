@@ -1,11 +1,11 @@
 // main.cpp
 
-#include "ShopNavAndDriveNode.hpp"
+#include "GoalNavigatorNode.hpp"
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<ShopNavAndDriveNode>());
+  rclcpp::spin(std::make_shared<GoalNavigatorNode>());
   rclcpp::shutdown();
 
   return 0;
