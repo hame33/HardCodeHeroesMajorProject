@@ -21,8 +21,8 @@ public:
   SensorProcessor();
   
   // --- Processing Methods ---
-  void process_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg);  // Processes LIDAR scan data
-  void process_odom(const nav_msgs::msg::Odometry::SharedPtr msg);      // Processes odometry (robot position) data
+  void process_scan(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg);  // Processes LIDAR scan data
+  void process_odom(const nav_msgs::msg::Odometry::SharedPtr scan_msg);      // Processes odometry (robot position) data
 
   // --- Getter Methods ---
   std::array<double, Constants::NUM_SCAN_POSITIONS> get_scan_distance_data() const;  // Returns LIDAR scan distance data

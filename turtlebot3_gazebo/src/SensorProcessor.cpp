@@ -17,16 +17,16 @@ SensorProcessor::SensorProcessor()
 }
 
 // --- process_odom ---
-void SensorProcessor::process_odom(const nav_msgs::msg::Odometry::SharedPtr msg)
+void SensorProcessor::process_odom(const nav_msgs::msg::Odometry::SharedPtr scan_msg)
 {
-  robot_x_pos_ = msg->pose.pose.position.x;
-  robot_y_pos_ = msg->pose.pose.position.y; // On gazebo the x is vertical and the y is horizontal
+  robot_x_pos_ = scan_msg->pose.pose.position.x;
+  robot_y_pos_ = scan_msg->pose.pose.position.y; // On gazebo the x is vertical and the y is horizontal
 
   tf2::Quaternion q(
-    msg->pose.pose.orientation.x,
-    msg->pose.pose.orientation.y,
-    msg->pose.pose.orientation.z,
-    msg->pose.pose.orientation.w);
+    scan_msg->pose.pose.orientation.x,
+    scan_msg->pose.pose.orientation.y,
+    scan_msg->pose.pose.orientation.z,
+    scan_msg->pose.pose.orientation.w);
   tf2::Matrix3x3 m(q);
   double roll, pitch, yaw;
   m.getRPY(roll, pitch, yaw);
@@ -35,17 +35,17 @@ void SensorProcessor::process_odom(const nav_msgs::msg::Odometry::SharedPtr msg)
 }
 
 // --- process_scan ---
-void SensorProcessor::process_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg)
+void SensorProcessor::process_scan(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
 {
   for (int num = 0; num < Constants::NUM_SCAN_POSITIONS; num++) 
   {
-    if (std::isinf(msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS))) 
+    if (std::isinf(scan_msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS))) 
     {
-      scan_distance_data_[num] = msg->range_max;
+      scan_distance_data_[num] = scan_msg->range_max;
     } 
     else 
     {
-      scan_distance_data_[num] = msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS);
+      scan_distance_data_[num] = scan_msg->ranges.at(num * Constants::ANGLE_BETWEEN_SCANS);
     }
     calc_global_scan_coord(num);
     //std::cout << scan_location_data_[num].first << " " << scan_location_data_[num].second << std::endl;
