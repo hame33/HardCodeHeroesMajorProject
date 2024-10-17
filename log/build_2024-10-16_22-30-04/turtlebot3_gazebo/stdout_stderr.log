@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[ 41%] Built target obstacle1
+[ 58%] Built target obstacle2
+[ 75%] Built target obstacles
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:118: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

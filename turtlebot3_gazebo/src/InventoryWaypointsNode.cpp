@@ -22,7 +22,8 @@ InventoryWaypointsNode::InventoryWaypointsNode()
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
   waypoint_manager_ = std::make_shared<WaypointManager>(this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
-                                                        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos));
+                                                        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
+                                                        this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
 
   std::cout << "node class components initialised" << std::endl;
@@ -66,7 +67,8 @@ void InventoryWaypointsNode::waypoint_callback()
   }
   waypoint_manager_->publish_waypoints();
   waypoint_manager_->publish_markers();
-  waypoint_manager_->print_waypoints();
+  waypoint_manager_->publish_goals();
+  //waypoint_manager_->print_waypoints();
   waypoint_manager_->clear_waypoints();
 }
 

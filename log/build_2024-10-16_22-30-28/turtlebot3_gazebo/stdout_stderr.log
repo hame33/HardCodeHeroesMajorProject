@@ -1,0 +1,16 @@
+[  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[ 41%] Built target obstacles
+[ 58%] Built target obstacle1
+[ 75%] Built target obstacle2
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:26:137:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kwaypoint_generator_[m[K’
+   26 |                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos))
+      |                                                                                                                                         [01;31m[K^[m[K
+      |                                                                                                                                         [32m[K;[m[K
+   27 |   [32m[Kwaypoint_generator_[m[K = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
+      |   [32m[K~~~~~~~~~~~~~~~~~~~[m[K                                                                                                                    
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

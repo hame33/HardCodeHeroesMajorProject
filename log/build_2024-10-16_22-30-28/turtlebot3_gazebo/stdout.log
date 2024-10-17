@@ -1,0 +1,6 @@
+[  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[ 41%] Built target obstacles
+[ 58%] Built target obstacle1
+[ 75%] Built target obstacle2

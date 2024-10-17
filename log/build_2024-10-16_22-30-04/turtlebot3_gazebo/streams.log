@@ -1,0 +1,17 @@
+[0.043s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[0.297s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.315s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[0.512s] [  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[0.528s] [ 16%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[0.545s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[0.720s] [ 41%] Built target obstacle1
+[0.740s] [ 58%] Built target obstacle2
+[0.746s] [ 75%] Built target obstacles
+[8.099s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Interrupt
+[8.100s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:118: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o] Interrupt
+[8.100s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Interrupt
+[8.101s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Interrupt
+[8.101s] gmake: *** [Makefile:146: all] Interrupt
+[8.157s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

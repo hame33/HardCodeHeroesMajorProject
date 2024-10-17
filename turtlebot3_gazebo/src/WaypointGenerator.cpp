@@ -15,10 +15,10 @@ WaypointGenerator::WaypointGenerator(std::shared_ptr<SensorProcessor> sensor_pro
 // --- create_waypoint ---
 void WaypointGenerator::create_waypoint(int num, std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data, std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data)
 {
-  geometry_msgs::msg::Point::SharedPtr new_waypoint_ = std::make_shared<geometry_msgs::msg::Point>();  
-  new_waypoint_->x = scan_location_data[num].first;
-  new_waypoint_->y = scan_location_data[num].second;
-  new_waypoint_->z = 0.0;
+  geometry_msgs::msg::Point::SharedPtr new_waypoint = std::make_shared<geometry_msgs::msg::Point>();  
+  new_waypoint->x = scan_location_data[num].first;
+  new_waypoint->y = scan_location_data[num].second;
+  new_waypoint->z = 0.0;
 
-  waypoint_manager_->add_waypoint(new_waypoint_, scan_distance_data[num]);
+  waypoint_manager_->add_waypoint(new_waypoint, scan_distance_data[num]);
 }

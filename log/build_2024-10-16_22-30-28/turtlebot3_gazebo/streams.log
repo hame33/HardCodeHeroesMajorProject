@@ -1,0 +1,18 @@
+[0.039s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.268s] [  8%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[0.275s] [ 16%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[0.292s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[0.316s] [ 41%] Built target obstacles
+[0.318s] [ 58%] Built target obstacle1
+[0.331s] [ 75%] Built target obstacle2
+[12.184s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[12.184s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:26:137:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kwaypoint_generator_[m[K’
+[12.184s]    26 |                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos))
+[12.185s]       |                                                                                                                                         [01;31m[K^[m[K
+[12.185s]       |                                                                                                                                         [32m[K;[m[K
+[12.185s]    27 |   [32m[Kwaypoint_generator_[m[K = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
+[12.186s]       |   [32m[K~~~~~~~~~~~~~~~~~~~[m[K                                                                                                                    
+[29.836s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+[29.837s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[29.838s] gmake: *** [Makefile:146: all] Error 2
+[29.846s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
