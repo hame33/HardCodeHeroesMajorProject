@@ -73,13 +73,13 @@ void InventoryWaypointsNode::waypoint_callback()
 }
 
 // --- scan_callback ---
-void InventoryWaypointsNode::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
+void InventoryWaypointsNode::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
 {
-  sensor_processor_->process_scan(msg);
+  sensor_processor_->process_scan(scan_msg);
 }
 
 // --- odom_callback ---
-void InventoryWaypointsNode::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
+void InventoryWaypointsNode::odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg)
 {
-  sensor_processor_->process_odom(msg);
+  sensor_processor_->process_odom(odom_msg);
 }

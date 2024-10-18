@@ -45,8 +45,8 @@ private:
 
   // --- Callback Functions ---
   void waypoint_callback();  // callback to handle publishing, creating, and managing waypoints
-  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg); // callback to handle scan data 
-  void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg); // callback to handle odom data
+  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg); // callback to handle scan data 
+  void odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg); // callback to handle odom data
 };
 
 

@@ -21,7 +21,7 @@ public:
   MotionController(rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client);
 
   // goal_follower
-  void goal_follower(geometry_msgs::msg::PoseStamped goal_to_follow); // Actions waypoint follower
+  void goal_follower(geometry_msgs::msg::PoseStamped goal_to_follow); // Actions goal navigator 
 private:
   // --- ROS Action Clients ---
   rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client_; // Pointer to goal follower action client

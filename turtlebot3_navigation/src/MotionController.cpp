@@ -34,7 +34,7 @@ void MotionController::goal_follower(geometry_msgs::msg::PoseStamped goal_to_fol
   auto send_goal_options = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
 
   auto goal_handle_future = navigator_client_->async_send_goal(goal, send_goal_options);
-  std::cout << "Navigating to goal @ x: " << goal_to_follow.pose.position.x << " y: " << goal_to_follow.pose.position.y << std::endl;
+  //std::cout << "Navigating to goal @ x: " << goal_to_follow.pose.position.x << " y: " << goal_to_follow.pose.position.y << std::endl;
 
   // auto goal_handle = goal_handle_future.get();
 

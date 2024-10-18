@@ -14,19 +14,22 @@ SensorProcessor::SensorProcessor()
 {
   scan_distance_data_.fill(0.0);
   scan_location_data_.fill(std::make_pair(0.0, 0.0));
+  robot_x_pos_ = 0.0;
+  robot_y_pos_ = 0.0;
+  robot_yaw_ = 0.0;
 }
 
 // --- process_odom ---
-void SensorProcessor::process_odom(const nav_msgs::msg::Odometry::SharedPtr scan_msg)
+void SensorProcessor::process_odom(const nav_msgs::msg::Odometry::SharedPtr odom_msg)
 {
-  robot_x_pos_ = scan_msg->pose.pose.position.x;
-  robot_y_pos_ = scan_msg->pose.pose.position.y; // On gazebo the x is vertical and the y is horizontal
+  robot_x_pos_ = odom_msg->pose.pose.position.x;
+  robot_y_pos_ = odom_msg->pose.pose.position.y; // On gazebo the x is vertical and the y is horizontal
 
   tf2::Quaternion q(
-    scan_msg->pose.pose.orientation.x,
-    scan_msg->pose.pose.orientation.y,
-    scan_msg->pose.pose.orientation.z,
-    scan_msg->pose.pose.orientation.w);
+    odom_msg->pose.pose.orientation.x,
+    odom_msg->pose.pose.orientation.y,
+    odom_msg->pose.pose.orientation.z,
+    odom_msg->pose.pose.orientation.w);
   tf2::Matrix3x3 m(q);
   double roll, pitch, yaw;
   m.getRPY(roll, pitch, yaw);
