@@ -60,9 +60,7 @@ set(EXEC_NAME "turtlebot3_shop_navigator")
 add_executable(${EXEC_NAME} 
   src/main.cpp
   src/GoalNavigatorNode.cpp
-  src/MotionController.cpp
-  src/MapManager.cpp
-  src/SensorProcessor.cpp)
+  src/MotionController.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
 ################################################################################

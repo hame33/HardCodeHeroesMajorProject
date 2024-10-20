@@ -116,4 +116,6 @@ void WaypointManager::publish_goals()
   {
     std::cout << "Waypoint with key " << Constants::MAX_SCAN_DISTANCE << " not found" << std::endl;
   }
+
+  // --- 
 }

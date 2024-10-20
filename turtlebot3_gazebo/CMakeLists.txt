@@ -23,12 +23,15 @@ find_package(ament_cmake REQUIRED)
 find_package(gazebo REQUIRED)
 find_package(gazebo_ros_pkgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(visualization_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(nav2_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
-
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 ################################################################################
 # Build
 ################################################################################
@@ -48,11 +51,15 @@ include_directories(
 
 set(dependencies
   "geometry_msgs"
-  "visualization_msgs"
   "nav_msgs"
+  "nav2_msgs"
   "rclcpp"
+  "rclcpp_action"
   "sensor_msgs"
   "tf2"
+  "tf2_ros"
+  "tf2_geometry_msgs"
+  "visualization_msgs"
 )
 
 set(EXEC_NAME "turtlebot3_shop_keeper")
@@ -62,7 +69,8 @@ add_executable(${EXEC_NAME}
   src/InventoryWaypointsNode.cpp
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
-  src/WaypointManager.cpp)
+  src/WaypointManager.cpp
+  src/MapManager.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
@@ -92,12 +100,16 @@ install(DIRECTORY include/
 ################################################################################
 # Macro for ament package
 ################################################################################
+################################################################################
 ament_export_include_directories(include)
 ament_export_dependencies(gazebo_ros_pkgs)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(nav_msgs)
+ament_export_dependencies(nav2_msgs)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2)
+ament_export_dependencies(tf2_ros)
+ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(visualization_msgs)
 ament_package()

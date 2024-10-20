@@ -19,12 +19,18 @@ InventoryWaypointsNode::InventoryWaypointsNode()
 
   std::cout << "qos defined" << std::endl;
 
+  // Initialise TF2 components
+  tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+  tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
   waypoint_manager_ = std::make_shared<WaypointManager>(this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
                                                         this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
+  // map_manager_ = std::make_shared<MapManager>(sensor_processor_);
+  map_manager_ = std::make_shared<MapManager>(tf_buffer_, tf_listener_, sensor_processor_);
 
   std::cout << "node class components initialised" << std::endl;
 
@@ -38,6 +44,11 @@ InventoryWaypointsNode::InventoryWaypointsNode()
   "odom",
   qos,
   std::bind(&InventoryWaypointsNode::odom_callback, this, std::placeholders::_1));
+
+  ocp_grid_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+  "map", 
+  qos, 
+  std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1));
 
   // Initialise Timer
   update_timer_ = this->create_wall_timer(
@@ -82,4 +93,10 @@ void InventoryWaypointsNode::scan_callback(const sensor_msgs::msg::LaserScan::Sh
 void InventoryWaypointsNode::odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg)
 {
   sensor_processor_->process_odom(odom_msg);
+}
+
+// --- map_callback ---
+void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
+{
+  map_manager_->process_map_data(ocp_grid_msg);
 }

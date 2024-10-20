@@ -31,12 +31,12 @@ public:
   void process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
 
 private:
-  // --- Components ---
-  std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
-
   // --- TF2 Components ---
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;   
+
+  // --- Components ---
+  std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
 };
 
 

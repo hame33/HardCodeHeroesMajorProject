@@ -27,6 +27,9 @@ public:
   // --- Getter Methods ---
   std::array<double, Constants::NUM_SCAN_POSITIONS> get_scan_distance_data() const;  // Returns LIDAR scan distance data
   std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> get_scan_location_data() const; // Returns LIDAR scan location data
+  double get_robot_x_pos() const; 
+  double get_robot_y_pos() const; 
+  double get_robot_yaw() const;  
 
 private:
   // --- Scan Data ---

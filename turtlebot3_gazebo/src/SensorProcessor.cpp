@@ -67,6 +67,24 @@ std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> SensorProce
   return scan_location_data_;
 }
 
+// --- get_robot_x_pos ---
+double SensorProcessor::get_robot_x_pos() const 
+{
+    return robot_x_pos_;
+}
+
+// --- get_robot_y_pos ---
+double SensorProcessor::get_robot_y_pos() const 
+{
+    return robot_y_pos_;
+}
+
+// --- get_robot_yaw ---
+double SensorProcessor::get_robot_yaw() const 
+{
+    return robot_yaw_;
+}
+
 // --- calc_global_scan_coord ---
 void SensorProcessor::calc_global_scan_coord(int num)
 {
@@ -75,4 +93,5 @@ void SensorProcessor::calc_global_scan_coord(int num)
   scan_location_data_[num].second = robot_y_pos_ + scan_distance_data_[num] *
   (sin(robot_yaw_ + (num * (Constants::ANGLE_BETWEEN_SCANS)) * Constants::DEG2RAD));
 }
+
 

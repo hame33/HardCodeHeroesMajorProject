@@ -21,32 +21,14 @@ GoalNavigatorNode::GoalNavigatorNode()
   // Initialise clients
   navigator_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
 
-  // Initialise TF2 components
-  tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
-  tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
-
   // Initialize components
-  sensor_processor_ = std::make_shared<SensorProcessor>();
   motion_controller_ = std::make_shared<MotionController>(navigator_client_);
-  // map_manager_ = std::make_shared<MapManager>(tf_buffer_, tf_listener_, sensor_processor_);
-  map_manager_ = std::make_shared<MapManager>(sensor_processor_);
 
   // Initialize subscribers
-  odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-    "odom",
-    qos,
-    std::bind(&GoalNavigatorNode::odom_callback, this, std::placeholders::_1));
-
   goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
     "inventory_goals",
     qos,
     std::bind(&GoalNavigatorNode::goal_callback, this, std::placeholders::_1));
-
-  ocp_grid_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
-    "map", 
-    qos, 
-    std::bind(&GoalNavigatorNode::map_callback, this, std::placeholders::_1));
-    
 
   // Initialize timer
   update_timer_ = this->create_wall_timer(
@@ -87,18 +69,6 @@ void GoalNavigatorNode::navigation_callback()
   geometry_msgs::msg::PoseStamped goal_to_follow = get_goal_to_follow();
 
   motion_controller_->goal_follower(goal_to_follow);
-}
-
-// --- odom_callback ---
-void GoalNavigatorNode::odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg)
-{
-  sensor_processor_->process_odom(odom_msg);
-}
-
-// --- map_callback ---
-void GoalNavigatorNode::map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
-{
-  map_manager_->process_map_data(ocp_grid_msg);
 }
 
 // --- get_goal_to_follow ---
