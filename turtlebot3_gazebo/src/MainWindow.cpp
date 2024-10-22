@@ -19,23 +19,19 @@ MainWindow::MainWindow(QWidget *parent)
   setupUi();
   startRosSpin();
 
-  // Subscribe to map, pose, and marker topics
+  // Subscribe to map and marker topics
   map_sub_ = node_->create_subscription<nav_msgs::msg::OccupancyGrid>(
     "/map", 10,
     [this](nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
       map_ = msg;
-    });
-
-  pose_sub_ = node_->create_subscription<geometry_msgs::msg::PoseStamped>(
-    "/robot_pose", 10,
-    [this](geometry_msgs::msg::PoseStamped::SharedPtr msg) {
-      robot_pose_ = msg;
+      RCLCPP_INFO(node_->get_logger(), "Received map data");
     });
 
   marker_sub_ = node_->create_subscription<visualization_msgs::msg::Marker>(
     "waypoint_markers", 10,
     [this](visualization_msgs::msg::Marker::SharedPtr msg) {
       waypoints_.push_back(*msg);
+      RCLCPP_INFO(node_->get_logger(), "Received waypoint marker");
     });
 
   // Update GUI periodically
@@ -53,63 +49,24 @@ MainWindow::MainWindow(QWidget *parent)
   });
 }
 
-MainWindow::~MainWindow()
-{
-  rclcpp::shutdown();
-  if (ros_spin_thread_ && ros_spin_thread_->joinable()) {
-    ros_spin_thread_->join();
-  }
-}
-
-void MainWindow::setupUi()
-{
-  map_label_ = new QLabel("Map will be displayed here.");
-  map_label_->setAlignment(Qt::AlignCenter);
-
-  start_button_ = new QPushButton("Start Navigation");
-  stop_button_ = new QPushButton("Stop Navigation");
-
-  QHBoxLayout *button_layout = new QHBoxLayout();
-  button_layout->addWidget(start_button_);
-  button_layout->addWidget(stop_button_);
-
-  main_layout_ = new QVBoxLayout();
-  main_layout_->addWidget(map_label_);
-  main_layout_->addLayout(button_layout);
-
-  central_widget_ = new QWidget(this);
-  central_widget_->setLayout(main_layout_);
-  setCentralWidget(central_widget_);
-
-  setWindowTitle("Inventory GUI");
-  resize(800, 600);
-
-  // Connect button signals to slots
-  connect(start_button_, &QPushButton::clicked, [this]() {
-    // Start navigation logic
-    inventory_node_->start_navigation();
-  });
-
-  connect(stop_button_, &QPushButton::clicked, [this]() {
-    // Stop navigation logic
-    inventory_node_->stop_navigation();
-  });
-}
-
-void MainWindow::startRosSpin()
-{
-  ros_spin_thread_ = std::make_shared<std::thread>([this]() {
-    rclcpp::spin(node_);
-  });
-}
-
 void MainWindow::updateMap()
 {
-  if (!map_ || !robot_pose_) {
+  if (!map_) {
+    RCLCPP_INFO(node_->get_logger(), "Map data not available yet");
     return;
   }
 
-  // Convert the occupancy grid to an image
+  // Get robot pose via TF
+  geometry_msgs::msg::TransformStamped transformStamped;
+  try {
+    // Adjust frame names as necessary
+    transformStamped = tf_buffer_->lookupTransform("map", "base_link", tf2::TimePointZero);
+  } catch (tf2::TransformException &ex) {
+    RCLCPP_WARN(node_->get_logger(), "Could not transform 'map' to 'base_link': %s", ex.what());
+    return;
+  }
+
+  // Proceed to draw the map and robot position
   int width = map_->info.width;
   int height = map_->info.height;
   QImage image(width, height, QImage::Format_RGB888);
@@ -145,8 +102,10 @@ void MainWindow::updateMap()
 
   // Draw robot position
   painter.setBrush(Qt::blue);
-  int robot_x = (robot_pose_->pose.position.x - map_->info.origin.position.x) / map_->info.resolution;
-  int robot_y = height - (robot_pose_->pose.position.y - map_->info.origin.position.y) / map_->info.resolution;
+  double robot_x_m = transformStamped.transform.translation.x;
+  double robot_y_m = transformStamped.transform.translation.y;
+  int robot_x = (robot_x_m - map_->info.origin.position.x) / map_->info.resolution;
+  int robot_y = height - (robot_y_m - map_->info.origin.position.y) / map_->info.resolution;
   painter.drawEllipse(QPointF(robot_x, robot_y), 5, 5);
 
   painter.end();
