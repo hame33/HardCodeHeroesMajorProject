@@ -70,7 +70,7 @@ void WaypointManager::publish_markers()
   {
     visualization_msgs::msg::Marker marker;
     marker.header.frame_id = "map";
-    marker.header.stamp = this->get_clock()->now();
+    marker.header.stamp = node_->get_clock()->now();
     marker.ns = "waypoints";
     marker.id = id++;
     marker.type = visualization_msgs::msg::Marker::SPHERE;
@@ -98,7 +98,7 @@ void WaypointManager::publish_goals()
   auto goal = geometry_msgs::msg::PoseStamped();
   goal.header.frame_id = "map";
   
-  goal.header.stamp = this->get_clock()->now();
+  goal.header.stamp = node_->get_clock()->now();
 
   if(waypoints_.find(Constants::MAX_SCAN_DISTANCE) != waypoints_.end())
   {
