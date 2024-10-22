@@ -1,4 +1,4 @@
-#include "main_window.hpp"
+#include "MainWindow.hpp"
 #include <QPixmap>
 #include <QImage>
 #include <QPainter>

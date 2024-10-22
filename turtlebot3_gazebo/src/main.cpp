@@ -1,16 +1,27 @@
 // main.cpp
 
-#include "InventoryWaypointsNode.hpp"
-#include <iostream>
+#include <QApplication>
+#include <rclcpp/rclcpp.hpp>
+#include "MainWindow.hpp"
 
-int main(int argc, char ** argv)
+int main(int argc, char *argv[])
 {
-  std::cout << "Main" << std::endl;
+  // Initialize ROS2
   rclcpp::init(argc, argv);
-  std::cout << "rclcpp initialise" << std::endl;
-  rclcpp::spin(std::make_shared<InventoryWaypointsNode>());
+
+  // Initialize Qt application
+  QApplication app(argc, argv);
+
+  // Create an instance of your main window
+  MainWindow window;
+  window.show();
+
+  // Start the Qt event loop
+  int result = app.exec();
+
+  // Shutdown ROS2
   rclcpp::shutdown();
 
-  return 0;
+  return result;
 }
 
