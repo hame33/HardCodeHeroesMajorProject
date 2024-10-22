@@ -28,10 +28,19 @@ find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Core Gui)  # Added for Qt integration
 
 ################################################################################
 # Build
 ################################################################################
+
+# Enable automatic Qt processing
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 link_directories(
   ${GAZEBO_LIBRARY_DIRS}
 )
@@ -39,6 +48,9 @@ link_directories(
 include_directories(
   include
   ${GAZEBO_INCLUDE_DIRS}
+  ${Qt5Widgets_INCLUDE_DIRS}
+  ${Qt5Core_INCLUDE_DIRS}
+  ${Qt5Gui_INCLUDE_DIRS}
 )
 
 include_directories(
@@ -53,17 +65,31 @@ set(dependencies
   "rclcpp"
   "sensor_msgs"
   "tf2"
+  "tf2_ros"
+  "tf2_geometry_msgs"
 )
 
 set(EXEC_NAME "turtlebot3_shop_keeper")
 
-add_executable(${EXEC_NAME} 
+add_executable(${EXEC_NAME}
   src/main.cpp
   src/InventoryWaypointsNode.cpp
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
-  src/WaypointManager.cpp)
+  src/WaypointManager.cpp
+  src/main_window.cpp  # Add your GUI source files here
+  # Add other GUI-related source files if any
+)
+
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
+
+# Link Qt5 libraries
+target_link_libraries(${EXEC_NAME}
+  Qt5::Widgets
+  Qt5::Core
+  Qt5::Gui
+  ${GAZEBO_LIBRARIES}
+)
 
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
 target_link_libraries(obstacle1 ${GAZEBO_LIBRARIES})
@@ -99,5 +125,7 @@ ament_export_dependencies(nav_msgs)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2)
+ament_export_dependencies(tf2_ros)
+ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(visualization_msgs)
 ament_package()
