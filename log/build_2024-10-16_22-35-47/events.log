@@ -1,0 +1,515 @@
+[0.000000] (-) TimerEvent: {}
+[0.001132] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.002620] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.031786] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[0.035301] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[0.038936] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1019'), ('SYSTEMD_EXEC_PID', '1356'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:13473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1142,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1142'), ('INVOCATION_ID', '0f33f25bdaff4f86bf4c56ce4028566d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I9FGV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ee97309-d74e-4650-97e0-2fc46c25f905'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.099267] (-) TimerEvent: {}
+[0.180982] (turtlebot3_gazebo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper\x1b[0m\n'}
+[0.203227] (-) TimerEvent: {}
+[0.287735] (turtlebot3_gazebo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o\x1b[0m\n'}
+[0.294536] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 25%] Built target obstacles\n'}
+[0.297733] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 41%] Built target obstacle1\n'}
+[0.298343] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 58%] Built target obstacle2\n'}
+[0.304343] (-) TimerEvent: {}
+[0.405742] (-) TimerEvent: {}
+[0.506173] (-) TimerEvent: {}
+[0.606777] (-) TimerEvent: {}
+[0.707710] (-) TimerEvent: {}
+[0.808206] (-) TimerEvent: {}
+[0.908878] (-) TimerEvent: {}
+[1.010323] (-) TimerEvent: {}
+[1.111005] (-) TimerEvent: {}
+[1.211491] (-) TimerEvent: {}
+[1.312148] (-) TimerEvent: {}
+[1.413196] (-) TimerEvent: {}
+[1.513828] (-) TimerEvent: {}
+[1.614317] (-) TimerEvent: {}
+[1.714845] (-) TimerEvent: {}
+[1.815252] (-) TimerEvent: {}
+[1.915839] (-) TimerEvent: {}
+[2.017181] (-) TimerEvent: {}
+[2.117907] (-) TimerEvent: {}
+[2.218339] (-) TimerEvent: {}
+[2.318999] (-) TimerEvent: {}
+[2.419807] (-) TimerEvent: {}
+[2.520207] (-) TimerEvent: {}
+[2.620691] (-) TimerEvent: {}
+[2.722039] (-) TimerEvent: {}
+[2.822512] (-) TimerEvent: {}
+[2.923080] (-) TimerEvent: {}
+[3.023656] (-) TimerEvent: {}
+[3.124181] (-) TimerEvent: {}
+[3.224649] (-) TimerEvent: {}
+[3.325265] (-) TimerEvent: {}
+[3.426367] (-) TimerEvent: {}
+[3.526874] (-) TimerEvent: {}
+[3.627501] (-) TimerEvent: {}
+[3.729008] (-) TimerEvent: {}
+[3.829671] (-) TimerEvent: {}
+[3.930141] (-) TimerEvent: {}
+[4.031162] (-) TimerEvent: {}
+[4.132993] (-) TimerEvent: {}
+[4.233910] (-) TimerEvent: {}
+[4.334463] (-) TimerEvent: {}
+[4.435145] (-) TimerEvent: {}
+[4.535704] (-) TimerEvent: {}
+[4.636212] (-) TimerEvent: {}
+[4.737112] (-) TimerEvent: {}
+[4.838462] (-) TimerEvent: {}
+[4.939232] (-) TimerEvent: {}
+[5.040107] (-) TimerEvent: {}
+[5.140938] (-) TimerEvent: {}
+[5.241408] (-) TimerEvent: {}
+[5.341974] (-) TimerEvent: {}
+[5.442523] (-) TimerEvent: {}
+[5.542993] (-) TimerEvent: {}
+[5.643481] (-) TimerEvent: {}
+[5.744027] (-) TimerEvent: {}
+[5.844851] (-) TimerEvent: {}
+[5.945294] (-) TimerEvent: {}
+[6.045720] (-) TimerEvent: {}
+[6.146258] (-) TimerEvent: {}
+[6.246824] (-) TimerEvent: {}
+[6.347202] (-) TimerEvent: {}
+[6.447833] (-) TimerEvent: {}
+[6.548528] (-) TimerEvent: {}
+[6.648975] (-) TimerEvent: {}
+[6.749349] (-) TimerEvent: {}
+[6.850152] (-) TimerEvent: {}
+[6.950614] (-) TimerEvent: {}
+[7.051058] (-) TimerEvent: {}
+[7.151461] (-) TimerEvent: {}
+[7.251936] (-) TimerEvent: {}
+[7.352421] (-) TimerEvent: {}
+[7.453064] (-) TimerEvent: {}
+[7.553778] (-) TimerEvent: {}
+[7.654190] (-) TimerEvent: {}
+[7.754674] (-) TimerEvent: {}
+[7.855107] (-) TimerEvent: {}
+[7.955515] (-) TimerEvent: {}
+[8.055879] (-) TimerEvent: {}
+[8.156524] (-) TimerEvent: {}
+[8.257427] (-) TimerEvent: {}
+[8.357943] (-) TimerEvent: {}
+[8.458326] (-) TimerEvent: {}
+[8.558715] (-) TimerEvent: {}
+[8.659143] (-) TimerEvent: {}
+[8.759540] (-) TimerEvent: {}
+[8.859961] (-) TimerEvent: {}
+[8.960602] (-) TimerEvent: {}
+[9.061350] (-) TimerEvent: {}
+[9.161890] (-) TimerEvent: {}
+[9.262282] (-) TimerEvent: {}
+[9.362890] (-) TimerEvent: {}
+[9.463352] (-) TimerEvent: {}
+[9.563769] (-) TimerEvent: {}
+[9.664315] (-) TimerEvent: {}
+[9.764978] (-) TimerEvent: {}
+[9.865436] (-) TimerEvent: {}
+[9.966024] (-) TimerEvent: {}
+[10.066826] (-) TimerEvent: {}
+[10.167238] (-) TimerEvent: {}
+[10.267629] (-) TimerEvent: {}
+[10.368245] (-) TimerEvent: {}
+[10.468777] (-) TimerEvent: {}
+[10.569160] (-) TimerEvent: {}
+[10.669528] (-) TimerEvent: {}
+[10.770184] (-) TimerEvent: {}
+[10.870664] (-) TimerEvent: {}
+[10.971028] (-) TimerEvent: {}
+[11.071438] (-) TimerEvent: {}
+[11.171891] (-) TimerEvent: {}
+[11.272409] (-) TimerEvent: {}
+[11.372968] (-) TimerEvent: {}
+[11.473753] (-) TimerEvent: {}
+[11.574251] (-) TimerEvent: {}
+[11.674656] (-) TimerEvent: {}
+[11.775180] (-) TimerEvent: {}
+[11.875627] (-) TimerEvent: {}
+[11.976117] (-) TimerEvent: {}
+[12.076591] (-) TimerEvent: {}
+[12.177499] (-) TimerEvent: {}
+[12.278144] (-) TimerEvent: {}
+[12.378574] (-) TimerEvent: {}
+[12.479000] (-) TimerEvent: {}
+[12.579426] (-) TimerEvent: {}
+[12.679823] (-) TimerEvent: {}
+[12.780301] (-) TimerEvent: {}
+[12.881309] (-) TimerEvent: {}
+[12.981896] (-) TimerEvent: {}
+[13.082297] (-) TimerEvent: {}
+[13.182843] (-) TimerEvent: {}
+[13.283413] (-) TimerEvent: {}
+[13.383869] (-) TimerEvent: {}
+[13.484418] (-) TimerEvent: {}
+[13.585223] (-) TimerEvent: {}
+[13.685770] (-) TimerEvent: {}
+[13.786251] (-) TimerEvent: {}
+[13.886749] (-) TimerEvent: {}
+[13.987240] (-) TimerEvent: {}
+[14.087731] (-) TimerEvent: {}
+[14.188169] (-) TimerEvent: {}
+[14.288645] (-) TimerEvent: {}
+[14.389194] (-) TimerEvent: {}
+[14.489668] (-) TimerEvent: {}
+[14.590266] (-) TimerEvent: {}
+[14.690918] (-) TimerEvent: {}
+[14.791421] (-) TimerEvent: {}
+[14.891918] (-) TimerEvent: {}
+[14.993008] (-) TimerEvent: {}
+[15.093790] (-) TimerEvent: {}
+[15.194259] (-) TimerEvent: {}
+[15.294749] (-) TimerEvent: {}
+[15.395246] (-) TimerEvent: {}
+[15.495738] (-) TimerEvent: {}
+[15.596201] (-) TimerEvent: {}
+[15.696899] (-) TimerEvent: {}
+[15.797474] (-) TimerEvent: {}
+[15.897927] (-) TimerEvent: {}
+[15.998427] (-) TimerEvent: {}
+[16.098931] (-) TimerEvent: {}
+[16.199403] (-) TimerEvent: {}
+[16.299855] (-) TimerEvent: {}
+[16.400563] (-) TimerEvent: {}
+[16.501184] (-) TimerEvent: {}
+[16.601793] (-) TimerEvent: {}
+[16.702324] (-) TimerEvent: {}
+[16.803024] (-) TimerEvent: {}
+[16.903426] (-) TimerEvent: {}
+[17.003912] (-) TimerEvent: {}
+[17.104562] (-) TimerEvent: {}
+[17.205249] (-) TimerEvent: {}
+[17.305734] (-) TimerEvent: {}
+[17.406172] (-) TimerEvent: {}
+[17.506662] (-) TimerEvent: {}
+[17.607118] (-) TimerEvent: {}
+[17.707616] (-) TimerEvent: {}
+[17.808661] (-) TimerEvent: {}
+[17.909224] (-) TimerEvent: {}
+[18.009707] (-) TimerEvent: {}
+[18.110230] (-) TimerEvent: {}
+[18.210714] (-) TimerEvent: {}
+[18.311177] (-) TimerEvent: {}
+[18.411561] (-) TimerEvent: {}
+[18.512018] (-) TimerEvent: {}
+[18.612584] (-) TimerEvent: {}
+[18.713005] (-) TimerEvent: {}
+[18.813460] (-) TimerEvent: {}
+[18.914071] (-) TimerEvent: {}
+[19.014562] (-) TimerEvent: {}
+[19.114952] (-) TimerEvent: {}
+[19.215565] (-) TimerEvent: {}
+[19.316285] (-) TimerEvent: {}
+[19.416690] (-) TimerEvent: {}
+[19.517298] (-) TimerEvent: {}
+[19.618166] (-) TimerEvent: {}
+[19.718548] (-) TimerEvent: {}
+[19.818964] (-) TimerEvent: {}
+[19.919362] (-) TimerEvent: {}
+[20.019843] (-) TimerEvent: {}
+[20.120239] (-) TimerEvent: {}
+[20.220945] (-) TimerEvent: {}
+[20.321566] (-) TimerEvent: {}
+[20.423817] (-) TimerEvent: {}
+[20.524442] (-) TimerEvent: {}
+[20.625158] (-) TimerEvent: {}
+[20.725816] (-) TimerEvent: {}
+[20.826244] (-) TimerEvent: {}
+[20.926768] (-) TimerEvent: {}
+[21.027367] (-) TimerEvent: {}
+[21.127787] (-) TimerEvent: {}
+[21.228343] (-) TimerEvent: {}
+[21.329067] (-) TimerEvent: {}
+[21.429671] (-) TimerEvent: {}
+[21.530033] (-) TimerEvent: {}
+[21.630453] (-) TimerEvent: {}
+[21.731012] (-) TimerEvent: {}
+[21.831412] (-) TimerEvent: {}
+[21.932024] (-) TimerEvent: {}
+[22.032733] (-) TimerEvent: {}
+[22.133569] (-) TimerEvent: {}
+[22.234009] (-) TimerEvent: {}
+[22.334441] (-) TimerEvent: {}
+[22.434953] (-) TimerEvent: {}
+[22.535355] (-) TimerEvent: {}
+[22.635775] (-) TimerEvent: {}
+[22.736536] (-) TimerEvent: {}
+[22.837518] (-) TimerEvent: {}
+[22.937959] (-) TimerEvent: {}
+[23.038401] (-) TimerEvent: {}
+[23.138842] (-) TimerEvent: {}
+[23.239286] (-) TimerEvent: {}
+[23.339660] (-) TimerEvent: {}
+[23.440140] (-) TimerEvent: {}
+[23.540787] (-) TimerEvent: {}
+[23.641152] (-) TimerEvent: {}
+[23.741804] (-) TimerEvent: {}
+[23.842663] (-) TimerEvent: {}
+[23.943477] (-) TimerEvent: {}
+[24.043955] (-) TimerEvent: {}
+[24.144576] (-) TimerEvent: {}
+[24.245162] (-) TimerEvent: {}
+[24.345509] (-) TimerEvent: {}
+[24.445891] (-) TimerEvent: {}
+[24.546413] (-) TimerEvent: {}
+[24.647030] (-) TimerEvent: {}
+[24.747550] (-) TimerEvent: {}
+[24.848161] (-) TimerEvent: {}
+[24.948886] (-) TimerEvent: {}
+[25.049320] (-) TimerEvent: {}
+[25.149855] (-) TimerEvent: {}
+[25.251029] (-) TimerEvent: {}
+[25.351473] (-) TimerEvent: {}
+[25.451890] (-) TimerEvent: {}
+[25.553541] (-) TimerEvent: {}
+[25.655709] (-) TimerEvent: {}
+[25.757093] (-) TimerEvent: {}
+[25.858360] (-) TimerEvent: {}
+[25.958931] (-) TimerEvent: {}
+[26.059649] (-) TimerEvent: {}
+[26.160235] (-) TimerEvent: {}
+[26.261247] (-) TimerEvent: {}
+[26.362175] (-) TimerEvent: {}
+[26.463345] (-) TimerEvent: {}
+[26.564785] (-) TimerEvent: {}
+[26.665849] (-) TimerEvent: {}
+[26.766989] (-) TimerEvent: {}
+[26.868081] (-) TimerEvent: {}
+[26.969274] (-) TimerEvent: {}
+[27.070258] (-) TimerEvent: {}
+[27.171322] (-) TimerEvent: {}
+[27.272301] (-) TimerEvent: {}
+[27.373010] (-) TimerEvent: {}
+[27.474873] (-) TimerEvent: {}
+[27.575867] (-) TimerEvent: {}
+[27.676769] (-) TimerEvent: {}
+[27.777554] (-) TimerEvent: {}
+[27.879292] (-) TimerEvent: {}
+[27.980046] (-) TimerEvent: {}
+[28.081874] (-) TimerEvent: {}
+[28.182760] (-) TimerEvent: {}
+[28.283262] (-) TimerEvent: {}
+[28.384013] (-) TimerEvent: {}
+[28.485048] (-) TimerEvent: {}
+[28.585742] (-) TimerEvent: {}
+[28.686589] (-) TimerEvent: {}
+[28.787256] (-) TimerEvent: {}
+[28.887951] (-) TimerEvent: {}
+[28.988768] (-) TimerEvent: {}
+[29.090023] (-) TimerEvent: {}
+[29.190871] (-) TimerEvent: {}
+[29.291517] (-) TimerEvent: {}
+[29.392175] (-) TimerEvent: {}
+[29.492983] (-) TimerEvent: {}
+[29.593502] (-) TimerEvent: {}
+[29.694096] (-) TimerEvent: {}
+[29.794732] (-) TimerEvent: {}
+[29.895288] (-) TimerEvent: {}
+[29.996019] (-) TimerEvent: {}
+[30.096644] (-) TimerEvent: {}
+[30.197207] (-) TimerEvent: {}
+[30.297649] (-) TimerEvent: {}
+[30.398228] (-) TimerEvent: {}
+[30.498775] (-) TimerEvent: {}
+[30.599466] (-) TimerEvent: {}
+[30.699980] (-) TimerEvent: {}
+[30.800541] (-) TimerEvent: {}
+[30.901209] (-) TimerEvent: {}
+[31.001638] (-) TimerEvent: {}
+[31.102187] (-) TimerEvent: {}
+[31.202888] (-) TimerEvent: {}
+[31.303407] (-) TimerEvent: {}
+[31.403865] (-) TimerEvent: {}
+[31.504498] (-) TimerEvent: {}
+[31.605244] (-) TimerEvent: {}
+[31.705669] (-) TimerEvent: {}
+[31.806115] (-) TimerEvent: {}
+[31.906939] (-) TimerEvent: {}
+[32.007426] (-) TimerEvent: {}
+[32.107893] (-) TimerEvent: {}
+[32.208723] (-) TimerEvent: {}
+[32.309347] (-) TimerEvent: {}
+[32.409912] (-) TimerEvent: {}
+[32.510515] (-) TimerEvent: {}
+[32.611122] (-) TimerEvent: {}
+[32.711532] (-) TimerEvent: {}
+[32.812002] (-) TimerEvent: {}
+[32.912606] (-) TimerEvent: {}
+[33.013363] (-) TimerEvent: {}
+[33.113819] (-) TimerEvent: {}
+[33.214241] (-) TimerEvent: {}
+[33.314812] (-) TimerEvent: {}
+[33.415310] (-) TimerEvent: {}
+[33.515855] (-) TimerEvent: {}
+[33.616467] (-) TimerEvent: {}
+[33.717026] (-) TimerEvent: {}
+[33.817544] (-) TimerEvent: {}
+[33.918178] (-) TimerEvent: {}
+[34.018682] (-) TimerEvent: {}
+[34.119189] (-) TimerEvent: {}
+[34.219779] (-) TimerEvent: {}
+[34.320344] (-) TimerEvent: {}
+[34.420995] (-) TimerEvent: {}
+[34.521499] (-) TimerEvent: {}
+[34.622058] (-) TimerEvent: {}
+[34.722643] (-) TimerEvent: {}
+[34.823180] (-) TimerEvent: {}
+[34.923677] (-) TimerEvent: {}
+[35.024325] (-) TimerEvent: {}
+[35.125067] (-) TimerEvent: {}
+[35.225714] (-) TimerEvent: {}
+[35.286643] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_shop_keeper\x1b[0m\n'}
+[35.325845] (-) TimerEvent: {}
+[35.426415] (-) TimerEvent: {}
+[35.527100] (-) TimerEvent: {}
+[35.627883] (-) TimerEvent: {}
+[35.729241] (-) TimerEvent: {}
+[35.830307] (-) TimerEvent: {}
+[35.936161] (-) TimerEvent: {}
+[36.038315] (-) TimerEvent: {}
+[36.142095] (-) TimerEvent: {}
+[36.244440] (-) TimerEvent: {}
+[36.345168] (-) TimerEvent: {}
+[36.445837] (-) TimerEvent: {}
+[36.546950] (-) TimerEvent: {}
+[36.647909] (-) TimerEvent: {}
+[36.748500] (-) TimerEvent: {}
+[36.849067] (-) TimerEvent: {}
+[36.949702] (-) TimerEvent: {}
+[37.050179] (-) TimerEvent: {}
+[37.151283] (-) TimerEvent: {}
+[37.251957] (-) TimerEvent: {}
+[37.352446] (-) TimerEvent: {}
+[37.452960] (-) TimerEvent: {}
+[37.553899] (-) TimerEvent: {}
+[37.654965] (-) TimerEvent: {}
+[37.755681] (-) TimerEvent: {}
+[37.856339] (-) TimerEvent: {}
+[37.923267] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target turtlebot3_shop_keeper\n'}
+[37.956369] (-) TimerEvent: {}
+[37.959556] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[38.056528] (-) TimerEvent: {}
+[38.093459] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'install'}
+[38.119770] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1019'), ('SYSTEMD_EXEC_PID', '1356'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:13473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1142,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1142'), ('INVOCATION_ID', '0f33f25bdaff4f86bf4c56ce4028566d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I9FGV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ee97309-d74e-4650-97e0-2fc46c25f905'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble')]), 'shell': False}
+[38.143126] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.144718] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper\n'}
+[38.156727] (-) TimerEvent: {}
+[38.165949] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper" to ""\n'}
+[38.166779] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch\n'}
+[38.167347] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py\n'}
+[38.167861] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/box_world.launch.py\n'}
+[38.168791] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py\n'}
+[38.169525] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py\n'}
+[38.170115] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__\n'}
+[38.170639] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/spawn_turtlebot3.launch.cpython-310.pyc\n'}
+[38.171145] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/empty_world.launch.cpython-310.pyc\n'}
+[38.171634] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py\n'}
+[38.172297] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py\n'}
+[38.172881] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py\n'}
+[38.173488] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py\n'}
+[38.173861] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py\n'}
+[38.174487] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py\n'}
+[38.175064] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/open_track_maze.launch.py\n'}
+[38.175701] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models\n'}
+[38.176264] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house\n'}
+[38.176911] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf\n'}
+[38.177365] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config\n'}
+[38.177678] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle\n'}
+[38.177918] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf\n'}
+[38.178526] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf\n'}
+[38.178891] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config\n'}
+[38.179215] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger\n'}
+[38.179683] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf\n'}
+[38.179968] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf\n'}
+[38.180185] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config\n'}
+[38.180451] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world\n'}
+[38.180778] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf\n'}
+[38.181013] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes\n'}
+[38.181225] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae\n'}
+[38.181814] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae\n'}
+[38.184127] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf\n'}
+[38.185048] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config\n'}
+[38.185323] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi\n'}
+[38.185953] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf\n'}
+[38.186253] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf\n'}
+[38.186452] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config\n'}
+[38.186945] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common\n'}
+[38.187274] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes\n'}
+[38.187853] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae\n'}
+[38.188295] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae\n'}
+[38.189660] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae\n'}
+[38.191201] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae\n'}
+[38.192662] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae\n'}
+[38.194043] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae\n'}
+[38.195306] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config\n'}
+[38.195617] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world\n'}
+[38.195794] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1\n'}
+[38.196275] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf\n'}
+[38.196651] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config\n'}
+[38.196919] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box\n'}
+[38.197080] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf\n'}
+[38.197226] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config\n'}
+[38.197384] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin\n'}
+[38.197937] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt\n'}
+[38.198603] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc\n'}
+[38.198762] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc\n'}
+[38.198907] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc\n'}
+[38.199190] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2\n'}
+[38.199402] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf\n'}
+[38.199574] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config\n'}
+[38.199718] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls\n'}
+[38.199860] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf\n'}
+[38.200003] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config\n'}
+[38.200265] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf\n'}
+[38.200768] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config\n'}
+[38.201318] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles\n'}
+[38.201526] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf\n'}
+[38.202082] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config\n'}
+[38.202643] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz\n'}
+[38.202826] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz\n'}
+[38.203060] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf\n'}
+[38.203347] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf\n'}
+[38.204103] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf\n'}
+[38.204502] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf\n'}
+[38.206155] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf\n'}
+[38.206673] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds\n'}
+[38.207352] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world\n'}
+[38.209561] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world\n'}
+[38.209887] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_maze.world\n'}
+[38.212583] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world\n'}
+[38.213413] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world\n'}
+[38.213950] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world\n'}
+[38.214316] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/box_world.world\n'}
+[38.215338] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world\n'}
+[38.216283] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world\n'}
+[38.217300] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_ls.world\n'}
+[38.217776] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include/\n'}
+[38.218103] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointManager.hpp\n'}
+[38.218420] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//InventoryWaypointsNode.hpp\n'}
+[38.218928] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//Constants.hpp\n'}
+[38.219245] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointGenerator.hpp\n'}
+[38.219724] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//SensorProcessor.hpp\n'}
+[38.220094] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo\n'}
+[38.220423] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo\n'}
+[38.221365] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh\n'}
+[38.222727] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv\n'}
+[38.223295] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh\n'}
+[38.223932] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv\n'}
+[38.224596] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash\n'}
+[38.225428] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh\n'}
+[38.226152] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh\n'}
+[38.226670] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv\n'}
+[38.227112] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv\n'}
+[38.227483] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo\n'}
+[38.227983] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[38.228281] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[38.228575] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake\n'}
+[38.228904] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake\n'}
+[38.229248] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Up-to-date: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml\n'}
+[38.229670] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[38.260722] (-) TimerEvent: {}
+[38.361724] (-) TimerEvent: {}
+[38.463563] (-) TimerEvent: {}
+[38.486754] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 0}
+[38.488598] (-) EventReactorShutdown: {}

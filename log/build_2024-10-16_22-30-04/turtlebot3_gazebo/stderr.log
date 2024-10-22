@@ -1,0 +1,5 @@
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:118: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

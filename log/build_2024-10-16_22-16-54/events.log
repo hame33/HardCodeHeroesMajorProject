@@ -1,0 +1,1032 @@
+[0.000000] (-) TimerEvent: {}
+[0.000450] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.003379] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.043481] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[0.043663] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1019'), ('SYSTEMD_EXEC_PID', '1356'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:13473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1142,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1142'), ('INVOCATION_ID', '0f33f25bdaff4f86bf4c56ce4028566d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I9FGV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ee97309-d74e-4650-97e0-2fc46c25f905'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble')]), 'shell': False}
+[0.099524] (-) TimerEvent: {}
+[0.200895] (-) TimerEvent: {}
+[0.301744] (-) TimerEvent: {}
+[0.402856] (-) TimerEvent: {}
+[0.418976] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.503176] (-) TimerEvent: {}
+[0.604386] (-) TimerEvent: {}
+[0.681819] (turtlebot3_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.704535] (-) TimerEvent: {}
+[0.713492] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.804753] (-) TimerEvent: {}
+[0.905931] (-) TimerEvent: {}
+[1.007068] (-) TimerEvent: {}
+[1.009984] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.057502] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.061367] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.063997] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.082026] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.107317] (-) TimerEvent: {}
+[1.209152] (-) TimerEvent: {}
+[1.310496] (-) TimerEvent: {}
+[1.411246] (-) TimerEvent: {}
+[1.431451] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.480352] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.481592] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.483777] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.511357] (-) TimerEvent: {}
+[1.512117] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.611502] (-) TimerEvent: {}
+[1.712050] (-) TimerEvent: {}
+[1.812766] (-) TimerEvent: {}
+[1.914109] (-) TimerEvent: {}
+[2.015313] (-) TimerEvent: {}
+[2.115867] (-) TimerEvent: {}
+[2.206430] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.216001] (-) TimerEvent: {}
+[2.316597] (-) TimerEvent: {}
+[2.417128] (-) TimerEvent: {}
+[2.517974] (-) TimerEvent: {}
+[2.619375] (-) TimerEvent: {}
+[2.659011] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[2.660593] (turtlebot3_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[2.661131] (turtlebot3_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[2.663430] (turtlebot3_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[2.664062] (turtlebot3_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[2.664512] (turtlebot3_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.664857] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[2.665143] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[2.665607] (turtlebot3_gazebo) StderrLine: {'line': b'  CMakeLists.txt:23 (find_package)\n'}
+[2.665977] (turtlebot3_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.666424] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[2.667259] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.681955] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[2.719555] (-) TimerEvent: {}
+[2.726875] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[2.819772] (-) TimerEvent: {}
+[2.920849] (-) TimerEvent: {}
+[3.022156] (-) TimerEvent: {}
+[3.123656] (-) TimerEvent: {}
+[3.138297] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[3.223824] (-) TimerEvent: {}
+[3.326339] (-) TimerEvent: {}
+[3.400791] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[3.426780] (-) TimerEvent: {}
+[3.496296] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[3.527029] (-) TimerEvent: {}
+[3.627961] (-) TimerEvent: {}
+[3.728503] (-) TimerEvent: {}
+[3.829326] (-) TimerEvent: {}
+[3.930457] (-) TimerEvent: {}
+[4.031148] (-) TimerEvent: {}
+[4.133083] (-) TimerEvent: {}
+[4.236661] (-) TimerEvent: {}
+[4.241941] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.336851] (-) TimerEvent: {}
+[4.345871] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.371128] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.403468] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.411764] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.413873] (turtlebot3_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[4.434315] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[4.437667] (-) TimerEvent: {}
+[4.485988] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[4.537817] (-) TimerEvent: {}
+[4.635824] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[4.637968] (-) TimerEvent: {}
+[4.713881] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.738176] (-) TimerEvent: {}
+[4.767938] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.801818] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.803394] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.841976] (-) TimerEvent: {}
+[4.843965] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.844745] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.885242] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.885939] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.932055] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.933886] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.942224] (-) TimerEvent: {}
+[4.977968] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.979072] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[5.022182] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[5.042411] (-) TimerEvent: {}
+[5.143055] (-) TimerEvent: {}
+[5.243689] (-) TimerEvent: {}
+[5.344161] (-) TimerEvent: {}
+[5.445016] (-) TimerEvent: {}
+[5.545823] (-) TimerEvent: {}
+[5.646900] (-) TimerEvent: {}
+[5.747996] (-) TimerEvent: {}
+[5.845202] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.848117] (-) TimerEvent: {}
+[5.855423] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[5.857455] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[5.946812] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[5.948290] (-) TimerEvent: {}
+[6.005872] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[6.027410] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[6.048463] (-) TimerEvent: {}
+[6.088564] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[6.148689] (-) TimerEvent: {}
+[6.237052] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[6.248822] (-) TimerEvent: {}
+[6.261174] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[6.313975] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[6.349008] (-) TimerEvent: {}
+[6.449264] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[6.450041] (-) TimerEvent: {}
+[6.461223] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.463176] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[6.549084] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.550394] (-) TimerEvent: {}
+[6.573788] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[6.633894] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[6.650535] (-) TimerEvent: {}
+[6.751297] (-) TimerEvent: {}
+[6.776915] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[6.790841] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[6.793632] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[6.795562] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[6.799376] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[6.806255] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[6.851540] (-) TimerEvent: {}
+[6.863528] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[6.866261] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[6.878546] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[6.880954] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[6.882522] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.898283] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[6.901094] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[6.951882] (-) TimerEvent: {}
+[7.052563] (-) TimerEvent: {}
+[7.153294] (-) TimerEvent: {}
+[7.229002] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[7.253524] (-) TimerEvent: {}
+[7.267645] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[7.322601] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[7.353756] (-) TimerEvent: {}
+[7.454594] (-) TimerEvent: {}
+[7.463992] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[7.495967] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[7.546677] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[7.554735] (-) TimerEvent: {}
+[7.655378] (-) TimerEvent: {}
+[7.670271] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[7.672814] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[7.674738] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.676464] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.708132] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[7.721891] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[7.755642] (-) TimerEvent: {}
+[7.856577] (-) TimerEvent: {}
+[7.917399] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.955507] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.956862] (-) TimerEvent: {}
+[8.013567] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[8.057014] (-) TimerEvent: {}
+[8.088461] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.157216] (-) TimerEvent: {}
+[8.175848] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.257310] (-) TimerEvent: {}
+[8.357991] (-) TimerEvent: {}
+[8.389005] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[8.458135] (-) TimerEvent: {}
+[8.558811] (-) TimerEvent: {}
+[8.630036] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.659393] (-) TimerEvent: {}
+[8.721663] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[8.759313] (-) TimerEvent: {}
+[8.859882] (-) TimerEvent: {}
+[8.911479] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.925967] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.960030] (-) TimerEvent: {}
+[9.060908] (-) TimerEvent: {}
+[9.162021] (-) TimerEvent: {}
+[9.262556] (-) TimerEvent: {}
+[9.292750] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[9.362744] (-) TimerEvent: {}
+[9.394773] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.462922] (-) TimerEvent: {}
+[9.562419] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.562920] (-) TimerEvent: {}
+[9.603972] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.663060] (-) TimerEvent: {}
+[9.763603] (-) TimerEvent: {}
+[9.787138] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[9.863786] (-) TimerEvent: {}
+[9.964379] (-) TimerEvent: {}
+[10.064831] (-) TimerEvent: {}
+[10.080628] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.165098] (-) TimerEvent: {}
+[10.234277] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[10.243060] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo\n'}
+[10.265239] (-) TimerEvent: {}
+[10.285058] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[10.286730] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[10.288897] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1019'), ('SYSTEMD_EXEC_PID', '1356'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2093'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:13473'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1142,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1142'), ('INVOCATION_ID', '0f33f25bdaff4f86bf4c56ce4028566d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I9FGV2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:5ee97309-d74e-4650-97e0-2fc46c25f905'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_path_tracker:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/opt/ros/humble')]), 'shell': False}
+[10.365390] (-) TimerEvent: {}
+[10.465850] (-) TimerEvent: {}
+[10.484303] (turtlebot3_gazebo) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o\x1b[0m\n'}
+[10.487751] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o\x1b[0m\n'}
+[10.492024] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o\x1b[0m\n'}
+[10.527687] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o\x1b[0m\n'}
+[10.531151] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o\x1b[0m\n'}
+[10.537392] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o\x1b[0m\n'}
+[10.540180] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o\x1b[0m\n'}
+[10.568369] (-) TimerEvent: {}
+[10.586806] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o\x1b[0m\n'}
+[10.668674] (-) TimerEvent: {}
+[10.774693] (-) TimerEvent: {}
+[10.876799] (-) TimerEvent: {}
+[10.981087] (-) TimerEvent: {}
+[11.085172] (-) TimerEvent: {}
+[11.196453] (-) TimerEvent: {}
+[11.303959] (-) TimerEvent: {}
+[11.430346] (-) TimerEvent: {}
+[11.540963] (-) TimerEvent: {}
+[11.642731] (-) TimerEvent: {}
+[11.744285] (-) TimerEvent: {}
+[11.850502] (-) TimerEvent: {}
+[11.954314] (-) TimerEvent: {}
+[12.055538] (-) TimerEvent: {}
+[12.158504] (-) TimerEvent: {}
+[12.269639] (-) TimerEvent: {}
+[12.377156] (-) TimerEvent: {}
+[12.479071] (-) TimerEvent: {}
+[12.582341] (-) TimerEvent: {}
+[12.686980] (-) TimerEvent: {}
+[12.794790] (-) TimerEvent: {}
+[12.899650] (-) TimerEvent: {}
+[13.017438] (-) TimerEvent: {}
+[13.120417] (-) TimerEvent: {}
+[13.227688] (-) TimerEvent: {}
+[13.329570] (-) TimerEvent: {}
+[13.430605] (-) TimerEvent: {}
+[13.535272] (-) TimerEvent: {}
+[13.644246] (-) TimerEvent: {}
+[13.748699] (-) TimerEvent: {}
+[13.852996] (-) TimerEvent: {}
+[13.955384] (-) TimerEvent: {}
+[14.062391] (-) TimerEvent: {}
+[14.164076] (-) TimerEvent: {}
+[14.266978] (-) TimerEvent: {}
+[14.368943] (-) TimerEvent: {}
+[14.472760] (-) TimerEvent: {}
+[14.575240] (-) TimerEvent: {}
+[14.678094] (-) TimerEvent: {}
+[14.784811] (-) TimerEvent: {}
+[14.890802] (-) TimerEvent: {}
+[15.002966] (-) TimerEvent: {}
+[15.115301] (-) TimerEvent: {}
+[15.223898] (-) TimerEvent: {}
+[15.325034] (-) TimerEvent: {}
+[15.429407] (-) TimerEvent: {}
+[15.536762] (-) TimerEvent: {}
+[15.637744] (-) TimerEvent: {}
+[15.747461] (-) TimerEvent: {}
+[15.852380] (-) TimerEvent: {}
+[15.957902] (-) TimerEvent: {}
+[16.073515] (-) TimerEvent: {}
+[16.174902] (-) TimerEvent: {}
+[16.279947] (-) TimerEvent: {}
+[16.380839] (-) TimerEvent: {}
+[16.482519] (-) TimerEvent: {}
+[16.587771] (-) TimerEvent: {}
+[16.694384] (-) TimerEvent: {}
+[16.802130] (-) TimerEvent: {}
+[16.914319] (-) TimerEvent: {}
+[17.020703] (-) TimerEvent: {}
+[17.126047] (-) TimerEvent: {}
+[17.229852] (-) TimerEvent: {}
+[17.332107] (-) TimerEvent: {}
+[17.438904] (-) TimerEvent: {}
+[17.542330] (-) TimerEvent: {}
+[17.645976] (-) TimerEvent: {}
+[17.752377] (-) TimerEvent: {}
+[17.858917] (-) TimerEvent: {}
+[17.970093] (-) TimerEvent: {}
+[18.072490] (-) TimerEvent: {}
+[18.174824] (-) TimerEvent: {}
+[18.284813] (-) TimerEvent: {}
+[18.388569] (-) TimerEvent: {}
+[18.500828] (-) TimerEvent: {}
+[18.602701] (-) TimerEvent: {}
+[18.706660] (-) TimerEvent: {}
+[18.810407] (-) TimerEvent: {}
+[18.911984] (-) TimerEvent: {}
+[19.021922] (-) TimerEvent: {}
+[19.127393] (-) TimerEvent: {}
+[19.233351] (-) TimerEvent: {}
+[19.339393] (-) TimerEvent: {}
+[19.440235] (-) TimerEvent: {}
+[19.542733] (-) TimerEvent: {}
+[19.645797] (-) TimerEvent: {}
+[19.751617] (-) TimerEvent: {}
+[19.864020] (-) TimerEvent: {}
+[19.978337] (-) TimerEvent: {}
+[20.089553] (-) TimerEvent: {}
+[20.196035] (-) TimerEvent: {}
+[20.304089] (-) TimerEvent: {}
+[20.408098] (-) TimerEvent: {}
+[20.511643] (-) TimerEvent: {}
+[20.618162] (-) TimerEvent: {}
+[20.721939] (-) TimerEvent: {}
+[20.826574] (-) TimerEvent: {}
+[20.930350] (-) TimerEvent: {}
+[21.036421] (-) TimerEvent: {}
+[21.143122] (-) TimerEvent: {}
+[21.244480] (-) TimerEvent: {}
+[21.349121] (-) TimerEvent: {}
+[21.458328] (-) TimerEvent: {}
+[21.563832] (-) TimerEvent: {}
+[21.683532] (-) TimerEvent: {}
+[21.792228] (-) TimerEvent: {}
+[21.901359] (-) TimerEvent: {}
+[22.020963] (-) TimerEvent: {}
+[22.126609] (-) TimerEvent: {}
+[22.232769] (-) TimerEvent: {}
+[22.336729] (-) TimerEvent: {}
+[22.439656] (-) TimerEvent: {}
+[22.544719] (-) TimerEvent: {}
+[22.646713] (-) TimerEvent: {}
+[22.766313] (-) TimerEvent: {}
+[22.876352] (-) TimerEvent: {}
+[22.983507] (-) TimerEvent: {}
+[23.085790] (-) TimerEvent: {}
+[23.191529] (-) TimerEvent: {}
+[23.293250] (-) TimerEvent: {}
+[23.396326] (-) TimerEvent: {}
+[23.497544] (-) TimerEvent: {}
+[23.605624] (-) TimerEvent: {}
+[23.713518] (-) TimerEvent: {}
+[23.820103] (-) TimerEvent: {}
+[23.930368] (-) TimerEvent: {}
+[24.031694] (-) TimerEvent: {}
+[24.140164] (-) TimerEvent: {}
+[24.241822] (-) TimerEvent: {}
+[24.346722] (-) TimerEvent: {}
+[24.451225] (-) TimerEvent: {}
+[24.552382] (-) TimerEvent: {}
+[24.656968] (-) TimerEvent: {}
+[24.765059] (-) TimerEvent: {}
+[24.870963] (-) TimerEvent: {}
+[24.977605] (-) TimerEvent: {}
+[25.082873] (-) TimerEvent: {}
+[25.189479] (-) TimerEvent: {}
+[25.291022] (-) TimerEvent: {}
+[25.399495] (-) TimerEvent: {}
+[25.506850] (-) TimerEvent: {}
+[25.612444] (-) TimerEvent: {}
+[25.717773] (-) TimerEvent: {}
+[25.820535] (-) TimerEvent: {}
+[25.922237] (-) TimerEvent: {}
+[26.029028] (-) TimerEvent: {}
+[26.133358] (-) TimerEvent: {}
+[26.236667] (-) TimerEvent: {}
+[26.341827] (-) TimerEvent: {}
+[26.444944] (-) TimerEvent: {}
+[26.549019] (-) TimerEvent: {}
+[26.650719] (-) TimerEvent: {}
+[26.753330] (-) TimerEvent: {}
+[26.858569] (-) TimerEvent: {}
+[26.959691] (-) TimerEvent: {}
+[27.065347] (-) TimerEvent: {}
+[27.172367] (-) TimerEvent: {}
+[27.274506] (-) TimerEvent: {}
+[27.377589] (-) TimerEvent: {}
+[27.483372] (-) TimerEvent: {}
+[27.585036] (-) TimerEvent: {}
+[27.686469] (-) TimerEvent: {}
+[27.789332] (-) TimerEvent: {}
+[27.891564] (-) TimerEvent: {}
+[27.994823] (-) TimerEvent: {}
+[28.096261] (-) TimerEvent: {}
+[28.200131] (-) TimerEvent: {}
+[28.304367] (-) TimerEvent: {}
+[28.407258] (-) TimerEvent: {}
+[28.510665] (-) TimerEvent: {}
+[28.615779] (-) TimerEvent: {}
+[28.726702] (-) TimerEvent: {}
+[28.835245] (-) TimerEvent: {}
+[28.944562] (-) TimerEvent: {}
+[29.046742] (-) TimerEvent: {}
+[29.160519] (-) TimerEvent: {}
+[29.263818] (-) TimerEvent: {}
+[29.366704] (-) TimerEvent: {}
+[29.468417] (-) TimerEvent: {}
+[29.571719] (-) TimerEvent: {}
+[29.677658] (-) TimerEvent: {}
+[29.794853] (-) TimerEvent: {}
+[29.901969] (-) TimerEvent: {}
+[30.006576] (-) TimerEvent: {}
+[30.108272] (-) TimerEvent: {}
+[30.214404] (-) TimerEvent: {}
+[30.316864] (-) TimerEvent: {}
+[30.421645] (-) TimerEvent: {}
+[30.522905] (-) TimerEvent: {}
+[30.627031] (-) TimerEvent: {}
+[30.728511] (-) TimerEvent: {}
+[30.832650] (-) TimerEvent: {}
+[30.936430] (-) TimerEvent: {}
+[31.038416] (-) TimerEvent: {}
+[31.150766] (-) TimerEvent: {}
+[31.252177] (-) TimerEvent: {}
+[31.358862] (-) TimerEvent: {}
+[31.472945] (-) TimerEvent: {}
+[31.578252] (-) TimerEvent: {}
+[31.682116] (-) TimerEvent: {}
+[31.802574] (-) TimerEvent: {}
+[31.914532] (-) TimerEvent: {}
+[32.025212] (-) TimerEvent: {}
+[32.129324] (-) TimerEvent: {}
+[32.233475] (-) TimerEvent: {}
+[32.335381] (-) TimerEvent: {}
+[32.441412] (-) TimerEvent: {}
+[32.547094] (-) TimerEvent: {}
+[32.651595] (-) TimerEvent: {}
+[32.790317] (-) TimerEvent: {}
+[32.897333] (-) TimerEvent: {}
+[33.010320] (-) TimerEvent: {}
+[33.111556] (-) TimerEvent: {}
+[33.213431] (-) TimerEvent: {}
+[33.318105] (-) TimerEvent: {}
+[33.428494] (-) TimerEvent: {}
+[33.529227] (-) TimerEvent: {}
+[33.631887] (-) TimerEvent: {}
+[33.733270] (-) TimerEvent: {}
+[33.836339] (-) TimerEvent: {}
+[33.938111] (-) TimerEvent: {}
+[34.042675] (-) TimerEvent: {}
+[34.092812] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInventoryWaypointsNode::InventoryWaypointsNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.097740] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:26:136:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[34.101540] (turtlebot3_gazebo) StderrLine: {'line': b'   26 |                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos)\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[34.103319] (turtlebot3_gazebo) StderrLine: {'line': b'      |                                                                                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[34.108151] (turtlebot3_gazebo) StderrLine: {'line': b'      |                                                                                                                                        \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[34.108715] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:24:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[34.109152] (turtlebot3_gazebo) StderrLine: {'line': b'   24 |   waypoint_manager_ = std::make_shared<WaypointManager>\x1b[01;36m\x1b[K(\x1b[m\x1b[Kthis->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),\n'}
+[34.111374] (turtlebot3_gazebo) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[34.145066] (-) TimerEvent: {}
+[34.246837] (-) TimerEvent: {}
+[34.351043] (-) TimerEvent: {}
+[34.371088] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WaypointManager::publish_goals()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.376273] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:98:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kwaypoint_as_goal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[34.379423] (turtlebot3_gazebo) StderrLine: {'line': b'   98 |   std::make_shared<geometry_msgs::msg::Point>\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kwaypoint_as_goal\x1b[m\x1b[K = waypoints_.at(3.5);\n'}
+[34.382590] (turtlebot3_gazebo) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.384473] (turtlebot3_gazebo) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[34.386089] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:98:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement is a reference, not call, to function \xe2\x80\x98\x1b[01m\x1b[Kstd::make_shared<geometry_msgs::msg::Point_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waddress\x07-Waddress\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[34.386724] (turtlebot3_gazebo) StderrLine: {'line': b'   98 |   \x1b[01;35m\x1b[Kstd::make_shared<geometry_msgs::msg::Point>\x1b[m\x1b[K waypoint_as_goal = waypoints_.at(3.5);\n'}
+[34.387269] (turtlebot3_gazebo) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.394240] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:98:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[34.437391] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:100:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoint_as_goal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[34.441315] (turtlebot3_gazebo) StderrLine: {'line': b'  100 |   goal.pose.position.x = \x1b[01;31m\x1b[Kwaypoint_as_goal\x1b[m\x1b[K->x;\n'}
+[34.441914] (turtlebot3_gazebo) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.442316] (turtlebot3_gazebo) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kwaypoints_\x1b[m\x1b[K\n'}
+[34.451243] (-) TimerEvent: {}
+[34.493346] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:109:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[34.494262] (turtlebot3_gazebo) StderrLine: {'line': b'  109 |   \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(goal);\n'}
+[34.494706] (turtlebot3_gazebo) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.495114] (turtlebot3_gazebo) StderrLine: {'line': b'      |   \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[34.552107] (-) TimerEvent: {}
+[34.657326] (-) TimerEvent: {}
+[34.765724] (-) TimerEvent: {}
+[34.871367] (-) TimerEvent: {}
+[34.972317] (-) TimerEvent: {}
+[35.074749] (-) TimerEvent: {}
+[35.185556] (-) TimerEvent: {}
+[35.286879] (-) TimerEvent: {}
+[35.388529] (-) TimerEvent: {}
+[35.489797] (-) TimerEvent: {}
+[35.594682] (-) TimerEvent: {}
+[35.695954] (-) TimerEvent: {}
+[35.797174] (-) TimerEvent: {}
+[35.901752] (-) TimerEvent: {}
+[36.003277] (-) TimerEvent: {}
+[36.107608] (-) TimerEvent: {}
+[36.209340] (-) TimerEvent: {}
+[36.314314] (-) TimerEvent: {}
+[36.415792] (-) TimerEvent: {}
+[36.528314] (-) TimerEvent: {}
+[36.629369] (-) TimerEvent: {}
+[36.734317] (-) TimerEvent: {}
+[36.835564] (-) TimerEvent: {}
+[36.939569] (-) TimerEvent: {}
+[37.040777] (-) TimerEvent: {}
+[37.144504] (-) TimerEvent: {}
+[37.250014] (-) TimerEvent: {}
+[37.352860] (-) TimerEvent: {}
+[37.455656] (-) TimerEvent: {}
+[37.559361] (-) TimerEvent: {}
+[37.660643] (-) TimerEvent: {}
+[37.761877] (-) TimerEvent: {}
+[37.864156] (-) TimerEvent: {}
+[37.968413] (-) TimerEvent: {}
+[38.071388] (-) TimerEvent: {}
+[38.179989] (-) TimerEvent: {}
+[38.283609] (-) TimerEvent: {}
+[38.386105] (-) TimerEvent: {}
+[38.489408] (-) TimerEvent: {}
+[38.593651] (-) TimerEvent: {}
+[38.694911] (-) TimerEvent: {}
+[38.796486] (-) TimerEvent: {}
+[38.902569] (-) TimerEvent: {}
+[39.017047] (-) TimerEvent: {}
+[39.120109] (-) TimerEvent: {}
+[39.255870] (-) TimerEvent: {}
+[39.358339] (-) TimerEvent: {}
+[39.465841] (-) TimerEvent: {}
+[39.570796] (-) TimerEvent: {}
+[39.675713] (-) TimerEvent: {}
+[39.804315] (-) TimerEvent: {}
+[39.848560] (turtlebot3_gazebo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Error 1\n'}
+[39.851699] (turtlebot3_gazebo) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[39.906414] (-) TimerEvent: {}
+[40.011630] (-) TimerEvent: {}
+[40.115337] (-) TimerEvent: {}
+[40.219633] (-) TimerEvent: {}
+[40.328344] (-) TimerEvent: {}
+[40.429309] (-) TimerEvent: {}
+[40.531158] (-) TimerEvent: {}
+[40.635433] (-) TimerEvent: {}
+[40.739479] (-) TimerEvent: {}
+[40.841127] (-) TimerEvent: {}
+[40.944178] (-) TimerEvent: {}
+[41.046335] (-) TimerEvent: {}
+[41.148513] (-) TimerEvent: {}
+[41.257410] (-) TimerEvent: {}
+[41.367994] (-) TimerEvent: {}
+[41.469326] (-) TimerEvent: {}
+[41.572439] (-) TimerEvent: {}
+[41.676088] (-) TimerEvent: {}
+[41.777563] (-) TimerEvent: {}
+[41.878938] (-) TimerEvent: {}
+[41.983330] (-) TimerEvent: {}
+[42.087368] (-) TimerEvent: {}
+[42.188397] (-) TimerEvent: {}
+[42.290321] (-) TimerEvent: {}
+[42.394596] (-) TimerEvent: {}
+[42.495756] (-) TimerEvent: {}
+[42.597671] (-) TimerEvent: {}
+[42.699992] (-) TimerEvent: {}
+[42.804324] (-) TimerEvent: {}
+[42.905591] (-) TimerEvent: {}
+[43.012349] (-) TimerEvent: {}
+[43.113334] (-) TimerEvent: {}
+[43.214307] (-) TimerEvent: {}
+[43.316041] (-) TimerEvent: {}
+[43.417344] (-) TimerEvent: {}
+[43.520141] (-) TimerEvent: {}
+[43.621877] (-) TimerEvent: {}
+[43.724939] (-) TimerEvent: {}
+[43.825837] (-) TimerEvent: {}
+[43.926864] (-) TimerEvent: {}
+[44.027628] (-) TimerEvent: {}
+[44.128392] (-) TimerEvent: {}
+[44.229279] (-) TimerEvent: {}
+[44.330182] (-) TimerEvent: {}
+[44.431433] (-) TimerEvent: {}
+[44.532176] (-) TimerEvent: {}
+[44.632963] (-) TimerEvent: {}
+[44.733792] (-) TimerEvent: {}
+[44.834660] (-) TimerEvent: {}
+[44.936279] (-) TimerEvent: {}
+[45.038507] (-) TimerEvent: {}
+[45.139286] (-) TimerEvent: {}
+[45.240147] (-) TimerEvent: {}
+[45.342054] (-) TimerEvent: {}
+[45.442729] (-) TimerEvent: {}
+[45.543458] (-) TimerEvent: {}
+[45.645358] (-) TimerEvent: {}
+[45.746305] (-) TimerEvent: {}
+[45.846923] (-) TimerEvent: {}
+[45.949764] (-) TimerEvent: {}
+[46.050739] (-) TimerEvent: {}
+[46.152064] (-) TimerEvent: {}
+[46.253649] (-) TimerEvent: {}
+[46.355880] (-) TimerEvent: {}
+[46.456886] (-) TimerEvent: {}
+[46.557799] (-) TimerEvent: {}
+[46.658602] (-) TimerEvent: {}
+[46.759285] (-) TimerEvent: {}
+[46.859994] (-) TimerEvent: {}
+[46.961515] (-) TimerEvent: {}
+[47.062163] (-) TimerEvent: {}
+[47.162827] (-) TimerEvent: {}
+[47.263781] (-) TimerEvent: {}
+[47.364415] (-) TimerEvent: {}
+[47.467838] (-) TimerEvent: {}
+[47.576310] (-) TimerEvent: {}
+[47.681452] (-) TimerEvent: {}
+[47.782648] (-) TimerEvent: {}
+[47.883335] (-) TimerEvent: {}
+[47.983995] (-) TimerEvent: {}
+[48.084626] (-) TimerEvent: {}
+[48.185432] (-) TimerEvent: {}
+[48.288277] (-) TimerEvent: {}
+[48.389978] (-) TimerEvent: {}
+[48.490769] (-) TimerEvent: {}
+[48.591575] (-) TimerEvent: {}
+[48.692610] (-) TimerEvent: {}
+[48.793328] (-) TimerEvent: {}
+[48.894479] (-) TimerEvent: {}
+[48.995330] (-) TimerEvent: {}
+[49.097090] (-) TimerEvent: {}
+[49.197913] (-) TimerEvent: {}
+[49.298663] (-) TimerEvent: {}
+[49.399351] (-) TimerEvent: {}
+[49.501984] (-) TimerEvent: {}
+[49.602545] (-) TimerEvent: {}
+[49.703403] (-) TimerEvent: {}
+[49.804261] (-) TimerEvent: {}
+[49.904826] (-) TimerEvent: {}
+[50.005476] (-) TimerEvent: {}
+[50.108527] (-) TimerEvent: {}
+[50.209234] (-) TimerEvent: {}
+[50.311461] (-) TimerEvent: {}
+[50.414309] (-) TimerEvent: {}
+[50.514912] (-) TimerEvent: {}
+[50.615604] (-) TimerEvent: {}
+[50.717362] (-) TimerEvent: {}
+[50.818142] (-) TimerEvent: {}
+[50.919066] (-) TimerEvent: {}
+[51.019807] (-) TimerEvent: {}
+[51.120526] (-) TimerEvent: {}
+[51.221561] (-) TimerEvent: {}
+[51.322580] (-) TimerEvent: {}
+[51.423777] (-) TimerEvent: {}
+[51.524541] (-) TimerEvent: {}
+[51.625949] (-) TimerEvent: {}
+[51.731771] (-) TimerEvent: {}
+[51.833401] (-) TimerEvent: {}
+[51.934222] (-) TimerEvent: {}
+[52.034888] (-) TimerEvent: {}
+[52.137556] (-) TimerEvent: {}
+[52.242380] (-) TimerEvent: {}
+[52.344045] (-) TimerEvent: {}
+[52.445033] (-) TimerEvent: {}
+[52.545994] (-) TimerEvent: {}
+[52.648300] (-) TimerEvent: {}
+[52.749380] (-) TimerEvent: {}
+[52.850284] (-) TimerEvent: {}
+[52.951433] (-) TimerEvent: {}
+[53.054665] (-) TimerEvent: {}
+[53.155304] (-) TimerEvent: {}
+[53.255938] (-) TimerEvent: {}
+[53.357096] (-) TimerEvent: {}
+[53.457917] (-) TimerEvent: {}
+[53.558734] (-) TimerEvent: {}
+[53.659986] (-) TimerEvent: {}
+[53.760800] (-) TimerEvent: {}
+[53.861686] (-) TimerEvent: {}
+[53.965694] (-) TimerEvent: {}
+[54.066550] (-) TimerEvent: {}
+[54.167547] (-) TimerEvent: {}
+[54.269238] (-) TimerEvent: {}
+[54.370786] (-) TimerEvent: {}
+[54.472914] (-) TimerEvent: {}
+[54.574294] (-) TimerEvent: {}
+[54.675153] (-) TimerEvent: {}
+[54.776713] (-) TimerEvent: {}
+[54.887996] (-) TimerEvent: {}
+[54.904678] (turtlebot3_gazebo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1\n'}
+[54.905341] (turtlebot3_gazebo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2\n'}
+[54.905763] (turtlebot3_gazebo) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[54.988147] (-) TimerEvent: {}
+[55.091522] (-) TimerEvent: {}
+[55.196360] (-) TimerEvent: {}
+[55.297129] (-) TimerEvent: {}
+[55.399748] (-) TimerEvent: {}
+[55.501221] (-) TimerEvent: {}
+[55.602607] (-) TimerEvent: {}
+[55.703312] (-) TimerEvent: {}
+[55.804678] (-) TimerEvent: {}
+[55.905779] (-) TimerEvent: {}
+[56.010862] (-) TimerEvent: {}
+[56.114470] (-) TimerEvent: {}
+[56.215447] (-) TimerEvent: {}
+[56.316308] (-) TimerEvent: {}
+[56.417763] (-) TimerEvent: {}
+[56.518437] (-) TimerEvent: {}
+[56.619132] (-) TimerEvent: {}
+[56.720015] (-) TimerEvent: {}
+[56.820556] (-) TimerEvent: {}
+[56.921079] (-) TimerEvent: {}
+[57.021855] (-) TimerEvent: {}
+[57.122587] (-) TimerEvent: {}
+[57.223286] (-) TimerEvent: {}
+[57.324072] (-) TimerEvent: {}
+[57.425130] (-) TimerEvent: {}
+[57.525718] (-) TimerEvent: {}
+[57.626498] (-) TimerEvent: {}
+[57.727450] (-) TimerEvent: {}
+[57.827943] (-) TimerEvent: {}
+[57.928527] (-) TimerEvent: {}
+[58.029462] (-) TimerEvent: {}
+[58.130020] (-) TimerEvent: {}
+[58.230651] (-) TimerEvent: {}
+[58.332285] (-) TimerEvent: {}
+[58.432957] (-) TimerEvent: {}
+[58.533478] (-) TimerEvent: {}
+[58.634121] (-) TimerEvent: {}
+[58.734776] (-) TimerEvent: {}
+[58.835325] (-) TimerEvent: {}
+[58.936018] (-) TimerEvent: {}
+[59.036877] (-) TimerEvent: {}
+[59.137326] (-) TimerEvent: {}
+[59.237860] (-) TimerEvent: {}
+[59.338608] (-) TimerEvent: {}
+[59.439577] (-) TimerEvent: {}
+[59.540158] (-) TimerEvent: {}
+[59.640890] (-) TimerEvent: {}
+[59.741510] (-) TimerEvent: {}
+[59.842093] (-) TimerEvent: {}
+[59.942799] (-) TimerEvent: {}
+[60.043525] (-) TimerEvent: {}
+[60.144240] (-) TimerEvent: {}
+[60.244742] (-) TimerEvent: {}
+[60.345339] (-) TimerEvent: {}
+[60.445857] (-) TimerEvent: {}
+[60.546492] (-) TimerEvent: {}
+[60.647493] (-) TimerEvent: {}
+[60.748408] (-) TimerEvent: {}
+[60.849115] (-) TimerEvent: {}
+[60.949656] (-) TimerEvent: {}
+[61.051026] (-) TimerEvent: {}
+[61.151564] (-) TimerEvent: {}
+[61.252234] (-) TimerEvent: {}
+[61.352806] (-) TimerEvent: {}
+[61.453286] (-) TimerEvent: {}
+[61.553752] (-) TimerEvent: {}
+[61.654305] (-) TimerEvent: {}
+[61.755014] (-) TimerEvent: {}
+[61.855840] (-) TimerEvent: {}
+[61.956447] (-) TimerEvent: {}
+[62.057150] (-) TimerEvent: {}
+[62.158002] (-) TimerEvent: {}
+[62.258816] (-) TimerEvent: {}
+[62.359303] (-) TimerEvent: {}
+[62.460069] (-) TimerEvent: {}
+[62.560650] (-) TimerEvent: {}
+[62.661219] (-) TimerEvent: {}
+[62.762290] (-) TimerEvent: {}
+[62.862840] (-) TimerEvent: {}
+[62.963386] (-) TimerEvent: {}
+[63.064140] (-) TimerEvent: {}
+[63.165022] (-) TimerEvent: {}
+[63.265812] (-) TimerEvent: {}
+[63.366545] (-) TimerEvent: {}
+[63.467445] (-) TimerEvent: {}
+[63.568608] (-) TimerEvent: {}
+[63.669306] (-) TimerEvent: {}
+[63.769904] (-) TimerEvent: {}
+[63.870553] (-) TimerEvent: {}
+[63.971030] (-) TimerEvent: {}
+[64.071785] (-) TimerEvent: {}
+[64.173255] (-) TimerEvent: {}
+[64.273984] (-) TimerEvent: {}
+[64.374505] (-) TimerEvent: {}
+[64.475341] (-) TimerEvent: {}
+[64.576106] (-) TimerEvent: {}
+[64.677395] (-) TimerEvent: {}
+[64.778074] (-) TimerEvent: {}
+[64.878967] (-) TimerEvent: {}
+[64.979532] (-) TimerEvent: {}
+[65.080284] (-) TimerEvent: {}
+[65.181179] (-) TimerEvent: {}
+[65.281781] (-) TimerEvent: {}
+[65.382490] (-) TimerEvent: {}
+[65.483664] (-) TimerEvent: {}
+[65.584892] (-) TimerEvent: {}
+[65.685513] (-) TimerEvent: {}
+[65.786093] (-) TimerEvent: {}
+[65.887174] (-) TimerEvent: {}
+[65.988361] (-) TimerEvent: {}
+[66.089639] (-) TimerEvent: {}
+[66.190574] (-) TimerEvent: {}
+[66.291156] (-) TimerEvent: {}
+[66.392108] (-) TimerEvent: {}
+[66.493600] (-) TimerEvent: {}
+[66.594092] (-) TimerEvent: {}
+[66.694711] (-) TimerEvent: {}
+[66.795962] (-) TimerEvent: {}
+[66.896609] (-) TimerEvent: {}
+[66.997177] (-) TimerEvent: {}
+[67.097874] (-) TimerEvent: {}
+[67.198521] (-) TimerEvent: {}
+[67.299160] (-) TimerEvent: {}
+[67.400274] (-) TimerEvent: {}
+[67.501429] (-) TimerEvent: {}
+[67.602492] (-) TimerEvent: {}
+[67.703659] (-) TimerEvent: {}
+[67.804723] (-) TimerEvent: {}
+[67.905291] (-) TimerEvent: {}
+[68.005892] (-) TimerEvent: {}
+[68.106590] (-) TimerEvent: {}
+[68.207230] (-) TimerEvent: {}
+[68.308163] (-) TimerEvent: {}
+[68.408791] (-) TimerEvent: {}
+[68.509652] (-) TimerEvent: {}
+[68.610341] (-) TimerEvent: {}
+[68.711709] (-) TimerEvent: {}
+[68.813538] (-) TimerEvent: {}
+[68.914058] (-) TimerEvent: {}
+[69.014684] (-) TimerEvent: {}
+[69.115355] (-) TimerEvent: {}
+[69.216300] (-) TimerEvent: {}
+[69.316844] (-) TimerEvent: {}
+[69.417917] (-) TimerEvent: {}
+[69.518801] (-) TimerEvent: {}
+[69.619350] (-) TimerEvent: {}
+[69.720111] (-) TimerEvent: {}
+[69.821131] (-) TimerEvent: {}
+[69.922017] (-) TimerEvent: {}
+[70.023130] (-) TimerEvent: {}
+[70.123917] (-) TimerEvent: {}
+[70.224782] (-) TimerEvent: {}
+[70.325380] (-) TimerEvent: {}
+[70.426567] (-) TimerEvent: {}
+[70.527334] (-) TimerEvent: {}
+[70.628081] (-) TimerEvent: {}
+[70.728978] (-) TimerEvent: {}
+[70.829623] (-) TimerEvent: {}
+[70.930127] (-) TimerEvent: {}
+[71.030925] (-) TimerEvent: {}
+[71.136065] (-) TimerEvent: {}
+[71.236892] (-) TimerEvent: {}
+[71.337707] (-) TimerEvent: {}
+[71.438583] (-) TimerEvent: {}
+[71.539079] (-) TimerEvent: {}
+[71.639680] (-) TimerEvent: {}
+[71.740684] (-) TimerEvent: {}
+[71.844118] (-) TimerEvent: {}
+[71.945219] (-) TimerEvent: {}
+[72.051121] (-) TimerEvent: {}
+[72.153666] (-) TimerEvent: {}
+[72.257915] (-) TimerEvent: {}
+[72.372746] (-) TimerEvent: {}
+[72.473671] (-) TimerEvent: {}
+[72.575359] (-) TimerEvent: {}
+[72.676988] (-) TimerEvent: {}
+[72.778830] (-) TimerEvent: {}
+[72.883350] (-) TimerEvent: {}
+[72.984913] (-) TimerEvent: {}
+[73.086308] (-) TimerEvent: {}
+[73.193274] (-) TimerEvent: {}
+[73.299335] (-) TimerEvent: {}
+[73.407216] (-) TimerEvent: {}
+[73.511540] (-) TimerEvent: {}
+[73.613323] (-) TimerEvent: {}
+[73.717760] (-) TimerEvent: {}
+[73.820502] (-) TimerEvent: {}
+[73.922060] (-) TimerEvent: {}
+[74.027892] (-) TimerEvent: {}
+[74.129308] (-) TimerEvent: {}
+[74.230600] (-) TimerEvent: {}
+[74.338488] (-) TimerEvent: {}
+[74.441084] (-) TimerEvent: {}
+[74.546698] (-) TimerEvent: {}
+[74.663104] (-) TimerEvent: {}
+[74.771403] (-) TimerEvent: {}
+[74.872541] (-) TimerEvent: {}
+[74.976391] (-) TimerEvent: {}
+[75.079114] (-) TimerEvent: {}
+[75.181766] (-) TimerEvent: {}
+[75.288686] (-) TimerEvent: {}
+[75.406539] (-) TimerEvent: {}
+[75.511054] (-) TimerEvent: {}
+[75.615418] (-) TimerEvent: {}
+[75.716221] (-) TimerEvent: {}
+[75.822374] (-) TimerEvent: {}
+[75.926339] (-) TimerEvent: {}
+[76.048338] (-) TimerEvent: {}
+[76.149158] (-) TimerEvent: {}
+[76.252835] (-) TimerEvent: {}
+[76.355500] (-) TimerEvent: {}
+[76.458380] (-) TimerEvent: {}
+[76.559740] (-) TimerEvent: {}
+[76.661600] (-) TimerEvent: {}
+[76.764967] (-) TimerEvent: {}
+[76.865763] (-) TimerEvent: {}
+[76.968207] (-) TimerEvent: {}
+[77.070746] (-) TimerEvent: {}
+[77.171826] (-) TimerEvent: {}
+[77.273087] (-) TimerEvent: {}
+[77.375270] (-) TimerEvent: {}
+[77.477374] (-) TimerEvent: {}
+[77.578094] (-) TimerEvent: {}
+[77.679376] (-) TimerEvent: {}
+[77.780241] (-) TimerEvent: {}
+[77.880897] (-) TimerEvent: {}
+[77.981611] (-) TimerEvent: {}
+[78.082282] (-) TimerEvent: {}
+[78.183100] (-) TimerEvent: {}
+[78.283793] (-) TimerEvent: {}
+[78.384941] (-) TimerEvent: {}
+[78.485990] (-) TimerEvent: {}
+[78.588523] (-) TimerEvent: {}
+[78.690348] (-) TimerEvent: {}
+[78.791017] (-) TimerEvent: {}
+[78.891677] (-) TimerEvent: {}
+[78.992483] (-) TimerEvent: {}
+[79.093262] (-) TimerEvent: {}
+[79.193947] (-) TimerEvent: {}
+[79.294650] (-) TimerEvent: {}
+[79.395288] (-) TimerEvent: {}
+[79.495774] (-) TimerEvent: {}
+[79.596538] (-) TimerEvent: {}
+[79.697368] (-) TimerEvent: {}
+[79.798093] (-) TimerEvent: {}
+[79.898864] (-) TimerEvent: {}
+[79.999868] (-) TimerEvent: {}
+[80.100972] (-) TimerEvent: {}
+[80.203316] (-) TimerEvent: {}
+[80.304312] (-) TimerEvent: {}
+[80.405152] (-) TimerEvent: {}
+[80.506121] (-) TimerEvent: {}
+[80.606919] (-) TimerEvent: {}
+[80.707688] (-) TimerEvent: {}
+[80.808545] (-) TimerEvent: {}
+[80.909332] (-) TimerEvent: {}
+[81.010172] (-) TimerEvent: {}
+[81.110856] (-) TimerEvent: {}
+[81.212136] (-) TimerEvent: {}
+[81.313849] (-) TimerEvent: {}
+[81.414487] (-) TimerEvent: {}
+[81.514947] (-) TimerEvent: {}
+[81.616066] (-) TimerEvent: {}
+[81.717261] (-) TimerEvent: {}
+[81.819302] (-) TimerEvent: {}
+[81.923593] (-) TimerEvent: {}
+[82.024167] (-) TimerEvent: {}
+[82.125070] (-) TimerEvent: {}
+[82.225971] (-) TimerEvent: {}
+[82.326710] (-) TimerEvent: {}
+[82.427599] (-) TimerEvent: {}
+[82.533214] (-) TimerEvent: {}
+[82.633872] (-) TimerEvent: {}
+[82.734494] (-) TimerEvent: {}
+[82.835590] (-) TimerEvent: {}
+[82.941399] (-) TimerEvent: {}
+[83.047541] (-) TimerEvent: {}
+[83.148474] (-) TimerEvent: {}
+[83.249275] (-) TimerEvent: {}
+[83.349957] (-) TimerEvent: {}
+[83.450942] (-) TimerEvent: {}
+[83.551717] (-) TimerEvent: {}
+[83.653015] (-) TimerEvent: {}
+[83.753726] (-) TimerEvent: {}
+[83.854552] (-) TimerEvent: {}
+[83.955224] (-) TimerEvent: {}
+[84.056378] (-) TimerEvent: {}
+[84.157536] (-) TimerEvent: {}
+[84.259971] (-) TimerEvent: {}
+[84.361069] (-) TimerEvent: {}
+[84.461760] (-) TimerEvent: {}
+[84.562552] (-) TimerEvent: {}
+[84.567632] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle1.so\x1b[0m\n'}
+[84.662735] (-) TimerEvent: {}
+[84.763743] (-) TimerEvent: {}
+[84.866483] (-) TimerEvent: {}
+[84.967654] (-) TimerEvent: {}
+[85.070465] (-) TimerEvent: {}
+[85.172950] (-) TimerEvent: {}
+[85.276562] (-) TimerEvent: {}
+[85.378465] (-) TimerEvent: {}
+[85.479914] (-) TimerEvent: {}
+[85.580754] (-) TimerEvent: {}
+[85.682364] (-) TimerEvent: {}
+[85.783959] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libobstacles.so\x1b[0m\n'}
+[85.784563] (-) TimerEvent: {}
+[85.885331] (-) TimerEvent: {}
+[85.987113] (-) TimerEvent: {}
+[86.089222] (-) TimerEvent: {}
+[86.191973] (-) TimerEvent: {}
+[86.203321] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 83%] Built target obstacle1\n'}
+[86.294437] (-) TimerEvent: {}
+[86.395966] (-) TimerEvent: {}
+[86.499509] (-) TimerEvent: {}
+[86.605037] (-) TimerEvent: {}
+[86.706671] (-) TimerEvent: {}
+[86.807434] (-) TimerEvent: {}
+[86.908539] (-) TimerEvent: {}
+[87.011699] (-) TimerEvent: {}
+[87.112819] (-) TimerEvent: {}
+[87.219380] (-) TimerEvent: {}
+[87.281489] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 83%] Built target obstacles\n'}
+[87.319597] (-) TimerEvent: {}
+[87.420408] (-) TimerEvent: {}
+[87.521273] (-) TimerEvent: {}
+[87.622079] (-) TimerEvent: {}
+[87.699647] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle2.so\x1b[0m\n'}
+[87.722292] (-) TimerEvent: {}
+[87.823383] (-) TimerEvent: {}
+[87.924497] (-) TimerEvent: {}
+[88.025469] (-) TimerEvent: {}
+[88.126378] (-) TimerEvent: {}
+[88.227091] (-) TimerEvent: {}
+[88.327644] (-) TimerEvent: {}
+[88.428420] (-) TimerEvent: {}
+[88.529321] (-) TimerEvent: {}
+[88.630093] (-) TimerEvent: {}
+[88.675175] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 91%] Built target obstacle2\n'}
+[88.679156] (turtlebot3_gazebo) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[88.691316] (turtlebot3_gazebo) CommandEnded: {'returncode': 2}
+[88.730264] (-) TimerEvent: {}
+[88.831443] (-) TimerEvent: {}
+[88.916893] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 2}
+[88.928237] (-) EventReactorShutdown: {}
