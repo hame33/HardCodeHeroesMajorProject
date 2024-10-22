@@ -71,14 +71,27 @@ set(dependencies
 
 set(EXEC_NAME "turtlebot3_shop_keeper")
 
-add_executable(${EXEC_NAME}
+# List of source files
+set(SRC_FILES
   src/main.cpp
+  src/MainWindow.cpp
   src/InventoryWaypointsNode.cpp
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
   src/WaypointManager.cpp
-  src/MainWindow.cpp  # Add your GUI source files here
-  # Add other GUI-related source files if any
+  # Add other source files as needed
+)
+
+# List of header files that need MOC processing
+set(MOC_HDRS
+  include/MainWindow.hpp
+  # Add other headers with Q_OBJECT macro
+)
+
+# Add executable
+add_executable(${EXEC_NAME}
+  ${SRC_FILES}
+  ${MOC_HDRS}  # Include MOC headers
 )
 
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
