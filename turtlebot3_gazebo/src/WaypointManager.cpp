@@ -115,7 +115,7 @@ void WaypointManager::publish_goals()
     goal.pose.orientation.w = 1.0;
 
     goal_pub_->publish(goal);
-    RCLCPP_INFO(this->get_logger(), "Published goal @: [%f, %f]",waypoint_as_goal->x, waypoint_as_goal->y);
+    RCLCPP_INFO(node_->get_logger(), "Published goal @: [%f, %f]",waypoint_as_goal->x, waypoint_as_goal->y);
   }
   else
   {

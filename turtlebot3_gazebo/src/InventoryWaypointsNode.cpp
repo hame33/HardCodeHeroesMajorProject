@@ -62,7 +62,7 @@ void InventoryWaypointsNode::stop_navigation()
 // --- Destructor ---
 InventoryWaypointsNode::~InventoryWaypointsNode()
 {
-  RCLCPP_INFO(this->get_logger(), "InventoryWaypointsNode has been terminated");
+  RCLCPP_INFO(node_->get_logger(), "InventoryWaypointsNode has been terminated");
 }
 
 
