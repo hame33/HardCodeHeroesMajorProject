@@ -11,8 +11,8 @@
 using namespace std::chrono_literals;
 
 // --- InventroyWaypointsNode class implementation ---
-InventoryWaypointsNode::InventoryWaypointsNode()
-: Node("inventory_waypoints_node")
+InventoryWaypointsNode::InventoryWaypointsNode(rclcpp::Node::SharedPtr node)
+: node_(node)
 {
   // Generalised Qos to be used
   auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
@@ -21,30 +21,47 @@ InventoryWaypointsNode::InventoryWaypointsNode()
 
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
-  waypoint_manager_ = std::make_shared<WaypointManager>(this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
-                                                        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
-                                                        this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
+  waypoint_manager_ = std::make_shared<WaypointManager>(
+    node_,
+    node_->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
+    node_->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
+    node_->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos)
+  );
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
 
   std::cout << "node class components initialised" << std::endl;
 
   // Initialise Subscribers
-  scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
-  "scan",
-  rclcpp::SensorDataQoS(),
-  std::bind(&InventoryWaypointsNode::scan_callback, this, std::placeholders::_1));
+  scan_sub_ = node_->create_subscription<sensor_msgs::msg::LaserScan>(
+    "scan",
+    rclcpp::SensorDataQoS(),
+    std::bind(&InventoryWaypointsNode::scan_callback, this, std::placeholders::_1)
+  );
 
-  odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-  "odom",
-  qos,
-  std::bind(&InventoryWaypointsNode::odom_callback, this, std::placeholders::_1));
+  odom_sub_ = node_->create_subscription<nav_msgs::msg::Odometry>(
+    "odom",
+    qos,
+    std::bind(&InventoryWaypointsNode::odom_callback, this, std::placeholders::_1)
+  );
 
-  // Initialise Timer
-  update_timer_ = this->create_wall_timer(
-    10ms,
-    std::bind(&InventoryWaypointsNode::waypoint_callback, this));
+  // Initialize Timer but do not start it yet
+  update_timer_ = node_->create_wall_timer(
+    std::chrono::milliseconds(10),
+    std::bind(&InventoryWaypointsNode::waypoint_callback, this)
+  );
+  update_timer_->cancel(); // Cancel timer until navigation is started
 
-  RCLCPP_INFO(this->get_logger(), "InventoryWaypointsNode has been initialized");
+  RCLCPP_INFO(node_->get_logger(), "InventoryWaypointsNode has been initialized");
+}
+
+void InventoryWaypointsNode::start_navigation()
+{
+  update_timer_->reset(); // Start the timer
+}
+
+void InventoryWaypointsNode::stop_navigation()
+{
+  update_timer_->cancel(); // Stop the timer
 }
 
 // --- Destructor ---

@@ -19,8 +19,11 @@
 class InventoryWaypointsNode : public rclcpp::Node 
 {
 public:
-  // Constructor - Initialises InventoryWaypointsNode
-  InventoryWaypointsNode();
+  // Constructor that accepts a shared_ptr to rclcpp::Node
+  InventoryWaypointsNode(rclcpp::Node::SharedPtr node);
+
+  void start_navigation();
+  void stop_navigation();
 
   // Destructor
   ~InventoryWaypointsNode();
@@ -36,6 +39,7 @@ private:
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;         // Subscriber for odometry data
 
   // --- Components ---
+  rclcpp::Node::SharedPtr node_;
   std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
   std::shared_ptr<WaypointGenerator> waypoint_generator_; // Waypoint generating component
   std::shared_ptr<WaypointManager> waypoint_manager_;     // Waypoint managing component

@@ -4,11 +4,14 @@
 #include <QPainter>
 
 MainWindow::MainWindow(QWidget *parent)
-  : QMainWindow(parent),
-    tf_listener_(tf_buffer_)
+  : QMainWindow(parent)
 {
   // Initialize ROS2 node
   node_ = rclcpp::Node::make_shared("inventory_gui_node");
+
+  // Initialize tf2_ros buffer and listener
+  tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
+  tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
   // Initialize InventoryWaypointsNode
   inventory_node_ = std::make_shared<InventoryWaypointsNode>(node_);
