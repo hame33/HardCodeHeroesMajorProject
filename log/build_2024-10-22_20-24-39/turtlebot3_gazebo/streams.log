@@ -1,0 +1,18 @@
+[0.022s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.103s] [ 15%] Built target obstacle2
+[0.111s] [ 30%] Built target obstacles
+[0.127s] [ 46%] Built target obstacle1
+[0.133s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[3.593s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:[m[K In member function ‘[01m[Kvoid WaypointManager::process_goal_result(nav2_msgs::action::NavigateToPose::Result)[m[K’:
+[3.593s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:119:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Result[m[K’ {aka ‘[01m[Kconst nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’}
+[3.593s]   119 |   if (goal_result[01;31m[K->[m[Kresult == nav2_msgs::action::NavigateToPose_Result::SUCCESS)
+[3.593s]       |                  [01;31m[K^~[m[K
+[3.593s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:119:72:[m[K [01;31m[Kerror: [m[K‘[01m[KSUCCESS[m[K’ is not a member of ‘[01m[Knav2_msgs::action::NavigateToPose_Result[m[K’ {aka ‘[01m[Knav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’}
+[3.593s]   119 | lt == nav2_msgs::action::NavigateToPose_Result::[01;31m[KSUCCESS[m[K)
+[3.593s]       |                                                 [01;31m[K^~~~~~~[m[K
+[3.593s] 
+[4.563s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Error 1
+[4.564s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[4.564s] gmake: *** [Makefile:146: all] Error 2
+[4.566s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

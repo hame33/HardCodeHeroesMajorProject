@@ -116,4 +116,8 @@ void WaypointManager::publish_goal()
 void WaypointManager::process_goal_result(const nav2_msgs::action::NavigateToPose::Result goal_result)
 {
   std::cout << "Process_goal_result" << std::endl;
+  if (goal_result->result == nav2_msgs::action::NavigateToPose_Result::SUCCESS)
+  {
+    std::cout << "Success" << std::endl;
+  }
 }

@@ -1,0 +1,11 @@
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:[m[K In member function ‘[01m[Kvoid WaypointManager::process_goal_result(nav2_msgs::action::NavigateToPose::Result)[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:119:18:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Result[m[K’ {aka ‘[01m[Kconst nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’}
+  119 |   if (goal_result[01;31m[K->[m[Kresult == nav2_msgs::action::NavigateToPose_Result::SUCCESS)
+      |                  [01;31m[K^~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:119:72:[m[K [01;31m[Kerror: [m[K‘[01m[KSUCCESS[m[K’ is not a member of ‘[01m[Knav2_msgs::action::NavigateToPose_Result[m[K’ {aka ‘[01m[Knav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’}
+  119 | lt == nav2_msgs::action::NavigateToPose_Result::[01;31m[KSUCCESS[m[K)
+      |                                                 [01;31m[K^~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
