@@ -11,11 +11,16 @@
 #include <map>
 
 // --- Constructor ---
-WaypointManager::WaypointManager(rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
-                                 rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub,
-                                 rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_pub)
-: Node("waypoint_manager"), waypoint_pub_(waypoint_pub), marker_pub_(marker_pub), goal_pub_(goal_pub)
+WaypointManager::WaypointManager(
+  rclcpp::Node::SharedPtr node)
+  : node_(node)
 {
+  auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
+
+  waypoint_pub_ = node_->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos);
+  marker_pub_ = node_->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos);
+  goal_pub_ = node_->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos);
+  
   waypoints_[0] = std::make_shared<geometry_msgs::msg::Point>();
   std::cout << "Waypoint manager constructor" << std::endl;
 }

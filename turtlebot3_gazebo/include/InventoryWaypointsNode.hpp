@@ -16,7 +16,7 @@
 #include "Constants.hpp"
 
 // --- InventoryWaypointsNode Class Interface ---
-class InventoryWaypointsNode : public rclcpp::Node 
+class InventoryWaypointsNode
 {
 public:
   // Constructor that accepts a shared_ptr to rclcpp::Node

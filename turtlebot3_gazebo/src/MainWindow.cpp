@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
   tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
   tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-  // Initialize InventoryWaypointsNode
+  // Initialize InventoryWaypointsNode with the shared node
   inventory_node_ = std::make_shared<InventoryWaypointsNode>(node_);
 
   setupUi();
@@ -42,6 +42,15 @@ MainWindow::MainWindow(QWidget *parent)
   update_timer_ = new QTimer(this);
   connect(update_timer_, &QTimer::timeout, this, &MainWindow::updateMap);
   update_timer_->start(500); // Update every 500 ms
+
+  // Connect start and stop buttons
+  connect(start_button_, &QPushButton::clicked, [this]() {
+    inventory_node_->start_navigation();
+  });
+
+  connect(stop_button_, &QPushButton::clicked, [this]() {
+    inventory_node_->stop_navigation();
+  });
 }
 
 MainWindow::~MainWindow()

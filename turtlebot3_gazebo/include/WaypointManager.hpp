@@ -12,13 +12,12 @@
 #include "Constants.hpp"
 
 // --- WaypointManager class interface ---
-class WaypointManager : public rclcpp::Node
+class WaypointManager
 {
 public:
   // Constructor - Initalise WaypointManager class
-  WaypointManager(rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
-                  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub,
-                  rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_pub);
+  WaypointManager(
+    rclcpp::Node::SharedPtr node);
 
   void add_waypoint(geometry_msgs::msg::Point::SharedPtr waypoint, double distance_from_bot); // Adds waypoint to back of vector
   void remove_waypoint(double distance_from_bot);  // Remove a Waypoint
@@ -29,6 +28,7 @@ public:
   void publish_goals(); // Publishes Nav2 goals
 private:
   // --- ROS Publishers ---
+  rclcpp::Node::SharedPtr node_;
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub_;  // Publisher for waypoints
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;  // Publisher for waypoints as markers
   rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_pub_;  // Publisher for Nav2 goals

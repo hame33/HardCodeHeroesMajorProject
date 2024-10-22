@@ -21,12 +21,7 @@ InventoryWaypointsNode::InventoryWaypointsNode(rclcpp::Node::SharedPtr node)
 
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
-  waypoint_manager_ = std::make_shared<WaypointManager>(
-    node_,
-    node_->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
-    node_->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
-    node_->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos)
-  );
+  waypoint_manager_ = std::make_shared<WaypointManager>(node_);
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
 
   std::cout << "node class components initialised" << std::endl;
