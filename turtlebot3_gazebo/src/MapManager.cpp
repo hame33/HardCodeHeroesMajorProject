@@ -38,7 +38,7 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
     {
       int index = static_cast<int>(ocp_grid_msg->info.width) * row + col;
       int cell_value = ocp_grid_msg->data[index]; 
-      if (min_cell_value > 40)
+      if (min_cell_value > 60)
       {
         if (cell_value <= -1)
         {

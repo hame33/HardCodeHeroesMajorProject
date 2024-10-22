@@ -137,3 +137,22 @@ void WaypointManager::publish_goals()
     std::cout << "Waypoint with key " << Constants::MAX_SCAN_DISTANCE << " not found" << std::endl;
   }
 }
+
+// --- process_goal_result ---
+void WaypointManager::process_goal_result(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
+{
+  switch (result.code) {
+    case rclcpp_action::ResultCode::SUCCEEDED:
+      RCLCPP_INFO(this->get_logger(), "Goal succeeded!");
+      break;
+    case rclcpp_action::ResultCode::ABORTED:
+      RCLCPP_INFO(this->get_logger(), "Goal was aborted.");
+      break;
+    case rclcpp_action::ResultCode::CANCELED:
+      RCLCPP_INFO(this->get_logger(), "Goal was canceled.");
+      break;
+    default:
+      RCLCPP_INFO(this->get_logger(), "Unknown result.");
+      break;
+  }
+}

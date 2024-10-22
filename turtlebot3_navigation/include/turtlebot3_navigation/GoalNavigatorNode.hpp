@@ -51,7 +51,8 @@ private:
 
   // --- Callback Functions ---
   void goal_callback(const geometry_msgs::msg::PoseStamped::SharedPtr goal_msg);  // Handles inventory goals messages (PoseStamped messages)
-  void navigation_callback(); // Handles navigation to goal action
+  void goal_result_callback();  // Handles goal result data
+  void navigation_callback();  // Handles navigation to goal action
 };
 
 #endif  // WAYPOINT_FOLLOWER_NODE_HPP

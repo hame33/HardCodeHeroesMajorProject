@@ -69,6 +69,12 @@ void GoalNavigatorNode::navigation_callback()
   geometry_msgs::msg::PoseStamped goal_to_follow = get_goal_to_follow();
 
   motion_controller_->goal_follower(goal_to_follow);
+}  
+
+// --- goal_result_callback ---
+void GoalNavigatorNode::goal_result_callback()
+{
+  
 }
 
 // --- get_goal_to_follow ---

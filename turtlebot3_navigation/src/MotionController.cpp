@@ -8,7 +8,7 @@
 
 // --- Constructor ---
 MotionController::MotionController(rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client)
-: navigator_client_(navigator_client)
+: Node("goal_navigator_motion_controller"), navigator_client_(navigator_client)
 {
 
 }
@@ -32,27 +32,36 @@ void MotionController::goal_follower(geometry_msgs::msg::PoseStamped goal_to_fol
   goal.pose = goal_to_follow;
 
   auto send_goal_options = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
-  send_goal_options.result_callback = 
+  send_goal_options.result_callback = std::bind(&MotionController::goal_result_callback, this, std::placeholders::_1);
 
-  auto goal_handle_future = navigator_client_->async_send_goal(goal, send_goal_options);
-  //std::cout << "Navigating to goal @ x: " << goal_to_follow.pose.position.x << " y: " << goal_to_follow.pose.position.y << std::endl;
+  navigator_client_->async_send_goal(goal, send_goal_options);
+}
 
-  // auto goal_handle = goal_handle_future.get();
+// --- goal_result_callback ---
+void MotionController::goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
+{
+    switch (result.code) {
+    case rclcpp_action::ResultCode::SUCCEEDED:
+      std::cout << "Goal reached successfully!" << std::endl;
+      break;
+    case rclcpp_action::ResultCode::ABORTED:
+      std::cout << "Goal was aborted." << std::endl;
+      break;
+    case rclcpp_action::ResultCode::CANCELED:
+      std::cout << "Goal was canceled." << std::endl;
+      break;
+    default:
+      std::cout << "Unknown result code." << std::endl;
+      break;
+  }
 
-  // if (!goal_handle) {
-  //     std::cout << "Goal was rejected by the server" << std::endl;
-  //     return;
-  // }
-
-  // std::cout << "Goal accepted" << std::endl;
-
-  // auto result_future = navigator_client_->async_get_result(goal_handle);
-  // auto result_value = result_future.get();
-
-  // if (result_value.result) {
-  //     std::cout << "Result: " << result_value.result << std::endl;
+  // // You can also inspect the actual result message here if needed
+  // if (result.result) {
+  //   // Access result data, e.g., final pose
+  //   std::cout << "Final position: "
+  //             << result.result->pose.pose.position.x << ", "
+  //             << result.result->pose.pose.position.y << std::endl;
   // } else {
-  //     std::cout << "Failed to get result" << std::endl;
+  //   std::cout << "No result returned by action server." << std::endl;
   // }
-
 }

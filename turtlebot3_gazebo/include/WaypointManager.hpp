@@ -7,6 +7,8 @@
 #include <geometry_msgs/msg/point.hpp>
 #include <visualization_msgs/msg/marker.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
+#include <nav2_msgs/action/navigate_to_pose.hpp>
+#include <rclcpp_action/rclcpp_action.hpp>
 #include <memory>
 #include <map>
 #include "Constants.hpp"
@@ -28,6 +30,7 @@ public:
   void publish_markers(); // Publishes waypoints as markers 
   void publish_goals(); // Publishes Nav2 goals (furthest waypoint becomes goal)
   void publish_goals(std::pair<double,double> closest_frontier);  // Publishes Nav2 goals (closest frontier becomes goal)
+  void process_goal_result(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result);  // Processes nav2 goal result 
 private:
   // --- ROS Publishers ---
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub_;  // Publisher for waypoints

@@ -15,7 +15,8 @@
 // The MotionController class manages the robot's movement, using sensor data 
 // to calculate turns and publish velocity commands. It interfaces with ROS to send 
 // movement commands and handles the logic for proportional and derivative turns.
-class MotionController {
+class MotionController : public rclcpp::Node 
+{
 public:
   // Constructor - Initializes the controller with a velocity publisher and sensor processor
   MotionController(rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client);
@@ -25,6 +26,10 @@ public:
 private:
   // --- ROS Action Clients ---
   rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client_; // Pointer to goal follower action client
+
+  // --- Callback Functions ---
+  void goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result);
+
 };
 
 #endif  // MOTION_CONTROLLER_HPP_

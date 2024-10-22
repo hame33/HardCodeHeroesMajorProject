@@ -51,6 +51,11 @@ InventoryWaypointsNode::InventoryWaypointsNode()
   qos, 
   std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1));
 
+  goal_result_sub_ = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+    "navigate_to_pose/result",
+    qos,
+    std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1));
+
   // Initialise Timer
   update_timer_ = this->create_wall_timer(
     10ms,
@@ -109,4 +114,11 @@ void InventoryWaypointsNode::odom_callback(const nav_msgs::msg::Odometry::Shared
 void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
   map_manager_->process_map_data(ocp_grid_msg);
+}
+
+// --- goal_result_callback ---
+void InventoryWaypointsNode::goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
+{
+  waypoint_manager_->process_goal_result(result);
+
 }
