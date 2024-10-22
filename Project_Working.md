@@ -14,8 +14,10 @@
 
 
 - Running everything:
-    1. Rviz and Nav2: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/ros2_practice_ws$ ros2 launch navigation_tb3 navigation.launch.py 
-        This package was downloaded from mohammad luqman's tutorial, this sets nav2 as active because nav2_bringup before wasn't doing that. Nav2 needs to be active so the bot can move towards waypoints
-    2. Gazebo: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py 
-    3. Inventory waypoints node: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 run turtlebot3_gazebo turtlebot3_shop_keeper 
-    4. Goal navigator node: lucaslapdoglinux@lucaslapdoglinux-Inspiron-5584:~/major_prok_ws$ ros2 run turtlebot3_navigation turtlebot3_shop_navigator 
+    1. ros2 launch turtlebot3_gazebo open_track_maze.launch.py 
+    2. /opt/ros/humble/share/nav2_bringup/rviz$ rviz2 -d nav2_default_view.rviz use_sim_time:=TRUE
+    3. ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=TRUE
+    4. ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=TRUE
+    5. run turtlebot3_shop_navigator and turtlebot3_shop_keeper
+
+

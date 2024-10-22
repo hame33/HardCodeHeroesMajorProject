@@ -7,6 +7,7 @@
 #include <memory>
 #include <chrono>
 #include <iostream>
+#include <utility>
 
 using namespace std::chrono_literals;
 
@@ -30,7 +31,7 @@ InventoryWaypointsNode::InventoryWaypointsNode()
                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
   // map_manager_ = std::make_shared<MapManager>(sensor_processor_);
-  map_manager_ = std::make_shared<MapManager>(tf_buffer_, tf_listener_, sensor_processor_);
+  map_manager_ = std::make_shared<MapManager>(sensor_processor_);
 
   std::cout << "node class components initialised" << std::endl;
 
@@ -65,22 +66,31 @@ InventoryWaypointsNode::~InventoryWaypointsNode()
 }
 
 
+// // --- waypoint_callback ---
+// void InventoryWaypointsNode::waypoint_callback()
+// {
+//   std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data = sensor_processor_->get_scan_distance_data();
+//   std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data = sensor_processor_->get_scan_location_data();
+
+
+//   for (int num = 0; num < Constants::NUM_SCAN_POSITIONS; num++ )
+//   {
+//       waypoint_generator_->create_waypoint(num, scan_distance_data, scan_location_data);
+//   }
+//   waypoint_manager_->publish_waypoints();
+//   waypoint_manager_->publish_markers();
+//   waypoint_manager_->publish_goals();
+//   //waypoint_manager_->print_waypoints();
+//   waypoint_manager_->clear_waypoints();
+// }
+
 // --- waypoint_callback ---
 void InventoryWaypointsNode::waypoint_callback()
 {
-  std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data = sensor_processor_->get_scan_distance_data();
-  std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data = sensor_processor_->get_scan_location_data();
+  std::pair<double,double> closest_frontier = std::make_pair(0.0,0.0);
+  closest_frontier = map_manager_->get_closest_frontier();
 
-
-  for (int num = 0; num < Constants::NUM_SCAN_POSITIONS; num++ )
-  {
-      waypoint_generator_->create_waypoint(num, scan_distance_data, scan_location_data);
-  }
-  waypoint_manager_->publish_waypoints();
-  waypoint_manager_->publish_markers();
-  waypoint_manager_->publish_goals();
-  //waypoint_manager_->print_waypoints();
-  waypoint_manager_->clear_waypoints();
+  waypoint_manager_->publish_goals(closest_frontier);
 }
 
 // --- scan_callback ---

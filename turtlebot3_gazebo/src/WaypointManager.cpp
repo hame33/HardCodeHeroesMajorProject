@@ -88,6 +88,26 @@ void WaypointManager::publish_markers()
 }
 
 // --- publish_goals ---
+void WaypointManager::publish_goals(std::pair<double,double> closest_frontier)
+{
+  auto goal = geometry_msgs::msg::PoseStamped();
+  goal.header.frame_id = "map";
+  
+  goal.header.stamp = this->get_clock()->now();
+
+    goal.pose.position.x = closest_frontier.first;
+    goal.pose.position.y = closest_frontier.second;
+    goal.pose.position.z = 0.0;
+
+    goal.pose.orientation.x = 0.0;
+    goal.pose.orientation.y = 0.0;
+    goal.pose.orientation.z = 0.0;
+    goal.pose.orientation.w = 1.0;
+
+    goal_pub_->publish(goal);
+    RCLCPP_INFO(this->get_logger(), "Published goal @: [%f, %f]",goal.pose.position.x, goal.pose.position.y);
+}
+
 void WaypointManager::publish_goals()
 {
   auto goal = geometry_msgs::msg::PoseStamped();
@@ -116,6 +136,4 @@ void WaypointManager::publish_goals()
   {
     std::cout << "Waypoint with key " << Constants::MAX_SCAN_DISTANCE << " not found" << std::endl;
   }
-
-  // --- 
 }

@@ -26,7 +26,8 @@ public:
   void print_waypoints(); // Prints out waypoints
   void publish_waypoints(); // Publishes waypoints 
   void publish_markers(); // Publishes waypoints as markers 
-  void publish_goals(); // Publishes Nav2 goals
+  void publish_goals(); // Publishes Nav2 goals (furthest waypoint becomes goal)
+  void publish_goals(std::pair<double,double> closest_frontier);  // Publishes Nav2 goals (closest frontier becomes goal)
 private:
   // --- ROS Publishers ---
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub_;  // Publisher for waypoints

@@ -17,6 +17,7 @@
 #include <nav2_msgs/action/navigate_to_pose.hpp>
 #include "nav_msgs/msg/occupancy_grid.hpp"
 #include "SensorProcessor.hpp"
+#include "Constants.hpp"
 #include <cmath>
 #include <vector>
 #include <utility>
@@ -36,7 +37,7 @@ public:
   void print_frontier_pixels();
 
   // --- Getter methods ---
-  std::pair<double,double> get_closest_frontier();
+  std::pair<double,double> get_closest_frontier() const;
 
 private:
   // --- TF2 Components ---
@@ -47,16 +48,16 @@ private:
   std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
 
   // --- Data ---
-  std::vector<std::pair<unsigned int, unsigned int>> frontier_pixels_;  // Vector storing frontier pixels (free space bordering unknown) 
+  std::vector<std::pair<int, int>> frontier_pixels_;  // Vector storing frontier pixels (free space bordering unknown) 
   int robot_grid_x_pos_;  // Robot's x position in terms of occupancy grid map
   int robot_grid_y_pos_;  // Robot's y position in terms of occupancy grid map
-  std::pair<double, double> closest_frontier_;  // Closest frontier pixel to robot
+  std::pair<double, double> closest_frontier_;  // Closest frontier pixel to robot in world coordinates
+  std::pair<int,int> closest_frontier_pixels_; // Closest frontier pixel to robot in pixel coordinates
 
   // --- Helper functions ---
-  void search_for_frontiers(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, unsigned int grid_cell_x, unsigned int grid_cell_y);  
-  int8_t find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
+  void search_for_frontiers(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int grid_cell_x, int grid_cell_y);  
+  int find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
   void find_closest_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
+  void check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int& frontier_pixel_x, int& frontier_pixel_y);
 };
-
-
 #endif // MAP_MANAGER_HPP
