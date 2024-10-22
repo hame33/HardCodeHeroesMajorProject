@@ -1,0 +1,138 @@
+[0.091s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.330s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.391s] [  7%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[0.425s] [ 15%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[0.449s] [ 23%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[0.468s] [ 38%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[0.475s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o[0m
+[0.476s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[0.560s] [ 53%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[0.583s] [ 61%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[12.572s] [ 69%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/MapManager.cpp.o[0m
+[82.656s] [ 76%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[84.512s] [ 76%] Built target obstacle1
+[85.580s] [ 84%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[86.260s] [ 92%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[86.969s] [ 92%] Built target obstacles
+[87.395s] [ 92%] Built target obstacle2
+[93.671s] [100%] [32m[1mLinking CXX executable turtlebot3_shop_keeper[0m
+[96.668s] [100%] Built target turtlebot3_shop_keeper
+[96.694s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[96.789s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo
+[96.804s] -- Install configuration: ""
+[96.804s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper
+[96.816s] -- Set runtime path of "/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper" to ""
+[96.816s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[96.817s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[96.817s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/box_world.launch.py
+[96.818s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[96.820s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/tb3_nav2_params.yaml
+[96.822s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[96.822s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__
+[96.825s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/spawn_turtlebot3.launch.cpython-310.pyc
+[96.825s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/empty_world.launch.cpython-310.pyc
+[96.825s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[96.825s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[96.826s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[96.826s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[96.827s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[96.827s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[96.828s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/open_track_maze.launch.py
+[96.829s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[96.829s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[96.829s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[96.830s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[96.830s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[96.831s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[96.831s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[96.832s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[96.832s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[96.832s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[96.833s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[96.835s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[96.835s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[96.835s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[96.836s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[96.836s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[96.836s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[96.836s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[96.836s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[96.837s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[96.837s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[96.838s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[96.838s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[96.838s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[96.839s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[96.839s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[96.840s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[96.840s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[96.841s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[96.842s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[96.843s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[96.843s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[96.843s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[96.844s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[96.844s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[96.844s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[96.845s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[96.845s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[96.845s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[96.846s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[96.847s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[96.847s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[96.847s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[96.847s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[96.847s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[96.848s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[96.848s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[96.848s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[96.849s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[96.850s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[96.850s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[96.851s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[96.851s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[96.852s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[96.852s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[96.853s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[96.854s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[96.855s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[96.856s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[96.856s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[96.857s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[96.857s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[96.857s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[96.858s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[96.860s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[96.860s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_maze.world
+[96.861s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[96.861s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[96.862s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[96.862s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/box_world.world
+[96.863s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[96.863s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[96.863s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_ls.world
+[96.865s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include/
+[96.865s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointManager.hpp
+[96.865s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//InventoryWaypointsNode.hpp
+[96.867s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//Constants.hpp
+[96.867s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointGenerator.hpp
+[96.868s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//MapManager.hpp
+[96.868s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//SensorProcessor.hpp
+[96.868s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[96.869s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[96.870s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[96.870s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[96.871s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[96.872s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[96.872s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[96.872s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[96.873s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[96.874s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[96.874s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[96.874s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[96.875s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[96.875s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[96.876s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[96.876s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[96.877s] -- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[96.883s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo

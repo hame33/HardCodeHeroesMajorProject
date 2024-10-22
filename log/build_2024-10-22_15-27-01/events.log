@@ -1,0 +1,1116 @@
+[0.000000] (-) TimerEvent: {}
+[0.005412] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.006414] (turtlebot3_navigation) JobQueued: {'identifier': 'turtlebot3_navigation', 'dependencies': OrderedDict()}
+[0.006621] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.043449] (turtlebot3_navigation) JobStarted: {'identifier': 'turtlebot3_navigation'}
+[0.082991] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[0.087210] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[0.091916] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1043'), ('SYSTEMD_EXEC_PID', '1427'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install:/home/lucaslapdoglinux/major_prok_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:16386'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1200,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1200'), ('INVOCATION_ID', '6a079a956f904031952c0441a037697a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.87V7V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4ff8ffbc-aa30-410f-a015-495ac5f0d83f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble')]), 'shell': False}
+[0.102453] (-) TimerEvent: {}
+[0.112549] (turtlebot3_navigation) JobProgress: {'identifier': 'turtlebot3_navigation', 'progress': 'cmake'}
+[0.130484] (turtlebot3_navigation) JobProgress: {'identifier': 'turtlebot3_navigation', 'progress': 'build'}
+[0.130736] (turtlebot3_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation', '--', '-j8', '-l8'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1043'), ('SYSTEMD_EXEC_PID', '1427'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install:/home/lucaslapdoglinux/major_prok_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:16386'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1200,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1200'), ('INVOCATION_ID', '6a079a956f904031952c0441a037697a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.87V7V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4ff8ffbc-aa30-410f-a015-495ac5f0d83f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble')]), 'shell': False}
+[0.203369] (-) TimerEvent: {}
+[0.304008] (-) TimerEvent: {}
+[0.336653] (turtlebot3_gazebo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper\x1b[0m\n'}
+[0.396645] (turtlebot3_gazebo) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o\x1b[0m\n'}
+[0.404330] (-) TimerEvent: {}
+[0.427676] (turtlebot3_navigation) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_navigator.dir/src/GoalNavigatorNode.cpp.o\x1b[0m\n'}
+[0.428924] (turtlebot3_navigation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_navigator.dir/src/main.cpp.o\x1b[0m\n'}
+[0.430951] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o\x1b[0m\n'}
+[0.455371] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o\x1b[0m\n'}
+[0.473713] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o\x1b[0m\n'}
+[0.481543] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o\x1b[0m\n'}
+[0.482115] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o\x1b[0m\n'}
+[0.506153] (-) TimerEvent: {}
+[0.562482] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o\x1b[0m\n'}
+[0.589485] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o\x1b[0m\n'}
+[0.590126] (turtlebot3_navigation) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_navigator.dir/src/MotionController.cpp.o\x1b[0m\n'}
+[0.615428] (-) TimerEvent: {}
+[0.733330] (-) TimerEvent: {}
+[0.839039] (-) TimerEvent: {}
+[0.940001] (-) TimerEvent: {}
+[1.048379] (-) TimerEvent: {}
+[1.150712] (-) TimerEvent: {}
+[1.255592] (-) TimerEvent: {}
+[1.366320] (-) TimerEvent: {}
+[1.467098] (-) TimerEvent: {}
+[1.568698] (-) TimerEvent: {}
+[1.675421] (-) TimerEvent: {}
+[1.781210] (-) TimerEvent: {}
+[1.890801] (-) TimerEvent: {}
+[1.992293] (-) TimerEvent: {}
+[2.097338] (-) TimerEvent: {}
+[2.202018] (-) TimerEvent: {}
+[2.308296] (-) TimerEvent: {}
+[2.409936] (-) TimerEvent: {}
+[2.519320] (-) TimerEvent: {}
+[2.632162] (-) TimerEvent: {}
+[2.736316] (-) TimerEvent: {}
+[2.840147] (-) TimerEvent: {}
+[2.941544] (-) TimerEvent: {}
+[3.044560] (-) TimerEvent: {}
+[3.151246] (-) TimerEvent: {}
+[3.254413] (-) TimerEvent: {}
+[3.357185] (-) TimerEvent: {}
+[3.500448] (-) TimerEvent: {}
+[3.620946] (-) TimerEvent: {}
+[3.721769] (-) TimerEvent: {}
+[3.827943] (-) TimerEvent: {}
+[3.931957] (-) TimerEvent: {}
+[4.048335] (-) TimerEvent: {}
+[4.149262] (-) TimerEvent: {}
+[4.300384] (-) TimerEvent: {}
+[4.404004] (-) TimerEvent: {}
+[4.509937] (-) TimerEvent: {}
+[4.612153] (-) TimerEvent: {}
+[4.722655] (-) TimerEvent: {}
+[4.836319] (-) TimerEvent: {}
+[4.955336] (-) TimerEvent: {}
+[5.076222] (-) TimerEvent: {}
+[5.183674] (-) TimerEvent: {}
+[5.290568] (-) TimerEvent: {}
+[5.395816] (-) TimerEvent: {}
+[5.501413] (-) TimerEvent: {}
+[5.608606] (-) TimerEvent: {}
+[5.714382] (-) TimerEvent: {}
+[5.831428] (-) TimerEvent: {}
+[5.936387] (-) TimerEvent: {}
+[6.045343] (-) TimerEvent: {}
+[6.152655] (-) TimerEvent: {}
+[6.260124] (-) TimerEvent: {}
+[6.378416] (-) TimerEvent: {}
+[6.491974] (-) TimerEvent: {}
+[6.601961] (-) TimerEvent: {}
+[6.712383] (-) TimerEvent: {}
+[6.813473] (-) TimerEvent: {}
+[6.914885] (-) TimerEvent: {}
+[7.020839] (-) TimerEvent: {}
+[7.128454] (-) TimerEvent: {}
+[7.229810] (-) TimerEvent: {}
+[7.333502] (-) TimerEvent: {}
+[7.443466] (-) TimerEvent: {}
+[7.559343] (-) TimerEvent: {}
+[7.671626] (-) TimerEvent: {}
+[7.775614] (-) TimerEvent: {}
+[7.884669] (-) TimerEvent: {}
+[7.990403] (-) TimerEvent: {}
+[8.093710] (-) TimerEvent: {}
+[8.201039] (-) TimerEvent: {}
+[8.311651] (-) TimerEvent: {}
+[8.423427] (-) TimerEvent: {}
+[8.536004] (-) TimerEvent: {}
+[8.638527] (-) TimerEvent: {}
+[8.739683] (-) TimerEvent: {}
+[8.842740] (-) TimerEvent: {}
+[8.958945] (-) TimerEvent: {}
+[9.062306] (-) TimerEvent: {}
+[9.178626] (-) TimerEvent: {}
+[9.284430] (-) TimerEvent: {}
+[9.387797] (-) TimerEvent: {}
+[9.489195] (-) TimerEvent: {}
+[9.590161] (-) TimerEvent: {}
+[9.695347] (-) TimerEvent: {}
+[9.796274] (-) TimerEvent: {}
+[9.898549] (-) TimerEvent: {}
+[9.999506] (-) TimerEvent: {}
+[10.101697] (-) TimerEvent: {}
+[10.208016] (-) TimerEvent: {}
+[10.309137] (-) TimerEvent: {}
+[10.411155] (-) TimerEvent: {}
+[10.513348] (-) TimerEvent: {}
+[10.615806] (-) TimerEvent: {}
+[10.720384] (-) TimerEvent: {}
+[10.823773] (-) TimerEvent: {}
+[10.927555] (-) TimerEvent: {}
+[11.029247] (-) TimerEvent: {}
+[11.132440] (-) TimerEvent: {}
+[11.237540] (-) TimerEvent: {}
+[11.338862] (-) TimerEvent: {}
+[11.441846] (-) TimerEvent: {}
+[11.543817] (-) TimerEvent: {}
+[11.647387] (-) TimerEvent: {}
+[11.749177] (-) TimerEvent: {}
+[11.858112] (-) TimerEvent: {}
+[11.960329] (-) TimerEvent: {}
+[12.062035] (-) TimerEvent: {}
+[12.171265] (-) TimerEvent: {}
+[12.277449] (-) TimerEvent: {}
+[12.378156] (-) TimerEvent: {}
+[12.480580] (-) TimerEvent: {}
+[12.575800] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/MapManager.cpp.o\x1b[0m\n'}
+[12.582466] (-) TimerEvent: {}
+[12.685076] (-) TimerEvent: {}
+[12.798492] (-) TimerEvent: {}
+[12.900342] (-) TimerEvent: {}
+[13.011432] (-) TimerEvent: {}
+[13.115081] (-) TimerEvent: {}
+[13.240344] (-) TimerEvent: {}
+[13.344588] (-) TimerEvent: {}
+[13.445913] (-) TimerEvent: {}
+[13.559962] (-) TimerEvent: {}
+[13.667087] (-) TimerEvent: {}
+[13.767705] (-) TimerEvent: {}
+[13.868319] (-) TimerEvent: {}
+[13.970514] (-) TimerEvent: {}
+[14.071172] (-) TimerEvent: {}
+[14.175118] (-) TimerEvent: {}
+[14.276485] (-) TimerEvent: {}
+[14.379416] (-) TimerEvent: {}
+[14.480348] (-) TimerEvent: {}
+[14.582377] (-) TimerEvent: {}
+[14.684759] (-) TimerEvent: {}
+[14.786364] (-) TimerEvent: {}
+[14.892675] (-) TimerEvent: {}
+[14.995537] (-) TimerEvent: {}
+[15.096755] (-) TimerEvent: {}
+[15.198816] (-) TimerEvent: {}
+[15.299991] (-) TimerEvent: {}
+[15.402120] (-) TimerEvent: {}
+[15.503067] (-) TimerEvent: {}
+[15.604597] (-) TimerEvent: {}
+[15.706200] (-) TimerEvent: {}
+[15.809729] (-) TimerEvent: {}
+[15.910844] (-) TimerEvent: {}
+[16.013795] (-) TimerEvent: {}
+[16.114811] (-) TimerEvent: {}
+[16.216632] (-) TimerEvent: {}
+[16.319024] (-) TimerEvent: {}
+[16.421108] (-) TimerEvent: {}
+[16.522205] (-) TimerEvent: {}
+[16.623752] (-) TimerEvent: {}
+[16.725893] (-) TimerEvent: {}
+[16.827022] (-) TimerEvent: {}
+[16.929127] (-) TimerEvent: {}
+[17.030792] (-) TimerEvent: {}
+[17.132078] (-) TimerEvent: {}
+[17.237455] (-) TimerEvent: {}
+[17.338958] (-) TimerEvent: {}
+[17.440110] (-) TimerEvent: {}
+[17.548370] (-) TimerEvent: {}
+[17.650062] (-) TimerEvent: {}
+[17.757348] (-) TimerEvent: {}
+[17.878378] (-) TimerEvent: {}
+[17.988680] (-) TimerEvent: {}
+[18.098828] (-) TimerEvent: {}
+[18.210403] (-) TimerEvent: {}
+[18.311270] (-) TimerEvent: {}
+[18.413152] (-) TimerEvent: {}
+[18.521116] (-) TimerEvent: {}
+[18.625152] (-) TimerEvent: {}
+[18.726646] (-) TimerEvent: {}
+[18.829719] (-) TimerEvent: {}
+[18.948344] (-) TimerEvent: {}
+[19.050073] (-) TimerEvent: {}
+[19.151281] (-) TimerEvent: {}
+[19.258124] (-) TimerEvent: {}
+[19.364575] (-) TimerEvent: {}
+[19.467242] (-) TimerEvent: {}
+[19.576367] (-) TimerEvent: {}
+[19.687721] (-) TimerEvent: {}
+[19.806134] (-) TimerEvent: {}
+[19.916941] (-) TimerEvent: {}
+[20.018365] (-) TimerEvent: {}
+[20.122808] (-) TimerEvent: {}
+[20.224286] (-) TimerEvent: {}
+[20.326437] (-) TimerEvent: {}
+[20.436510] (-) TimerEvent: {}
+[20.545012] (-) TimerEvent: {}
+[20.647483] (-) TimerEvent: {}
+[20.750044] (-) TimerEvent: {}
+[20.858727] (-) TimerEvent: {}
+[20.963819] (-) TimerEvent: {}
+[21.067385] (-) TimerEvent: {}
+[21.181349] (-) TimerEvent: {}
+[21.283555] (-) TimerEvent: {}
+[21.389804] (-) TimerEvent: {}
+[21.496826] (-) TimerEvent: {}
+[21.614336] (-) TimerEvent: {}
+[21.726623] (-) TimerEvent: {}
+[21.827313] (-) TimerEvent: {}
+[21.939352] (-) TimerEvent: {}
+[22.042385] (-) TimerEvent: {}
+[22.147351] (-) TimerEvent: {}
+[22.252435] (-) TimerEvent: {}
+[22.354114] (-) TimerEvent: {}
+[22.463374] (-) TimerEvent: {}
+[22.565850] (-) TimerEvent: {}
+[22.668378] (-) TimerEvent: {}
+[22.777026] (-) TimerEvent: {}
+[22.885928] (-) TimerEvent: {}
+[23.002308] (-) TimerEvent: {}
+[23.117041] (-) TimerEvent: {}
+[23.225201] (-) TimerEvent: {}
+[23.362539] (-) TimerEvent: {}
+[23.477959] (-) TimerEvent: {}
+[23.583670] (-) TimerEvent: {}
+[23.687944] (-) TimerEvent: {}
+[23.796885] (-) TimerEvent: {}
+[23.916049] (-) TimerEvent: {}
+[24.019269] (-) TimerEvent: {}
+[24.125461] (-) TimerEvent: {}
+[24.233279] (-) TimerEvent: {}
+[24.335732] (-) TimerEvent: {}
+[24.439217] (-) TimerEvent: {}
+[24.557718] (-) TimerEvent: {}
+[24.658919] (-) TimerEvent: {}
+[24.764802] (-) TimerEvent: {}
+[24.876484] (-) TimerEvent: {}
+[24.992038] (-) TimerEvent: {}
+[25.096300] (-) TimerEvent: {}
+[25.199508] (-) TimerEvent: {}
+[25.304566] (-) TimerEvent: {}
+[25.408213] (-) TimerEvent: {}
+[25.510839] (-) TimerEvent: {}
+[25.619078] (-) TimerEvent: {}
+[25.720412] (-) TimerEvent: {}
+[25.825474] (-) TimerEvent: {}
+[25.929766] (-) TimerEvent: {}
+[26.036405] (-) TimerEvent: {}
+[26.145439] (-) TimerEvent: {}
+[26.249403] (-) TimerEvent: {}
+[26.358556] (-) TimerEvent: {}
+[26.472623] (-) TimerEvent: {}
+[26.574360] (-) TimerEvent: {}
+[26.677459] (-) TimerEvent: {}
+[26.778312] (-) TimerEvent: {}
+[26.878861] (-) TimerEvent: {}
+[26.979412] (-) TimerEvent: {}
+[27.080095] (-) TimerEvent: {}
+[27.187356] (-) TimerEvent: {}
+[27.292347] (-) TimerEvent: {}
+[27.393057] (-) TimerEvent: {}
+[27.493833] (-) TimerEvent: {}
+[27.596379] (-) TimerEvent: {}
+[27.697152] (-) TimerEvent: {}
+[27.797747] (-) TimerEvent: {}
+[27.901401] (-) TimerEvent: {}
+[28.002095] (-) TimerEvent: {}
+[28.103221] (-) TimerEvent: {}
+[28.204212] (-) TimerEvent: {}
+[28.305356] (-) TimerEvent: {}
+[28.408819] (-) TimerEvent: {}
+[28.510203] (-) TimerEvent: {}
+[28.611287] (-) TimerEvent: {}
+[28.713339] (-) TimerEvent: {}
+[28.820367] (-) TimerEvent: {}
+[28.921629] (-) TimerEvent: {}
+[29.022696] (-) TimerEvent: {}
+[29.123846] (-) TimerEvent: {}
+[29.225063] (-) TimerEvent: {}
+[29.326621] (-) TimerEvent: {}
+[29.427572] (-) TimerEvent: {}
+[29.532134] (-) TimerEvent: {}
+[29.633759] (-) TimerEvent: {}
+[29.734977] (-) TimerEvent: {}
+[29.835995] (-) TimerEvent: {}
+[29.938658] (-) TimerEvent: {}
+[30.043248] (-) TimerEvent: {}
+[30.168822] (-) TimerEvent: {}
+[30.303354] (-) TimerEvent: {}
+[30.408370] (-) TimerEvent: {}
+[30.509804] (-) TimerEvent: {}
+[30.611067] (-) TimerEvent: {}
+[30.712404] (-) TimerEvent: {}
+[30.815935] (-) TimerEvent: {}
+[30.922355] (-) TimerEvent: {}
+[31.023925] (-) TimerEvent: {}
+[31.127503] (-) TimerEvent: {}
+[31.233311] (-) TimerEvent: {}
+[31.334434] (-) TimerEvent: {}
+[31.441670] (-) TimerEvent: {}
+[31.561667] (-) TimerEvent: {}
+[31.666050] (-) TimerEvent: {}
+[31.779088] (-) TimerEvent: {}
+[31.886422] (-) TimerEvent: {}
+[31.988710] (-) TimerEvent: {}
+[32.105545] (-) TimerEvent: {}
+[32.210196] (-) TimerEvent: {}
+[32.311439] (-) TimerEvent: {}
+[32.412699] (-) TimerEvent: {}
+[32.514946] (-) TimerEvent: {}
+[32.619641] (-) TimerEvent: {}
+[32.726012] (-) TimerEvent: {}
+[32.829504] (-) TimerEvent: {}
+[32.930709] (-) TimerEvent: {}
+[33.031897] (-) TimerEvent: {}
+[33.132858] (-) TimerEvent: {}
+[33.235128] (-) TimerEvent: {}
+[33.346103] (-) TimerEvent: {}
+[33.447090] (-) TimerEvent: {}
+[33.548387] (-) TimerEvent: {}
+[33.649394] (-) TimerEvent: {}
+[33.761796] (-) TimerEvent: {}
+[33.867836] (-) TimerEvent: {}
+[33.976909] (-) TimerEvent: {}
+[34.077855] (-) TimerEvent: {}
+[34.178491] (-) TimerEvent: {}
+[34.293407] (-) TimerEvent: {}
+[34.395939] (-) TimerEvent: {}
+[34.510401] (-) TimerEvent: {}
+[34.616614] (-) TimerEvent: {}
+[34.718223] (-) TimerEvent: {}
+[34.826503] (-) TimerEvent: {}
+[34.929372] (-) TimerEvent: {}
+[35.033786] (-) TimerEvent: {}
+[35.135964] (-) TimerEvent: {}
+[35.240769] (-) TimerEvent: {}
+[35.343434] (-) TimerEvent: {}
+[35.444642] (-) TimerEvent: {}
+[35.545709] (-) TimerEvent: {}
+[35.657709] (-) TimerEvent: {}
+[35.760337] (-) TimerEvent: {}
+[35.878340] (-) TimerEvent: {}
+[35.984416] (-) TimerEvent: {}
+[36.087355] (-) TimerEvent: {}
+[36.188008] (-) TimerEvent: {}
+[36.291347] (-) TimerEvent: {}
+[36.398049] (-) TimerEvent: {}
+[36.501337] (-) TimerEvent: {}
+[36.602296] (-) TimerEvent: {}
+[36.703152] (-) TimerEvent: {}
+[36.806415] (-) TimerEvent: {}
+[36.911375] (-) TimerEvent: {}
+[37.013468] (-) TimerEvent: {}
+[37.116446] (-) TimerEvent: {}
+[37.221525] (-) TimerEvent: {}
+[37.324979] (-) TimerEvent: {}
+[37.426137] (-) TimerEvent: {}
+[37.528438] (-) TimerEvent: {}
+[37.629329] (-) TimerEvent: {}
+[37.733199] (-) TimerEvent: {}
+[37.838080] (-) TimerEvent: {}
+[37.958048] (-) TimerEvent: {}
+[38.061715] (-) TimerEvent: {}
+[38.166953] (-) TimerEvent: {}
+[38.278942] (-) TimerEvent: {}
+[38.381353] (-) TimerEvent: {}
+[38.482657] (-) TimerEvent: {}
+[38.585287] (-) TimerEvent: {}
+[38.691167] (-) TimerEvent: {}
+[38.796867] (-) TimerEvent: {}
+[38.898017] (-) TimerEvent: {}
+[39.002797] (-) TimerEvent: {}
+[39.106651] (-) TimerEvent: {}
+[39.211302] (-) TimerEvent: {}
+[39.312680] (-) TimerEvent: {}
+[39.418306] (-) TimerEvent: {}
+[39.530531] (-) TimerEvent: {}
+[39.638075] (-) TimerEvent: {}
+[39.751268] (-) TimerEvent: {}
+[39.859340] (-) TimerEvent: {}
+[39.965939] (-) TimerEvent: {}
+[40.075099] (-) TimerEvent: {}
+[40.177213] (-) TimerEvent: {}
+[40.281538] (-) TimerEvent: {}
+[40.383033] (-) TimerEvent: {}
+[40.490728] (-) TimerEvent: {}
+[40.608404] (-) TimerEvent: {}
+[40.711920] (-) TimerEvent: {}
+[40.817315] (-) TimerEvent: {}
+[40.921071] (-) TimerEvent: {}
+[41.024445] (-) TimerEvent: {}
+[41.125367] (-) TimerEvent: {}
+[41.227463] (-) TimerEvent: {}
+[41.331434] (-) TimerEvent: {}
+[41.433376] (-) TimerEvent: {}
+[41.534729] (-) TimerEvent: {}
+[41.636299] (-) TimerEvent: {}
+[41.738920] (-) TimerEvent: {}
+[41.839793] (-) TimerEvent: {}
+[41.945364] (-) TimerEvent: {}
+[42.046898] (-) TimerEvent: {}
+[42.147962] (-) TimerEvent: {}
+[42.249223] (-) TimerEvent: {}
+[42.350101] (-) TimerEvent: {}
+[42.453593] (-) TimerEvent: {}
+[42.554463] (-) TimerEvent: {}
+[42.656698] (-) TimerEvent: {}
+[42.763009] (-) TimerEvent: {}
+[42.864210] (-) TimerEvent: {}
+[42.966852] (-) TimerEvent: {}
+[43.068823] (-) TimerEvent: {}
+[43.176942] (-) TimerEvent: {}
+[43.277773] (-) TimerEvent: {}
+[43.389297] (-) TimerEvent: {}
+[43.494782] (-) TimerEvent: {}
+[43.597751] (-) TimerEvent: {}
+[43.698975] (-) TimerEvent: {}
+[43.805077] (-) TimerEvent: {}
+[43.915034] (-) TimerEvent: {}
+[44.017888] (-) TimerEvent: {}
+[44.119826] (-) TimerEvent: {}
+[44.228072] (-) TimerEvent: {}
+[44.332392] (-) TimerEvent: {}
+[44.432985] (-) TimerEvent: {}
+[44.535523] (-) TimerEvent: {}
+[44.642824] (-) TimerEvent: {}
+[44.753491] (-) TimerEvent: {}
+[44.864801] (-) TimerEvent: {}
+[44.985655] (-) TimerEvent: {}
+[45.088446] (-) TimerEvent: {}
+[45.189219] (-) TimerEvent: {}
+[45.290385] (-) TimerEvent: {}
+[45.394595] (-) TimerEvent: {}
+[45.495945] (-) TimerEvent: {}
+[45.601447] (-) TimerEvent: {}
+[45.702528] (-) TimerEvent: {}
+[45.807058] (-) TimerEvent: {}
+[45.907975] (-) TimerEvent: {}
+[46.019388] (-) TimerEvent: {}
+[46.120387] (-) TimerEvent: {}
+[46.224377] (-) TimerEvent: {}
+[46.326709] (-) TimerEvent: {}
+[46.429779] (-) TimerEvent: {}
+[46.532858] (-) TimerEvent: {}
+[46.642405] (-) TimerEvent: {}
+[46.742988] (-) TimerEvent: {}
+[46.848071] (-) TimerEvent: {}
+[46.958929] (-) TimerEvent: {}
+[47.063989] (-) TimerEvent: {}
+[47.166989] (-) TimerEvent: {}
+[47.267761] (-) TimerEvent: {}
+[47.373399] (-) TimerEvent: {}
+[47.474031] (-) TimerEvent: {}
+[47.574681] (-) TimerEvent: {}
+[47.675369] (-) TimerEvent: {}
+[47.779378] (-) TimerEvent: {}
+[47.880409] (-) TimerEvent: {}
+[47.981746] (-) TimerEvent: {}
+[48.083668] (-) TimerEvent: {}
+[48.187955] (-) TimerEvent: {}
+[48.298610] (-) TimerEvent: {}
+[48.399924] (-) TimerEvent: {}
+[48.500903] (-) TimerEvent: {}
+[48.605503] (-) TimerEvent: {}
+[48.708427] (-) TimerEvent: {}
+[48.810513] (-) TimerEvent: {}
+[48.914582] (-) TimerEvent: {}
+[49.019345] (-) TimerEvent: {}
+[49.120174] (-) TimerEvent: {}
+[49.222990] (-) TimerEvent: {}
+[49.352346] (-) TimerEvent: {}
+[49.453368] (-) TimerEvent: {}
+[49.554487] (-) TimerEvent: {}
+[49.656506] (-) TimerEvent: {}
+[49.764189] (-) TimerEvent: {}
+[49.871826] (-) TimerEvent: {}
+[49.985180] (-) TimerEvent: {}
+[50.087091] (-) TimerEvent: {}
+[50.188988] (-) TimerEvent: {}
+[50.292009] (-) TimerEvent: {}
+[50.393402] (-) TimerEvent: {}
+[50.501818] (-) TimerEvent: {}
+[50.614532] (-) TimerEvent: {}
+[50.716030] (-) TimerEvent: {}
+[50.821519] (-) TimerEvent: {}
+[50.928868] (-) TimerEvent: {}
+[51.032326] (-) TimerEvent: {}
+[51.134187] (-) TimerEvent: {}
+[51.240348] (-) TimerEvent: {}
+[51.341076] (-) TimerEvent: {}
+[51.444529] (-) TimerEvent: {}
+[51.547701] (-) TimerEvent: {}
+[51.649750] (-) TimerEvent: {}
+[51.756719] (-) TimerEvent: {}
+[51.858723] (-) TimerEvent: {}
+[51.963517] (-) TimerEvent: {}
+[52.073683] (-) TimerEvent: {}
+[52.175979] (-) TimerEvent: {}
+[52.285063] (-) TimerEvent: {}
+[52.390440] (-) TimerEvent: {}
+[52.498491] (-) TimerEvent: {}
+[52.599152] (-) TimerEvent: {}
+[52.709716] (-) TimerEvent: {}
+[52.812074] (-) TimerEvent: {}
+[52.915490] (-) TimerEvent: {}
+[53.016650] (-) TimerEvent: {}
+[53.119850] (-) TimerEvent: {}
+[53.224574] (-) TimerEvent: {}
+[53.326208] (-) TimerEvent: {}
+[53.427691] (-) TimerEvent: {}
+[53.531946] (-) TimerEvent: {}
+[53.638705] (-) TimerEvent: {}
+[53.740940] (-) TimerEvent: {}
+[53.842206] (-) TimerEvent: {}
+[53.943853] (-) TimerEvent: {}
+[54.046273] (-) TimerEvent: {}
+[54.148937] (-) TimerEvent: {}
+[54.255672] (-) TimerEvent: {}
+[54.358452] (-) TimerEvent: {}
+[54.463897] (-) TimerEvent: {}
+[54.566596] (-) TimerEvent: {}
+[54.669656] (-) TimerEvent: {}
+[54.787998] (-) TimerEvent: {}
+[54.893639] (-) TimerEvent: {}
+[55.005181] (-) TimerEvent: {}
+[55.109291] (-) TimerEvent: {}
+[55.214212] (-) TimerEvent: {}
+[55.316370] (-) TimerEvent: {}
+[55.418335] (-) TimerEvent: {}
+[55.522051] (-) TimerEvent: {}
+[55.626729] (-) TimerEvent: {}
+[55.728138] (-) TimerEvent: {}
+[55.830922] (-) TimerEvent: {}
+[55.932357] (-) TimerEvent: {}
+[56.036443] (-) TimerEvent: {}
+[56.142695] (-) TimerEvent: {}
+[56.244318] (-) TimerEvent: {}
+[56.347624] (-) TimerEvent: {}
+[56.450603] (-) TimerEvent: {}
+[56.552249] (-) TimerEvent: {}
+[56.654815] (-) TimerEvent: {}
+[56.756074] (-) TimerEvent: {}
+[56.860381] (-) TimerEvent: {}
+[56.961296] (-) TimerEvent: {}
+[57.067803] (-) TimerEvent: {}
+[57.174602] (-) TimerEvent: {}
+[57.283741] (-) TimerEvent: {}
+[57.405959] (-) TimerEvent: {}
+[57.516835] (-) TimerEvent: {}
+[57.618594] (-) TimerEvent: {}
+[57.722658] (-) TimerEvent: {}
+[57.823686] (-) TimerEvent: {}
+[57.932751] (-) TimerEvent: {}
+[58.040527] (-) TimerEvent: {}
+[58.142278] (-) TimerEvent: {}
+[58.244575] (-) TimerEvent: {}
+[58.346426] (-) TimerEvent: {}
+[58.448416] (-) TimerEvent: {}
+[58.552502] (-) TimerEvent: {}
+[58.669444] (-) TimerEvent: {}
+[58.770776] (-) TimerEvent: {}
+[58.872952] (-) TimerEvent: {}
+[58.983461] (-) TimerEvent: {}
+[59.084364] (-) TimerEvent: {}
+[59.185798] (-) TimerEvent: {}
+[59.286873] (-) TimerEvent: {}
+[59.388149] (-) TimerEvent: {}
+[59.497300] (-) TimerEvent: {}
+[59.602580] (-) TimerEvent: {}
+[59.713956] (-) TimerEvent: {}
+[59.814958] (-) TimerEvent: {}
+[59.915883] (-) TimerEvent: {}
+[60.022629] (-) TimerEvent: {}
+[60.130420] (-) TimerEvent: {}
+[60.233276] (-) TimerEvent: {}
+[60.346764] (-) TimerEvent: {}
+[60.452670] (-) TimerEvent: {}
+[60.554601] (-) TimerEvent: {}
+[60.656460] (-) TimerEvent: {}
+[60.764094] (-) TimerEvent: {}
+[60.865800] (-) TimerEvent: {}
+[60.968199] (-) TimerEvent: {}
+[61.070395] (-) TimerEvent: {}
+[61.186544] (-) TimerEvent: {}
+[61.306096] (-) TimerEvent: {}
+[61.413770] (-) TimerEvent: {}
+[61.514476] (-) TimerEvent: {}
+[61.617437] (-) TimerEvent: {}
+[61.718721] (-) TimerEvent: {}
+[61.823313] (-) TimerEvent: {}
+[61.925103] (-) TimerEvent: {}
+[62.027475] (-) TimerEvent: {}
+[62.131335] (-) TimerEvent: {}
+[62.232329] (-) TimerEvent: {}
+[62.336428] (-) TimerEvent: {}
+[62.437207] (-) TimerEvent: {}
+[62.550160] (-) TimerEvent: {}
+[62.654861] (-) TimerEvent: {}
+[62.756028] (-) TimerEvent: {}
+[62.858997] (-) TimerEvent: {}
+[62.977136] (-) TimerEvent: {}
+[63.082674] (-) TimerEvent: {}
+[63.187101] (-) TimerEvent: {}
+[63.295068] (-) TimerEvent: {}
+[63.407295] (-) TimerEvent: {}
+[63.510432] (-) TimerEvent: {}
+[63.617175] (-) TimerEvent: {}
+[63.721931] (-) TimerEvent: {}
+[63.828806] (-) TimerEvent: {}
+[63.935524] (-) TimerEvent: {}
+[64.047207] (-) TimerEvent: {}
+[64.149932] (-) TimerEvent: {}
+[64.189733] (turtlebot3_navigation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_shop_navigator\x1b[0m\n'}
+[64.250657] (-) TimerEvent: {}
+[64.355365] (-) TimerEvent: {}
+[64.456365] (-) TimerEvent: {}
+[64.557364] (-) TimerEvent: {}
+[64.658401] (-) TimerEvent: {}
+[64.766196] (-) TimerEvent: {}
+[64.870088] (-) TimerEvent: {}
+[64.973428] (-) TimerEvent: {}
+[65.075300] (-) TimerEvent: {}
+[65.186620] (-) TimerEvent: {}
+[65.295787] (-) TimerEvent: {}
+[65.397015] (-) TimerEvent: {}
+[65.499820] (-) TimerEvent: {}
+[65.602776] (-) TimerEvent: {}
+[65.714879] (-) TimerEvent: {}
+[65.822168] (-) TimerEvent: {}
+[65.926496] (-) TimerEvent: {}
+[66.038442] (-) TimerEvent: {}
+[66.153870] (-) TimerEvent: {}
+[66.258428] (-) TimerEvent: {}
+[66.364194] (-) TimerEvent: {}
+[66.470438] (-) TimerEvent: {}
+[66.588090] (-) TimerEvent: {}
+[66.700115] (-) TimerEvent: {}
+[66.806295] (-) TimerEvent: {}
+[66.914901] (-) TimerEvent: {}
+[67.015822] (-) TimerEvent: {}
+[67.116554] (-) TimerEvent: {}
+[67.217204] (-) TimerEvent: {}
+[67.323923] (-) TimerEvent: {}
+[67.439660] (-) TimerEvent: {}
+[67.540258] (-) TimerEvent: {}
+[67.646625] (-) TimerEvent: {}
+[67.747917] (-) TimerEvent: {}
+[67.849243] (-) TimerEvent: {}
+[67.960325] (-) TimerEvent: {}
+[68.070320] (-) TimerEvent: {}
+[68.174023] (-) TimerEvent: {}
+[68.280309] (-) TimerEvent: {}
+[68.383194] (-) TimerEvent: {}
+[68.487357] (-) TimerEvent: {}
+[68.589934] (-) TimerEvent: {}
+[68.604496] (turtlebot3_navigation) StdoutLine: {'line': b'[100%] Built target turtlebot3_shop_navigator\n'}
+[68.687898] (turtlebot3_navigation) CommandEnded: {'returncode': 0}
+[68.695785] (-) TimerEvent: {}
+[68.805845] (-) TimerEvent: {}
+[68.873612] (turtlebot3_navigation) JobProgress: {'identifier': 'turtlebot3_navigation', 'progress': 'install'}
+[68.907451] (-) TimerEvent: {}
+[68.914980] (turtlebot3_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1043'), ('SYSTEMD_EXEC_PID', '1427'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install:/home/lucaslapdoglinux/major_prok_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:16386'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1200,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1200'), ('INVOCATION_ID', '6a079a956f904031952c0441a037697a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.87V7V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4ff8ffbc-aa30-410f-a015-495ac5f0d83f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble')]), 'shell': False}
+[68.958770] (turtlebot3_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[68.970606] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/turtlebot3_navigation/turtlebot3_shop_navigator\n'}
+[69.008069] (turtlebot3_navigation) StdoutLine: {'line': b'-- Set runtime path of "/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/turtlebot3_navigation/turtlebot3_shop_navigator" to ""\n'}
+[69.009654] (-) TimerEvent: {}
+[69.010108] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include/\n'}
+[69.011323] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation\n'}
+[69.011801] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation/MotionController.hpp\n'}
+[69.012080] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation/GoalNavigatorNode.hpp\n'}
+[69.013829] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation/Constants.hpp\n'}
+[69.014944] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation/MapManager.hpp\n'}
+[69.015354] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/include//turtlebot3_navigation/SensorProcessor.hpp\n'}
+[69.015616] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/ament_index/resource_index/package_run_dependencies/turtlebot3_navigation\n'}
+[69.016723] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/ament_index/resource_index/parent_prefix_path/turtlebot3_navigation\n'}
+[69.017051] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/environment/ament_prefix_path.sh\n'}
+[69.018557] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/environment/ament_prefix_path.dsv\n'}
+[69.018887] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/environment/path.sh\n'}
+[69.023825] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/environment/path.dsv\n'}
+[69.025982] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/local_setup.bash\n'}
+[69.027750] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/local_setup.sh\n'}
+[69.028060] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/local_setup.zsh\n'}
+[69.028330] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/local_setup.dsv\n'}
+[69.028744] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.dsv\n'}
+[69.029995] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/ament_index/resource_index/packages/turtlebot3_navigation\n'}
+[69.031857] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[69.033612] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[69.034761] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/cmake/turtlebot3_navigationConfig.cmake\n'}
+[69.035881] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/cmake/turtlebot3_navigationConfig-version.cmake\n'}
+[69.038461] (turtlebot3_navigation) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.xml\n'}
+[69.044944] (turtlebot3_navigation) CommandEnded: {'returncode': 0}
+[69.111343] (-) TimerEvent: {}
+[69.229647] (-) TimerEvent: {}
+[69.332338] (-) TimerEvent: {}
+[69.439806] (-) TimerEvent: {}
+[69.549772] (-) TimerEvent: {}
+[69.625021] (turtlebot3_navigation) JobEnded: {'identifier': 'turtlebot3_navigation', 'rc': 0}
+[69.651335] (-) TimerEvent: {}
+[69.752271] (-) TimerEvent: {}
+[69.858976] (-) TimerEvent: {}
+[69.962206] (-) TimerEvent: {}
+[70.066193] (-) TimerEvent: {}
+[70.175033] (-) TimerEvent: {}
+[70.281491] (-) TimerEvent: {}
+[70.391427] (-) TimerEvent: {}
+[70.495858] (-) TimerEvent: {}
+[70.606462] (-) TimerEvent: {}
+[70.715982] (-) TimerEvent: {}
+[70.826710] (-) TimerEvent: {}
+[70.930653] (-) TimerEvent: {}
+[71.032432] (-) TimerEvent: {}
+[71.137693] (-) TimerEvent: {}
+[71.246586] (-) TimerEvent: {}
+[71.347506] (-) TimerEvent: {}
+[71.450392] (-) TimerEvent: {}
+[71.552978] (-) TimerEvent: {}
+[71.657560] (-) TimerEvent: {}
+[71.758429] (-) TimerEvent: {}
+[71.859480] (-) TimerEvent: {}
+[71.962603] (-) TimerEvent: {}
+[72.070159] (-) TimerEvent: {}
+[72.176176] (-) TimerEvent: {}
+[72.277331] (-) TimerEvent: {}
+[72.380525] (-) TimerEvent: {}
+[72.489498] (-) TimerEvent: {}
+[72.595389] (-) TimerEvent: {}
+[72.702519] (-) TimerEvent: {}
+[72.811138] (-) TimerEvent: {}
+[72.914961] (-) TimerEvent: {}
+[73.033375] (-) TimerEvent: {}
+[73.141913] (-) TimerEvent: {}
+[73.243467] (-) TimerEvent: {}
+[73.347339] (-) TimerEvent: {}
+[73.448573] (-) TimerEvent: {}
+[73.552959] (-) TimerEvent: {}
+[73.655888] (-) TimerEvent: {}
+[73.765972] (-) TimerEvent: {}
+[73.867182] (-) TimerEvent: {}
+[73.971422] (-) TimerEvent: {}
+[74.082644] (-) TimerEvent: {}
+[74.183243] (-) TimerEvent: {}
+[74.299452] (-) TimerEvent: {}
+[74.402346] (-) TimerEvent: {}
+[74.506045] (-) TimerEvent: {}
+[74.609100] (-) TimerEvent: {}
+[74.720156] (-) TimerEvent: {}
+[74.820772] (-) TimerEvent: {}
+[74.922903] (-) TimerEvent: {}
+[75.024777] (-) TimerEvent: {}
+[75.126826] (-) TimerEvent: {}
+[75.228986] (-) TimerEvent: {}
+[75.331063] (-) TimerEvent: {}
+[75.433374] (-) TimerEvent: {}
+[75.535713] (-) TimerEvent: {}
+[75.638688] (-) TimerEvent: {}
+[75.742315] (-) TimerEvent: {}
+[75.847851] (-) TimerEvent: {}
+[75.951569] (-) TimerEvent: {}
+[76.055441] (-) TimerEvent: {}
+[76.156452] (-) TimerEvent: {}
+[76.259095] (-) TimerEvent: {}
+[76.359794] (-) TimerEvent: {}
+[76.462304] (-) TimerEvent: {}
+[76.565506] (-) TimerEvent: {}
+[76.666546] (-) TimerEvent: {}
+[76.769343] (-) TimerEvent: {}
+[76.875142] (-) TimerEvent: {}
+[76.976526] (-) TimerEvent: {}
+[77.080159] (-) TimerEvent: {}
+[77.181820] (-) TimerEvent: {}
+[77.284096] (-) TimerEvent: {}
+[77.385263] (-) TimerEvent: {}
+[77.486965] (-) TimerEvent: {}
+[77.589695] (-) TimerEvent: {}
+[77.695535] (-) TimerEvent: {}
+[77.797672] (-) TimerEvent: {}
+[77.898855] (-) TimerEvent: {}
+[78.001319] (-) TimerEvent: {}
+[78.103542] (-) TimerEvent: {}
+[78.212879] (-) TimerEvent: {}
+[78.314217] (-) TimerEvent: {}
+[78.416556] (-) TimerEvent: {}
+[78.517960] (-) TimerEvent: {}
+[78.624187] (-) TimerEvent: {}
+[78.724916] (-) TimerEvent: {}
+[78.825796] (-) TimerEvent: {}
+[78.931453] (-) TimerEvent: {}
+[79.032056] (-) TimerEvent: {}
+[79.138142] (-) TimerEvent: {}
+[79.238946] (-) TimerEvent: {}
+[79.339500] (-) TimerEvent: {}
+[79.440752] (-) TimerEvent: {}
+[79.541702] (-) TimerEvent: {}
+[79.653988] (-) TimerEvent: {}
+[79.755355] (-) TimerEvent: {}
+[79.855949] (-) TimerEvent: {}
+[79.957603] (-) TimerEvent: {}
+[80.059803] (-) TimerEvent: {}
+[80.160507] (-) TimerEvent: {}
+[80.261778] (-) TimerEvent: {}
+[80.365888] (-) TimerEvent: {}
+[80.470048] (-) TimerEvent: {}
+[80.571523] (-) TimerEvent: {}
+[80.676352] (-) TimerEvent: {}
+[80.780452] (-) TimerEvent: {}
+[80.881979] (-) TimerEvent: {}
+[80.982497] (-) TimerEvent: {}
+[81.083044] (-) TimerEvent: {}
+[81.184281] (-) TimerEvent: {}
+[81.284899] (-) TimerEvent: {}
+[81.386552] (-) TimerEvent: {}
+[81.488775] (-) TimerEvent: {}
+[81.596143] (-) TimerEvent: {}
+[81.697046] (-) TimerEvent: {}
+[81.800197] (-) TimerEvent: {}
+[81.901084] (-) TimerEvent: {}
+[82.002825] (-) TimerEvent: {}
+[82.103340] (-) TimerEvent: {}
+[82.206423] (-) TimerEvent: {}
+[82.307055] (-) TimerEvent: {}
+[82.408472] (-) TimerEvent: {}
+[82.509013] (-) TimerEvent: {}
+[82.612991] (-) TimerEvent: {}
+[82.662134] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle1.so\x1b[0m\n'}
+[82.713551] (-) TimerEvent: {}
+[82.814897] (-) TimerEvent: {}
+[82.917150] (-) TimerEvent: {}
+[83.018627] (-) TimerEvent: {}
+[83.123003] (-) TimerEvent: {}
+[83.224779] (-) TimerEvent: {}
+[83.327869] (-) TimerEvent: {}
+[83.435384] (-) TimerEvent: {}
+[83.537908] (-) TimerEvent: {}
+[83.646437] (-) TimerEvent: {}
+[83.747439] (-) TimerEvent: {}
+[83.849021] (-) TimerEvent: {}
+[83.950954] (-) TimerEvent: {}
+[84.053060] (-) TimerEvent: {}
+[84.160072] (-) TimerEvent: {}
+[84.262433] (-) TimerEvent: {}
+[84.363057] (-) TimerEvent: {}
+[84.466729] (-) TimerEvent: {}
+[84.516360] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 76%] Built target obstacle1\n'}
+[84.566893] (-) TimerEvent: {}
+[84.668747] (-) TimerEvent: {}
+[84.771342] (-) TimerEvent: {}
+[84.872004] (-) TimerEvent: {}
+[84.973466] (-) TimerEvent: {}
+[85.074355] (-) TimerEvent: {}
+[85.176916] (-) TimerEvent: {}
+[85.283202] (-) TimerEvent: {}
+[85.385899] (-) TimerEvent: {}
+[85.487828] (-) TimerEvent: {}
+[85.586310] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libobstacles.so\x1b[0m\n'}
+[85.591394] (-) TimerEvent: {}
+[85.693584] (-) TimerEvent: {}
+[85.795720] (-) TimerEvent: {}
+[85.896806] (-) TimerEvent: {}
+[86.000022] (-) TimerEvent: {}
+[86.110551] (-) TimerEvent: {}
+[86.211716] (-) TimerEvent: {}
+[86.265744] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX shared library libobstacle2.so\x1b[0m\n'}
+[86.312150] (-) TimerEvent: {}
+[86.412869] (-) TimerEvent: {}
+[86.514522] (-) TimerEvent: {}
+[86.615062] (-) TimerEvent: {}
+[86.716180] (-) TimerEvent: {}
+[86.822540] (-) TimerEvent: {}
+[86.923325] (-) TimerEvent: {}
+[86.973895] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 92%] Built target obstacles\n'}
+[87.026458] (-) TimerEvent: {}
+[87.129296] (-) TimerEvent: {}
+[87.230770] (-) TimerEvent: {}
+[87.334147] (-) TimerEvent: {}
+[87.401689] (turtlebot3_gazebo) StdoutLine: {'line': b'[ 92%] Built target obstacle2\n'}
+[87.434551] (-) TimerEvent: {}
+[87.535068] (-) TimerEvent: {}
+[87.635557] (-) TimerEvent: {}
+[87.736166] (-) TimerEvent: {}
+[87.837124] (-) TimerEvent: {}
+[87.939482] (-) TimerEvent: {}
+[88.041641] (-) TimerEvent: {}
+[88.143741] (-) TimerEvent: {}
+[88.244162] (-) TimerEvent: {}
+[88.344642] (-) TimerEvent: {}
+[88.445306] (-) TimerEvent: {}
+[88.546568] (-) TimerEvent: {}
+[88.647259] (-) TimerEvent: {}
+[88.747789] (-) TimerEvent: {}
+[88.848384] (-) TimerEvent: {}
+[88.949338] (-) TimerEvent: {}
+[89.049829] (-) TimerEvent: {}
+[89.150357] (-) TimerEvent: {}
+[89.251175] (-) TimerEvent: {}
+[89.351894] (-) TimerEvent: {}
+[89.452462] (-) TimerEvent: {}
+[89.553216] (-) TimerEvent: {}
+[89.653790] (-) TimerEvent: {}
+[89.755018] (-) TimerEvent: {}
+[89.855842] (-) TimerEvent: {}
+[89.956362] (-) TimerEvent: {}
+[90.056952] (-) TimerEvent: {}
+[90.157536] (-) TimerEvent: {}
+[90.257967] (-) TimerEvent: {}
+[90.358616] (-) TimerEvent: {}
+[90.459373] (-) TimerEvent: {}
+[90.559917] (-) TimerEvent: {}
+[90.660582] (-) TimerEvent: {}
+[90.761120] (-) TimerEvent: {}
+[90.862265] (-) TimerEvent: {}
+[90.962892] (-) TimerEvent: {}
+[91.064352] (-) TimerEvent: {}
+[91.164896] (-) TimerEvent: {}
+[91.265640] (-) TimerEvent: {}
+[91.367321] (-) TimerEvent: {}
+[91.467841] (-) TimerEvent: {}
+[91.568332] (-) TimerEvent: {}
+[91.668789] (-) TimerEvent: {}
+[91.769371] (-) TimerEvent: {}
+[91.869957] (-) TimerEvent: {}
+[91.970677] (-) TimerEvent: {}
+[92.072172] (-) TimerEvent: {}
+[92.172692] (-) TimerEvent: {}
+[92.273101] (-) TimerEvent: {}
+[92.373619] (-) TimerEvent: {}
+[92.474160] (-) TimerEvent: {}
+[92.574824] (-) TimerEvent: {}
+[92.675724] (-) TimerEvent: {}
+[92.776334] (-) TimerEvent: {}
+[92.877094] (-) TimerEvent: {}
+[92.977691] (-) TimerEvent: {}
+[93.078118] (-) TimerEvent: {}
+[93.178782] (-) TimerEvent: {}
+[93.279345] (-) TimerEvent: {}
+[93.381213] (-) TimerEvent: {}
+[93.481763] (-) TimerEvent: {}
+[93.582201] (-) TimerEvent: {}
+[93.677418] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_shop_keeper\x1b[0m\n'}
+[93.682304] (-) TimerEvent: {}
+[93.782673] (-) TimerEvent: {}
+[93.884217] (-) TimerEvent: {}
+[93.985113] (-) TimerEvent: {}
+[94.086165] (-) TimerEvent: {}
+[94.187303] (-) TimerEvent: {}
+[94.288262] (-) TimerEvent: {}
+[94.388960] (-) TimerEvent: {}
+[94.489942] (-) TimerEvent: {}
+[94.590801] (-) TimerEvent: {}
+[94.692400] (-) TimerEvent: {}
+[94.793608] (-) TimerEvent: {}
+[94.894695] (-) TimerEvent: {}
+[94.995726] (-) TimerEvent: {}
+[95.096414] (-) TimerEvent: {}
+[95.198144] (-) TimerEvent: {}
+[95.299109] (-) TimerEvent: {}
+[95.400581] (-) TimerEvent: {}
+[95.501211] (-) TimerEvent: {}
+[95.601804] (-) TimerEvent: {}
+[95.702218] (-) TimerEvent: {}
+[95.802754] (-) TimerEvent: {}
+[95.903583] (-) TimerEvent: {}
+[96.004818] (-) TimerEvent: {}
+[96.105311] (-) TimerEvent: {}
+[96.205648] (-) TimerEvent: {}
+[96.305939] (-) TimerEvent: {}
+[96.406345] (-) TimerEvent: {}
+[96.506913] (-) TimerEvent: {}
+[96.607767] (-) TimerEvent: {}
+[96.674225] (turtlebot3_gazebo) StdoutLine: {'line': b'[100%] Built target turtlebot3_shop_keeper\n'}
+[96.697505] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[96.707879] (-) TimerEvent: {}
+[96.790912] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'install'}
+[96.792648] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1043'), ('SYSTEMD_EXEC_PID', '1427'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install:/home/lucaslapdoglinux/major_prok_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:16386'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1200,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1200'), ('INVOCATION_ID', '6a079a956f904031952c0441a037697a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.87V7V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4ff8ffbc-aa30-410f-a015-495ac5f0d83f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble')]), 'shell': False}
+[96.808261] (-) TimerEvent: {}
+[96.810531] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[96.810884] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper\n'}
+[96.822101] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_shop_keeper" to ""\n'}
+[96.822550] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch\n'}
+[96.823162] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py\n'}
+[96.823656] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/box_world.launch.py\n'}
+[96.824068] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py\n'}
+[96.825809] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/tb3_nav2_params.yaml\n'}
+[96.828055] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py\n'}
+[96.828851] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__\n'}
+[96.830955] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/spawn_turtlebot3.launch.cpython-310.pyc\n'}
+[96.831518] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/__pycache__/empty_world.launch.cpython-310.pyc\n'}
+[96.831779] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py\n'}
+[96.832006] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py\n'}
+[96.832313] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py\n'}
+[96.832726] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py\n'}
+[96.833019] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py\n'}
+[96.833575] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py\n'}
+[96.834323] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/open_track_maze.launch.py\n'}
+[96.834967] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models\n'}
+[96.835372] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house\n'}
+[96.835673] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf\n'}
+[96.836462] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config\n'}
+[96.836919] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle\n'}
+[96.837240] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf\n'}
+[96.837712] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf\n'}
+[96.838264] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config\n'}
+[96.838666] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger\n'}
+[96.838997] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf\n'}
+[96.839665] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf\n'}
+[96.841080] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config\n'}
+[96.841554] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world\n'}
+[96.841811] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf\n'}
+[96.842051] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes\n'}
+[96.842219] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae\n'}
+[96.842462] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae\n'}
+[96.842710] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf\n'}
+[96.843001] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config\n'}
+[96.843374] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi\n'}
+[96.843646] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf\n'}
+[96.844022] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf\n'}
+[96.844447] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config\n'}
+[96.844807] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common\n'}
+[96.845257] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes\n'}
+[96.845549] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae\n'}
+[96.846114] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae\n'}
+[96.846737] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae\n'}
+[96.847267] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae\n'}
+[96.848138] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae\n'}
+[96.849267] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae\n'}
+[96.849680] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config\n'}
+[96.849980] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world\n'}
+[96.850254] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1\n'}
+[96.850525] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf\n'}
+[96.850871] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config\n'}
+[96.851178] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box\n'}
+[96.851496] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf\n'}
+[96.851766] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config\n'}
+[96.852620] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin\n'}
+[96.853001] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt\n'}
+[96.853239] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc\n'}
+[96.853524] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc\n'}
+[96.853786] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc\n'}
+[96.853968] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2\n'}
+[96.854180] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf\n'}
+[96.854505] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config\n'}
+[96.854868] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls\n'}
+[96.855182] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf\n'}
+[96.855957] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config\n'}
+[96.856852] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf\n'}
+[96.857317] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config\n'}
+[96.857721] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles\n'}
+[96.858054] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf\n'}
+[96.858530] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config\n'}
+[96.859066] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz\n'}
+[96.859848] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz\n'}
+[96.861200] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf\n'}
+[96.862223] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf\n'}
+[96.862581] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf\n'}
+[96.863059] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf\n'}
+[96.863441] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf\n'}
+[96.863683] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds\n'}
+[96.864159] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world\n'}
+[96.866175] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world\n'}
+[96.866898] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_maze.world\n'}
+[96.867518] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world\n'}
+[96.867964] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world\n'}
+[96.868499] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world\n'}
+[96.868814] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/box_world.world\n'}
+[96.869345] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world\n'}
+[96.869664] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world\n'}
+[96.869989] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/open_track_ls.world\n'}
+[96.871143] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include/\n'}
+[96.871541] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointManager.hpp\n'}
+[96.871889] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//InventoryWaypointsNode.hpp\n'}
+[96.872631] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//Constants.hpp\n'}
+[96.873634] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//WaypointGenerator.hpp\n'}
+[96.874119] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//MapManager.hpp\n'}
+[96.874384] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/include//SensorProcessor.hpp\n'}
+[96.874752] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo\n'}
+[96.875347] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo\n'}
+[96.876207] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh\n'}
+[96.876585] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv\n'}
+[96.877786] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh\n'}
+[96.878167] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv\n'}
+[96.878508] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash\n'}
+[96.878795] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh\n'}
+[96.879223] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh\n'}
+[96.880416] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv\n'}
+[96.880768] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv\n'}
+[96.880980] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo\n'}
+[96.881281] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[96.881827] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[96.882444] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake\n'}
+[96.882701] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake\n'}
+[96.883087] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Installing: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml\n'}
+[96.886470] (turtlebot3_gazebo) CommandEnded: {'returncode': 0}
+[96.908379] (-) TimerEvent: {}
+[97.008768] (-) TimerEvent: {}
+[97.011496] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 0}
+[97.012650] (-) EventReactorShutdown: {}

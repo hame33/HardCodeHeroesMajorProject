@@ -1,0 +1,208 @@
+[0.342s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--allow-overriding', 'turtlebot3_gazebo']
+[0.342s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=['turtlebot3_gazebo'], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7966b6b43d60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7966b6b438b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7966b6b438b0>>, mixin_verb=('build',))
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.079s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.079s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.080s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.081s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['ignore', 'ignore_ament_install']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'ignore'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'ignore_ament_install'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['colcon_pkg']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'colcon_pkg'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['colcon_meta']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'colcon_meta'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['ros']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'ros'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['cmake', 'python']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'cmake'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'python'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extensions ['python_setup_py']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(Meeting_minutes) by extension 'python_setup_py'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.128s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extension 'ignore'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extension 'ignore_ament_install'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extensions ['colcon_pkg']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extension 'colcon_pkg'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extensions ['colcon_meta']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extension 'colcon_meta'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extensions ['ros']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_gazebo) by extension 'ros'
+[1.180s] DEBUG:colcon.colcon_core.package_identification:Package 'turtlebot3_gazebo' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo'
+[1.181s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ignore'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ignore_ament_install'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['colcon_pkg']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'colcon_pkg'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['colcon_meta']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'colcon_meta'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extensions ['ros']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(turtlebot3_navigation) by extension 'ros'
+[1.188s] DEBUG:colcon.colcon_core.package_identification:Package 'turtlebot3_navigation' with type 'ros.ament_cmake' and name 'turtlebot3_navigation'
+[1.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/lucaslapdoglinux/turtlebot3_ws/install
+[1.280s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/lucaslapdoglinux/major_prok_ws/install
+[1.282s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/lucaslapdoglinux/ros2_practice_ws/install
+[1.286s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install
+[1.296s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 485 installed packages in /opt/ros/humble
+[1.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_args' from command line to 'None'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target' from command line to 'None'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.567s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo', 'merge_install': False, 'path': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo', 'symlink_install': False, 'test_result_base': None}
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_args' from command line to 'None'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_target' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.571s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[1.571s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[1.571s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[1.571s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.571s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.571s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation', 'merge_install': False, 'path': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_navigation', 'symlink_install': False, 'test_result_base': None}
+[1.572s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.579s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.580s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo' with build type 'ament_cmake'
+[1.581s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo'
+[1.591s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.591s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.592s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.620s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_navigation' with build type 'ament_cmake'
+[1.621s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_navigation'
+[1.622s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.622s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[1.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation -- -j8 -l8
+[70.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation -- -j8 -l8
+[70.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation
+[70.621s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation)
+[70.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_navigation
+[70.652s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation' for CMake module files
+[70.656s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation' for CMake config files
+[70.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation', 'cmake_prefix_path')
+[70.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.ps1'
+[70.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.dsv'
+[70.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.sh'
+[70.683s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib'
+[70.684s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/bin'
+[70.684s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/pkgconfig/turtlebot3_navigation.pc'
+[70.685s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/python3.10/site-packages'
+[70.686s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/bin'
+[70.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.ps1'
+[70.701s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.dsv'
+[70.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.sh'
+[70.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.bash'
+[70.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.zsh'
+[70.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/colcon-core/packages/turtlebot3_navigation)
+[71.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_navigation)
+[71.061s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation' for CMake module files
+[71.081s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation' for CMake config files
+[71.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_navigation', 'cmake_prefix_path')
+[71.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.ps1'
+[71.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.dsv'
+[71.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/hook/cmake_prefix_path.sh'
+[71.122s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib'
+[71.126s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/bin'
+[71.128s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/pkgconfig/turtlebot3_navigation.pc'
+[71.129s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/lib/python3.10/site-packages'
+[71.131s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/bin'
+[71.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.ps1'
+[71.168s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.dsv'
+[71.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.sh'
+[71.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.bash'
+[71.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/turtlebot3_navigation/package.zsh'
+[71.192s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_navigation/share/colcon-core/packages/turtlebot3_navigation)
+[98.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[98.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo
+[98.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[98.464s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo' for CMake module files
+[98.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --install /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo
+[98.468s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo' for CMake config files
+[98.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[98.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[98.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[98.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[98.477s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib'
+[98.478s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/bin'
+[98.478s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[98.479s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[98.479s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/bin'
+[98.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[98.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[98.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[98.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[98.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[98.485s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[98.577s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[98.577s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo' for CMake module files
+[98.578s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo' for CMake config files
+[98.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[98.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[98.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[98.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[98.582s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib'
+[98.582s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/bin'
+[98.582s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[98.582s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[98.582s] Level 1:colcon.colcon_core.environment:checking '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/bin'
+[98.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[98.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[98.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[98.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[98.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[98.588s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[98.588s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[98.589s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[98.589s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[98.589s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[98.612s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[98.612s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[98.612s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[98.674s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[98.675s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/local_setup.ps1'
+[98.680s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/_local_setup_util_ps1.py'
+[98.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/setup.ps1'
+[98.700s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/local_setup.sh'
+[98.703s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/_local_setup_util_sh.py'
+[98.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/setup.sh'
+[98.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/local_setup.bash'
+[98.718s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/setup.bash'
+[98.725s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/local_setup.zsh'
+[98.727s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/install/setup.zsh'
