@@ -120,5 +120,4 @@ void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::Sh
 void InventoryWaypointsNode::goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
 {
   waypoint_manager_->process_goal_result(result);
-
 }
