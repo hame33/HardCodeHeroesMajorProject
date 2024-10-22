@@ -249,6 +249,58 @@ obstacles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/build
 .PHONY : obstacles/fast
 
+#=============================================================================
+# Target rules for targets named turtlebot3_shop_keeper_autogen
+
+# Build rule for target.
+turtlebot3_shop_keeper_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtlebot3_shop_keeper_autogen
+.PHONY : turtlebot3_shop_keeper_autogen
+
+# fast build rule for target.
+turtlebot3_shop_keeper_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper_autogen.dir/build.make CMakeFiles/turtlebot3_shop_keeper_autogen.dir/build
+.PHONY : turtlebot3_shop_keeper_autogen/fast
+
+#=============================================================================
+# Target rules for targets named obstacle1_autogen
+
+# Build rule for target.
+obstacle1_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacle1_autogen
+.PHONY : obstacle1_autogen
+
+# fast build rule for target.
+obstacle1_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle1_autogen.dir/build.make CMakeFiles/obstacle1_autogen.dir/build
+.PHONY : obstacle1_autogen/fast
+
+#=============================================================================
+# Target rules for targets named obstacle2_autogen
+
+# Build rule for target.
+obstacle2_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacle2_autogen
+.PHONY : obstacle2_autogen
+
+# fast build rule for target.
+obstacle2_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle2_autogen.dir/build.make CMakeFiles/obstacle2_autogen.dir/build
+.PHONY : obstacle2_autogen/fast
+
+#=============================================================================
+# Target rules for targets named obstacles_autogen
+
+# Build rule for target.
+obstacles_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacles_autogen
+.PHONY : obstacles_autogen
+
+# fast build rule for target.
+obstacles_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles_autogen.dir/build.make CMakeFiles/obstacles_autogen.dir/build
+.PHONY : obstacles_autogen/fast
+
 models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.o: models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o
 .PHONY : models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.o
 
@@ -321,6 +373,78 @@ models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s
 .PHONY : models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.s
 
+obstacle1_autogen/mocs_compilation.o: obstacle1_autogen/mocs_compilation.cpp.o
+.PHONY : obstacle1_autogen/mocs_compilation.o
+
+# target to build an object file
+obstacle1_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle1.dir/build.make CMakeFiles/obstacle1.dir/obstacle1_autogen/mocs_compilation.cpp.o
+.PHONY : obstacle1_autogen/mocs_compilation.cpp.o
+
+obstacle1_autogen/mocs_compilation.i: obstacle1_autogen/mocs_compilation.cpp.i
+.PHONY : obstacle1_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+obstacle1_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle1.dir/build.make CMakeFiles/obstacle1.dir/obstacle1_autogen/mocs_compilation.cpp.i
+.PHONY : obstacle1_autogen/mocs_compilation.cpp.i
+
+obstacle1_autogen/mocs_compilation.s: obstacle1_autogen/mocs_compilation.cpp.s
+.PHONY : obstacle1_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+obstacle1_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle1.dir/build.make CMakeFiles/obstacle1.dir/obstacle1_autogen/mocs_compilation.cpp.s
+.PHONY : obstacle1_autogen/mocs_compilation.cpp.s
+
+obstacle2_autogen/mocs_compilation.o: obstacle2_autogen/mocs_compilation.cpp.o
+.PHONY : obstacle2_autogen/mocs_compilation.o
+
+# target to build an object file
+obstacle2_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle2.dir/build.make CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o
+.PHONY : obstacle2_autogen/mocs_compilation.cpp.o
+
+obstacle2_autogen/mocs_compilation.i: obstacle2_autogen/mocs_compilation.cpp.i
+.PHONY : obstacle2_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+obstacle2_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle2.dir/build.make CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.i
+.PHONY : obstacle2_autogen/mocs_compilation.cpp.i
+
+obstacle2_autogen/mocs_compilation.s: obstacle2_autogen/mocs_compilation.cpp.s
+.PHONY : obstacle2_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+obstacle2_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle2.dir/build.make CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.s
+.PHONY : obstacle2_autogen/mocs_compilation.cpp.s
+
+obstacles_autogen/mocs_compilation.o: obstacles_autogen/mocs_compilation.cpp.o
+.PHONY : obstacles_autogen/mocs_compilation.o
+
+# target to build an object file
+obstacles_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/obstacles_autogen/mocs_compilation.cpp.o
+.PHONY : obstacles_autogen/mocs_compilation.cpp.o
+
+obstacles_autogen/mocs_compilation.i: obstacles_autogen/mocs_compilation.cpp.i
+.PHONY : obstacles_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+obstacles_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/obstacles_autogen/mocs_compilation.cpp.i
+.PHONY : obstacles_autogen/mocs_compilation.cpp.i
+
+obstacles_autogen/mocs_compilation.s: obstacles_autogen/mocs_compilation.cpp.s
+.PHONY : obstacles_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+obstacles_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles.dir/build.make CMakeFiles/obstacles.dir/obstacles_autogen/mocs_compilation.cpp.s
+.PHONY : obstacles_autogen/mocs_compilation.cpp.s
+
 src/InventoryWaypointsNode.o: src/InventoryWaypointsNode.cpp.o
 .PHONY : src/InventoryWaypointsNode.o
 
@@ -344,6 +468,30 @@ src/InventoryWaypointsNode.s: src/InventoryWaypointsNode.cpp.s
 src/InventoryWaypointsNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.s
 .PHONY : src/InventoryWaypointsNode.cpp.s
+
+src/MainWindow.o: src/MainWindow.cpp.o
+.PHONY : src/MainWindow.o
+
+# target to build an object file
+src/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o
+.PHONY : src/MainWindow.cpp.o
+
+src/MainWindow.i: src/MainWindow.cpp.i
+.PHONY : src/MainWindow.i
+
+# target to preprocess a source file
+src/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.i
+.PHONY : src/MainWindow.cpp.i
+
+src/MainWindow.s: src/MainWindow.cpp.s
+.PHONY : src/MainWindow.s
+
+# target to generate assembly for a file
+src/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.s
+.PHONY : src/MainWindow.cpp.s
 
 src/SensorProcessor.o: src/SensorProcessor.cpp.o
 .PHONY : src/SensorProcessor.o
@@ -441,6 +589,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+turtlebot3_shop_keeper_autogen/mocs_compilation.o: turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.o
+
+# target to build an object file
+turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o
+
+turtlebot3_shop_keeper_autogen/mocs_compilation.i: turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i
+
+turtlebot3_shop_keeper_autogen/mocs_compilation.s: turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_shop_keeper.dir/build.make CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s
+.PHONY : turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -454,7 +626,11 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... obstacle1_autogen"
+	@echo "... obstacle2_autogen"
+	@echo "... obstacles_autogen"
 	@echo "... turtlebot3_gazebo_uninstall"
+	@echo "... turtlebot3_shop_keeper_autogen"
 	@echo "... uninstall"
 	@echo "... obstacle1"
 	@echo "... obstacle2"
@@ -469,9 +645,21 @@ help:
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.o"
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.i"
 	@echo "... models/turtlebot3_dqn_world/obstacle_plugin/obstacles.s"
+	@echo "... obstacle1_autogen/mocs_compilation.o"
+	@echo "... obstacle1_autogen/mocs_compilation.i"
+	@echo "... obstacle1_autogen/mocs_compilation.s"
+	@echo "... obstacle2_autogen/mocs_compilation.o"
+	@echo "... obstacle2_autogen/mocs_compilation.i"
+	@echo "... obstacle2_autogen/mocs_compilation.s"
+	@echo "... obstacles_autogen/mocs_compilation.o"
+	@echo "... obstacles_autogen/mocs_compilation.i"
+	@echo "... obstacles_autogen/mocs_compilation.s"
 	@echo "... src/InventoryWaypointsNode.o"
 	@echo "... src/InventoryWaypointsNode.i"
 	@echo "... src/InventoryWaypointsNode.s"
+	@echo "... src/MainWindow.o"
+	@echo "... src/MainWindow.i"
+	@echo "... src/MainWindow.s"
 	@echo "... src/SensorProcessor.o"
 	@echo "... src/SensorProcessor.i"
 	@echo "... src/SensorProcessor.s"
@@ -484,6 +672,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... turtlebot3_shop_keeper_autogen/mocs_compilation.o"
+	@echo "... turtlebot3_shop_keeper_autogen/mocs_compilation.i"
+	@echo "... turtlebot3_shop_keeper_autogen/mocs_compilation.s"
 .PHONY : help
 
 

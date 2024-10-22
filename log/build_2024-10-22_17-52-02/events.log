@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000890] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict()}
+[0.001137] (turtlebot3_gazebo) JobStarted: {'identifier': 'turtlebot3_gazebo'}
+[0.013429] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'cmake'}
+[0.015048] (turtlebot3_gazebo) JobProgress: {'identifier': 'turtlebot3_gazebo', 'progress': 'build'}
+[0.015112] (turtlebot3_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'lucaslapdoglinux'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lucaslapdoglinux'), ('OLDPWD', '/home/lucaslapdoglinux/major_prok_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1043'), ('SYSTEMD_EXEC_PID', '1427'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3294'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install:/home/lucaslapdoglinux/major_prok_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/install:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lucaslapdoglinux'), ('JOURNAL_STREAM', '8:16386'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lucaslapdoglinux'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lucaslapdoglinux-Inspiron-5584:@/tmp/.ICE-unix/1200,unix/lucaslapdoglinux-Inspiron-5584:/tmp/.ICE-unix/1200'), ('INVOCATION_ID', '6a079a956f904031952c0441a037697a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.87V7V2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '22'), ('AMENT_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4ff8ffbc-aa30-410f-a015-495ac5f0d83f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3/local/lib/python3.10/dist-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math/lib/python3.10/site-packages:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_bringup:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_node:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_navigation2:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_msgs:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_description:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_cartographer:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_examples:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/lucaslapdoglinux/turtlebot3_ws/install/dynamixel_sdk:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_navigation:/home/lucaslapdoglinux/major_prok_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/install/navigation_tb3:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/turtlebot3_gazebo:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/transforms:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/point_cloud_perception:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/nodes:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/navigation_tb3:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble')]), 'shell': False}
+[0.049826] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099623] (-) TimerEvent: {}
+[0.199892] (-) TimerEvent: {}
+[0.203667] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[0.203863] (turtlebot3_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[0.203932] (turtlebot3_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[0.203988] (turtlebot3_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[0.204042] (turtlebot3_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[0.204095] (turtlebot3_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.204149] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[0.204202] (turtlebot3_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[0.204254] (turtlebot3_gazebo) StderrLine: {'line': b'  CMakeLists.txt:23 (find_package)\n'}
+[0.204305] (turtlebot3_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.204357] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[0.232177] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.283299] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.285518] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.294226] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.296164] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[0.299967] (-) TimerEvent: {}
+[0.302717] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[0.303183] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[0.315783] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[0.315951] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[0.316193] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[0.316378] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[0.316465] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[0.316528] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[0.316588] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[0.316644] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[0.316704] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[0.316766] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[0.316833] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[0.316889] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[0.400093] (-) TimerEvent: {}
+[0.500358] (-) TimerEvent: {}
+[0.559024] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.559634] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[0.560075] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[0.584420] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.598574] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.600447] (-) TimerEvent: {}
+[0.603583] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.621150] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.661869] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.679097] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.700586] (-) TimerEvent: {}
+[0.710125] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.710500] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[0.732694] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.737915] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.752169] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[0.785569] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.786489] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.786985] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[0.787234] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.787323] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.799348] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[0.799946] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[0.800422] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[0.800635] (-) TimerEvent: {}
+[0.800814] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.802500] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[0.802876] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[0.846594] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[0.860189] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[0.897785] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[0.900781] (-) TimerEvent: {}
+[0.911207] (turtlebot3_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[0.942739] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.943043] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.943405] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.946532] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[0.947180] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.976295] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.979586] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.988917] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.000936] (-) TimerEvent: {}
+[1.003276] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.020617] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.066686] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.101059] (-) TimerEvent: {}
+[1.111073] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.131758] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.172207] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.175544] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201182] (-) TimerEvent: {}
+[1.301477] (-) TimerEvent: {}
+[1.303044] (turtlebot3_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.357605] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.369708] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.401587] (-) TimerEvent: {}
+[1.501893] (-) TimerEvent: {}
+[1.516064] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.535032] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.536672] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.536821] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.601982] (-) TimerEvent: {}
+[1.655193] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.660614] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (add_executable):\n'}
+[1.660736] (turtlebot3_gazebo) StderrLine: {'line': b'  Cannot find source file:\n'}
+[1.660825] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[1.660882] (turtlebot3_gazebo) StderrLine: {'line': b'    src/main_window.cpp\n'}
+[1.660936] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[1.660988] (turtlebot3_gazebo) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[1.661042] (turtlebot3_gazebo) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[1.661093] (turtlebot3_gazebo) StderrLine: {'line': b'\n'}
+[1.661145] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[1.702104] (-) TimerEvent: {}
+[1.740120] (turtlebot3_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.742774] (turtlebot3_gazebo) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[1.756272] (turtlebot3_gazebo) StderrLine: {'line': b'gmake: *** [Makefile:498: cmake_check_build_system] Error 1\n'}
+[1.758211] (turtlebot3_gazebo) CommandEnded: {'returncode': 2}
+[1.802204] (-) TimerEvent: {}
+[1.815110] (turtlebot3_gazebo) JobEnded: {'identifier': 'turtlebot3_gazebo', 'rc': 2}
+[1.825506] (-) EventReactorShutdown: {}

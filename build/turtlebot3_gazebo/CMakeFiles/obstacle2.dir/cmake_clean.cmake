@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/obstacle2_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/obstacle2_autogen.dir/ParseCache.txt"
+  "obstacle2_autogen"
   "CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o"
   "CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o.d"
+  "CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o.d"
   "libobstacle2.pdb"
   "libobstacle2.so"
 )

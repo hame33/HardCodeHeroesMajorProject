@@ -1,0 +1,169 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PkgConfig)
+  does not match the name of the calling package (gazebo).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+  CMakeLists.txt:23 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Searching for dependencies of ignition-math6
+-- Looking for OGRE...
+-- Found Ogre Ghadamon (1.9.0)
+-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+-- Looking for OGRE_Paging...
+-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+-- Looking for OGRE_Terrain...
+-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+-- Looking for OGRE_Property...
+-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+-- Looking for OGRE_RTShaderSystem...
+-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+-- Looking for OGRE_Volume...
+-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+-- Looking for OGRE_Overlay...
+-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-transport8 -- found version 8.2.1
+-- Searching for dependencies of ignition-transport8
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.4
+-- Checking for module 'uuid'
+--   Found uuid, version 2.37.2
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Searching for dependencies of ignition-msgs5
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 9.0.0
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.14.0
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-fuel_tools4 -- found version 4.4.0
+-- Searching for dependencies of ignition-fuel_tools4
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.9.5
+-- Checking for module 'libzip'
+--   Found libzip, version 1.7.3
+-- Looking for ignition-common3 -- found version 3.14.0
+-- Looking for ignition-math6 -- found version 6.15.1
+-- Looking for ignition-msgs5 -- found version 5.8.1
+-- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo
+[ 19%] [34m[1mAutomatic MOC and UIC for target turtlebot3_shop_keeper[0m
+[ 19%] [34m[1mAutomatic MOC and UIC for target obstacle2[0m
+[ 19%] [34m[1mAutomatic MOC and UIC for target obstacles[0m
+[ 19%] [34m[1mAutomatic MOC and UIC for target obstacle1[0m
+[ 19%] Built target obstacle2_autogen
+[ 19%] Built target obstacles_autogen
+[ 19%] Built target obstacle1_autogen
+[ 19%] Built target turtlebot3_shop_keeper_autogen
+[35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/obstacle1_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/obstacles.dir/obstacles_autogen/mocs_compilation.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o[0m
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:[m[K In constructor ‘[01m[KMainWindow::MainWindow(QWidget*)[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:8:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::Buffer()[m[K’
+    8 |     tf_listener_(tf_buffer_[01;31m[K)[m[K
+      |                            [01;31m[K^[m[K
+In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/MainWindow.hpp:18[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::Buffer::Buffer(rclcpp::Clock::SharedPtr, tf2::Duration, rclcpp::Node::SharedPtr)[m[K’
+   73 |   TF2_ROS_PUBLIC [01;36m[KBuffer[m[K(
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:[m[K In lambda function:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:78:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class InventoryWaypointsNode[m[K’ {aka ‘[01m[Kclass InventoryWaypointsNode[m[K’} has no member named ‘[01m[Kstart_navigation[m[K’
+   78 |     inventory_node_->[01;31m[Kstart_navigation[m[K();
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:[m[K In lambda function:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:83:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class InventoryWaypointsNode[m[K’ {aka ‘[01m[Kclass InventoryWaypointsNode[m[K’} has no member named ‘[01m[Kstop_navigation[m[K’
+   83 |     inventory_node_->[01;31m[Kstop_navigation[m[K();
+      |                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/unordered_map:40[m[K,
+                 from [01m[K/usr/include/c++/11/functional:61[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h:142[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:43[m[K,
+                 from [01m[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/MainWindow.hpp:4[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = InventoryWaypointsNode; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = InventoryWaypointsNode][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = InventoryWaypointsNode; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = InventoryWaypointsNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<InventoryWaypointsNode>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = InventoryWaypointsNode; _Alloc = std::allocator<InventoryWaypointsNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = InventoryWaypointsNode; _Alloc = std::allocator<InventoryWaypointsNode>; _Args = {std::shared_ptr<rclcpp::Node>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<InventoryWaypointsNode>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = InventoryWaypointsNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<InventoryWaypointsNode>; _Args = {std::shared_ptr<rclcpp::Node>&}; _Tp = InventoryWaypointsNode][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = InventoryWaypointsNode; _Alloc = std::allocator<InventoryWaypointsNode>; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = InventoryWaypointsNode; _Args = {std::shared_ptr<rclcpp::Node>&}][m[K’
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:14:61:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode(std::shared_ptr<rclcpp::Node>&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/MainWindow.hpp:20[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp:1[m[K:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:23:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’
+   23 |   [01;36m[KInventoryWaypointsNode[m[K();
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:23:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:160: CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 85%] [32m[1mLinking CXX shared library libobstacles.so[0m
+gmake[1]: *** [CMakeFiles/Makefile2:147: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 85%] Built target obstacles
+[ 90%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[ 95%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[ 95%] Built target obstacle1
+[ 95%] Built target obstacle2
+gmake: *** [Makefile:146: all] Error 2

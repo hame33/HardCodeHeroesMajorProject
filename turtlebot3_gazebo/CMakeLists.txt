@@ -77,7 +77,7 @@ add_executable(${EXEC_NAME}
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
   src/WaypointManager.cpp
-  src/main_window.cpp  # Add your GUI source files here
+  src/MainWindow.cpp  # Add your GUI source files here
   # Add other GUI-related source files if any
 )
 

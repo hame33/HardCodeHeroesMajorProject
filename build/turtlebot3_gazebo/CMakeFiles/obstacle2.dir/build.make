@@ -69,10 +69,24 @@ include CMakeFiles/obstacle2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/obstacle2.dir/flags.make
 
+CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o: CMakeFiles/obstacle2.dir/flags.make
+CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o: obstacle2_autogen/mocs_compilation.cpp
+CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o: CMakeFiles/obstacle2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o -MF CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/obstacle2_autogen/mocs_compilation.cpp
+
+CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/obstacle2_autogen/mocs_compilation.cpp > CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/obstacle2_autogen/mocs_compilation.cpp -o CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o: CMakeFiles/obstacle2.dir/flags.make
 CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
 CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o: CMakeFiles/obstacle2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o -MF CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o.d -o CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
 
 CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.i: cmake_force
@@ -85,11 +99,13 @@ CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.c
 
 # Object files for target obstacle2
 obstacle2_OBJECTS = \
+"CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o"
 
 # External object files for target obstacle2
 obstacle2_EXTERNAL_OBJECTS =
 
+libobstacle2.so: CMakeFiles/obstacle2.dir/obstacle2_autogen/mocs_compilation.cpp.o
 libobstacle2.so: CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o
 libobstacle2.so: CMakeFiles/obstacle2.dir/build.make
 libobstacle2.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
@@ -144,7 +160,7 @@ libobstacle2.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.0
 libobstacle2.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 libobstacle2.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 libobstacle2.so: CMakeFiles/obstacle2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libobstacle2.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libobstacle2.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obstacle2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

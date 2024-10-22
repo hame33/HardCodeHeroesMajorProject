@@ -11,3 +11,7 @@
 /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/install.dir
 /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/install/local.dir
 /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/install/strip.dir
+/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/turtlebot3_shop_keeper_autogen.dir
+/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/obstacle1_autogen.dir
+/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/obstacle2_autogen.dir
+/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles/obstacles_autogen.dir

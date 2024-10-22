@@ -69,10 +69,24 @@ include CMakeFiles/turtlebot3_shop_keeper.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 
+CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
+CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o: turtlebot3_shop_keeper_autogen/mocs_compilation.cpp
+CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp
+
+CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp > CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp -o CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp
 CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp
 
 CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.s: cmake_force
 CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp
 CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp
 
 CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.s: cmake_fo
 CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/SensorProcessor.cpp
 CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/SensorProcessor.cpp
 
 CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.s: cmake_force
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointGenerator.cpp
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointGenerator.cpp
 
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.s: cmake_force
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp
 
 CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.i: cmake_force
@@ -139,22 +153,40 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp -o CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.s
 
+CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/flags.make
+CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp
+CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o: CMakeFiles/turtlebot3_shop_keeper.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o -MF CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o.d -o CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o -c /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp
+
+CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp > CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.i
+
+CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/MainWindow.cpp -o CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.s
+
 # Object files for target turtlebot3_shop_keeper
 turtlebot3_shop_keeper_OBJECTS = \
+"CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o" \
 "CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o" \
 "CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o" \
 "CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o" \
-"CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o"
+"CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o" \
+"CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o"
 
 # External object files for target turtlebot3_shop_keeper
 turtlebot3_shop_keeper_EXTERNAL_OBJECTS =
 
+turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o
+turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/build.make
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -168,35 +200,56 @@ turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_intr
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librclcpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libdart.so.6.12.1
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.7.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.14.0
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libvisualization_msgs__rosidl_generator_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_ros.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libmessage_filters.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librclcpp_action.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librclcpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/liblibstatistics_collector.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librmw_implementation.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libament_index_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_logging_spdlog.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_logging_interface.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_yaml_param_parser.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libyaml.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so
@@ -213,46 +266,109 @@ turtlebot3_shop_keeper: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesuppo
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_action.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_yaml_param_parser.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libyaml.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libtracetools.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librmw_implementation.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libament_index_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_logging_spdlog.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcl_logging_interface.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librmw.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 turtlebot3_shop_keeper: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_runtime_c.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcpputils.so
-turtlebot3_shop_keeper: /opt/ros/humble/lib/librcutils.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_typesupport_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcpputils.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librosidl_runtime_c.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/librcutils.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libblas.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/liblapack.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libblas.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/liblapack.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.12.1
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libccd.so.2.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libm.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libfcl.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libassimp.so
+turtlebot3_shop_keeper: /opt/ros/humble/lib/x86_64-linux-gnu/liboctomap.so.1.9.8
+turtlebot3_shop_keeper: /opt/ros/humble/lib/x86_64-linux-gnu/liboctomath.so.1.9.8
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.2.1
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.4.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.8.1
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.1
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.0
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libuuid.so
+turtlebot3_shop_keeper: /usr/lib/x86_64-linux-gnu/libuuid.so
 turtlebot3_shop_keeper: CMakeFiles/turtlebot3_shop_keeper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable turtlebot3_shop_keeper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable turtlebot3_shop_keeper"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlebot3_shop_keeper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

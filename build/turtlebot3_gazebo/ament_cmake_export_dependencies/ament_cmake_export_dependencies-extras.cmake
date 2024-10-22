@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "gazebo_ros_pkgs;geometry_msgs;nav_msgs;rclcpp;sensor_msgs;tf2;visualization_msgs")
+set(_exported_dependencies "gazebo_ros_pkgs;geometry_msgs;nav_msgs;rclcpp;sensor_msgs;tf2;tf2_ros;tf2_geometry_msgs;visualization_msgs")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

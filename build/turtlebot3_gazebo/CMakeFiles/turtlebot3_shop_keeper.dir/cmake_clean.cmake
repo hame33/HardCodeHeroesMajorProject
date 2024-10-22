@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/turtlebot3_shop_keeper_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/turtlebot3_shop_keeper_autogen.dir/ParseCache.txt"
+  "turtlebot3_shop_keeper_autogen"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o.d"
+  "CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o"
+  "CMakeFiles/turtlebot3_shop_keeper.dir/src/MainWindow.cpp.o.d"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o.d"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o"
@@ -9,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o.d"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o"
   "CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o.d"
+  "CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/turtlebot3_shop_keeper.dir/turtlebot3_shop_keeper_autogen/mocs_compilation.cpp.o.d"
   "turtlebot3_shop_keeper"
   "turtlebot3_shop_keeper.pdb"
 )
