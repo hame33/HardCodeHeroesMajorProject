@@ -12,13 +12,15 @@
 #include <memory>
 #include <map>
 #include "Constants.hpp"
+#include "MapManager.hpp"
 
 // --- WaypointManager class interface ---
 class WaypointManager : public rclcpp::Node
 {
 public:
   // Constructor - Initalise WaypointManager class
-  WaypointManager(rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
+  WaypointManager(std::shared_ptr<MapManager> map_manager,
+                  rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
                   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub,
                   rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_pub);
 
@@ -28,10 +30,12 @@ public:
   void print_waypoints(); // Prints out waypoints
   void publish_waypoints(); // Publishes waypoints 
   void publish_markers(); // Publishes waypoints as markers 
-  void publish_goals(); // Publishes Nav2 goals (furthest waypoint becomes goal)
-  void publish_goals(std::pair<double,double> closest_frontier);  // Publishes Nav2 goals (closest frontier becomes goal)
-  void process_goal_result(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result);  // Processes nav2 goal result 
+  void publish_goal();  // Publishes Nav2 goals (closest frontier becomes goal)
+  void process_goal_result(const nav2_msgs::action::NavigateToPose::Result goal_result);  // Processes nav2 goal result 
 private:
+  // --- Components ---
+  std::shared_ptr<MapManager> map_manager_;
+  
   // --- ROS Publishers ---
   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub_;  // Publisher for waypoints
   rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;  // Publisher for waypoints as markers
@@ -39,6 +43,7 @@ private:
 
   // --- Data ---
   std::map<double ,geometry_msgs::msg::Point::SharedPtr> waypoints_;  // Map storing waypoints and their associated distance from bot
+  std::pair<double, double> closest_frontier_goal_;  // Closest frontier pixel to robot in world coordinates
 };
 
 

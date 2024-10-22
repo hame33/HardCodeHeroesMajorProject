@@ -11,13 +11,15 @@
 #include <map>
 
 // --- Constructor ---
-WaypointManager::WaypointManager(rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
+WaypointManager::WaypointManager(std::shared_ptr<MapManager> map_manager,
+                                 rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr waypoint_pub,
                                  rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub,
                                  rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_pub)
-: Node("waypoint_manager"), waypoint_pub_(waypoint_pub), marker_pub_(marker_pub), goal_pub_(goal_pub)
+: Node("waypoint_manager"), map_manager_(map_manager), waypoint_pub_(waypoint_pub), marker_pub_(marker_pub), goal_pub_(goal_pub)
 {
   waypoints_[0] = std::make_shared<geometry_msgs::msg::Point>();
   std::cout << "Waypoint manager constructor" << std::endl;
+  closest_frontier_goal_ = std::make_pair(0.0,0.0);
 }
 
 // --- add_waypoint - Adds waypoint to the map ---
@@ -88,15 +90,17 @@ void WaypointManager::publish_markers()
 }
 
 // --- publish_goals ---
-void WaypointManager::publish_goals(std::pair<double,double> closest_frontier)
+void WaypointManager::publish_goal()
 {
+  closest_frontier_goal_ = map_manager_->get_closest_frontier();
+
   auto goal = geometry_msgs::msg::PoseStamped();
   goal.header.frame_id = "map";
   
   goal.header.stamp = this->get_clock()->now();
 
-    goal.pose.position.x = closest_frontier.first;
-    goal.pose.position.y = closest_frontier.second;
+    goal.pose.position.x = closest_frontier_goal_.first;
+    goal.pose.position.y = closest_frontier_goal_.second;
     goal.pose.position.z = 0.0;
 
     goal.pose.orientation.x = 0.0;
@@ -108,51 +112,8 @@ void WaypointManager::publish_goals(std::pair<double,double> closest_frontier)
     RCLCPP_INFO(this->get_logger(), "Published goal @: [%f, %f]",goal.pose.position.x, goal.pose.position.y);
 }
 
-void WaypointManager::publish_goals()
-{
-  auto goal = geometry_msgs::msg::PoseStamped();
-  goal.header.frame_id = "map";
-  
-  goal.header.stamp = this->get_clock()->now();
-
-  if(waypoints_.find(Constants::MAX_SCAN_DISTANCE) != waypoints_.end())
-  {
-    geometry_msgs::msg::Point::SharedPtr waypoint_as_goal = std::make_shared<geometry_msgs::msg::Point>();
-    waypoint_as_goal = waypoints_.at(Constants::MAX_SCAN_DISTANCE);
-
-    goal.pose.position.x = waypoint_as_goal->x;
-    goal.pose.position.y = waypoint_as_goal->y;
-    goal.pose.position.z = 0.0;
-
-    goal.pose.orientation.x = 0.0;
-    goal.pose.orientation.y = 0.0;
-    goal.pose.orientation.z = 0.0;
-    goal.pose.orientation.w = 1.0;
-
-    goal_pub_->publish(goal);
-    RCLCPP_INFO(this->get_logger(), "Published goal @: [%f, %f]",waypoint_as_goal->x, waypoint_as_goal->y);
-  }
-  else
-  {
-    std::cout << "Waypoint with key " << Constants::MAX_SCAN_DISTANCE << " not found" << std::endl;
-  }
-}
-
 // --- process_goal_result ---
-void WaypointManager::process_goal_result(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
+void WaypointManager::process_goal_result(const nav2_msgs::action::NavigateToPose::Result goal_result)
 {
-  switch (result.code) {
-    case rclcpp_action::ResultCode::SUCCEEDED:
-      RCLCPP_INFO(this->get_logger(), "Goal succeeded!");
-      break;
-    case rclcpp_action::ResultCode::ABORTED:
-      RCLCPP_INFO(this->get_logger(), "Goal was aborted.");
-      break;
-    case rclcpp_action::ResultCode::CANCELED:
-      RCLCPP_INFO(this->get_logger(), "Goal was canceled.");
-      break;
-    default:
-      RCLCPP_INFO(this->get_logger(), "Unknown result.");
-      break;
-  }
+  std::cout << "Process_goal_result" << std::endl;
 }

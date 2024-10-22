@@ -648,7 +648,28 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: \
  /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/Constants.hpp \
  /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointGenerator.hpp \
  /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp \
- /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/MapManager.hpp \
+ /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp \
+ /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp \
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
+ /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp \
+ /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp \
+ /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
@@ -677,13 +698,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: \
  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__functions.h \
  /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.h \
  /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
  /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/types.hpp \
  /usr/include/c++/11/climits \
@@ -695,8 +710,6 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/visibility_control.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp \
@@ -706,6 +719,7 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: \
  /opt/ros/humble/include/rcl_action/rcl_action/goal_state_machine.h \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp \
  /opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp \
+ /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/MapManager.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
  /opt/ros/humble/include/tf2/tf2/buffer_core.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h \
@@ -800,22 +814,8 @@ CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h \
  /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/follow_waypoints.hpp \
  /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/follow_waypoints__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
  /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/follow_waypoints__builder.hpp \
  /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/follow_waypoints__traits.hpp \
- /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp \
- /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp \
- /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp \
- /opt/ros/humble/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/occupancy_grid.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__struct.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__struct.hpp \

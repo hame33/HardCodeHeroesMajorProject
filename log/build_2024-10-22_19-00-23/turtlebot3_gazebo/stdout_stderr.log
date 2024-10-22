@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[ 15%] Built target obstacle1
+[ 30%] Built target obstacles
+[ 46%] Built target obstacle2
+[ 53%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:4[m[K:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:[m[K In constructor ‘[01m[KWaypointManager::WaypointManager(std::shared_ptr<MapManager>, rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::SharedPtr)[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:42:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KWaypointManager::map_manager_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   42 |   std::shared_ptr<MapManager> [01;35m[Kmap_manager_[m[K;
+      |                               [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:37:59:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr WaypointManager::waypoint_pub_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   37 | lisher<geometry_msgs::msg::Point>::SharedPtr [01;35m[Kwaypoint_pub_[m[K;  // Publisher for waypoints
+      |                                              [01;35m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:14:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   14 | [01;35m[KWaypointManager[m[K::WaypointManager(std::shared_ptr<MapManager> map_manager,
+      | [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:[m[K In member function ‘[01m[Kvoid WaypointManager::process_goal_result(nav2_msgs::action::NavigateToPose::Result)[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:118:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Result[m[K’ {aka ‘[01m[Kconst struct nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcode[m[K’
+  118 |   switch (goal_result.[01;31m[Kcode[m[K) {
+      |                       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:132: CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

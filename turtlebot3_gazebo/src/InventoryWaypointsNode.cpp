@@ -26,12 +26,13 @@ InventoryWaypointsNode::InventoryWaypointsNode()
 
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
-  waypoint_manager_ = std::make_shared<WaypointManager>(this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
+  map_manager_ = std::make_shared<MapManager>(sensor_processor_);
+  waypoint_manager_ = std::make_shared<WaypointManager>(map_manager_,
+                                                        this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
                                                         this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
                                                         this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
   waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
   // map_manager_ = std::make_shared<MapManager>(sensor_processor_);
-  map_manager_ = std::make_shared<MapManager>(sensor_processor_);
 
   std::cout << "node class components initialised" << std::endl;
 
@@ -51,7 +52,7 @@ InventoryWaypointsNode::InventoryWaypointsNode()
   qos, 
   std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1));
 
-  goal_result_sub_ = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+  goal_result_sub_ = this->create_subscription<nav2_msgs::action::NavigateToPose::Result>(
     "navigate_to_pose/result",
     qos,
     std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1));
@@ -92,10 +93,7 @@ InventoryWaypointsNode::~InventoryWaypointsNode()
 // --- waypoint_callback ---
 void InventoryWaypointsNode::waypoint_callback()
 {
-  std::pair<double,double> closest_frontier = std::make_pair(0.0,0.0);
-  closest_frontier = map_manager_->get_closest_frontier();
 
-  waypoint_manager_->publish_goals(closest_frontier);
 }
 
 // --- scan_callback ---
@@ -114,10 +112,11 @@ void InventoryWaypointsNode::odom_callback(const nav_msgs::msg::Odometry::Shared
 void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
   map_manager_->process_map_data(ocp_grid_msg);
+  waypoint_manager_->publish_goal();
 }
 
 // --- goal_result_callback ---
-void InventoryWaypointsNode::goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
+void InventoryWaypointsNode::goal_result_callback(const nav2_msgs::action::NavigateToPose::Result goal_result)
 {
-  waypoint_manager_->process_goal_result(result);
+  waypoint_manager_->process_goal_result(goal_result);
 }

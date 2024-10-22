@@ -1,0 +1,177 @@
+[0.022s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.061s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.226s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.226s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.226s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.226s]   problems in calling code that expects `find_package` result variables
+[0.226s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.226s] Call Stack (most recent call first):
+[0.226s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.226s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.226s]   CMakeLists.txt:23 (find_package)
+[0.226s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.227s] [0m
+[0.256s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.294s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.297s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.304s] -- Searching for dependencies of ignition-math6
+[0.306s] -- Looking for OGRE...
+[0.312s] -- Found Ogre Ghadamon (1.9.0)
+[0.312s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.322s] -- Looking for OGRE_Paging...
+[0.322s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.322s] -- Looking for OGRE_Terrain...
+[0.323s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.323s] -- Looking for OGRE_Property...
+[0.323s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.323s] -- Looking for OGRE_RTShaderSystem...
+[0.324s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.324s] -- Looking for OGRE_Volume...
+[0.324s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.324s] -- Looking for OGRE_Overlay...
+[0.324s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.561s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.562s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.562s] -- Searching for dependencies of ignition-transport8
+[0.586s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.601s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.606s] -- Checking for module 'libzmq >= 4'
+[0.622s] --   Found libzmq , version 4.3.4
+[0.668s] -- Checking for module 'uuid'
+[0.687s] --   Found uuid, version 2.37.2
+[0.726s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.726s] -- Searching for dependencies of ignition-msgs5
+[0.752s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.757s] -- Checking for module 'tinyxml2'
+[0.771s] --   Found tinyxml2, version 9.0.0
+[0.810s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.811s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.812s] -- Searching for dependencies of ignition-common3
+[0.812s] -- Looking for dlfcn.h - found
+[0.812s] -- Looking for libdl - found
+[0.826s] -- Searching for <ignition-common3> component [graphics]
+[0.827s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.828s] -- Searching for dependencies of ignition-common3-graphics
+[0.828s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.830s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.831s] -- Searching for dependencies of ignition-fuel_tools4
+[0.875s] -- Checking for module 'jsoncpp'
+[0.890s] --   Found jsoncpp, version 1.9.5
+[0.936s] -- Checking for module 'libzip'
+[0.952s] --   Found libzip, version 1.7.3
+[0.986s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.986s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.987s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.990s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[0.990s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.017s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.021s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.031s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.045s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.064s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.111s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.133s] -- Found nav2_msgs: 1.1.16 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.190s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.226s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.230s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.360s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.408s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.419s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.442s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.448s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.510s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.514s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.515s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.517s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.625s] -- Configuring done
+[1.677s] -- Generating done
+[1.683s] -- Build files have been written to: /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo
+[1.721s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[1.727s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[1.727s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[1.731s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[1.778s] [  7%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[1.792s] [ 15%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[1.799s] [ 30%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/SensorProcessor.cpp.o[0m
+[1.799s] [ 30%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[1.804s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointManager.cpp.o[0m
+[1.804s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/WaypointGenerator.cpp.o[0m
+[1.806s] [ 53%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[1.815s] [ 61%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[3.644s] [ 69%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/MapManager.cpp.o[0m
+[13.338s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:4[m[K:
+[13.339s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:[m[K In constructor ‘[01m[KWaypointManager::WaypointManager(std::shared_ptr<MapManager>, rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::SharedPtr)[m[K’:
+[13.340s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:42:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KWaypointManager::map_manager_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.341s]    42 |   std::shared_ptr<MapManager> [01;35m[Kmap_manager_[m[K;
+[13.343s]       |                               [01;35m[K^~~~~~~~~~~~[m[K
+[13.345s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:37:59:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr WaypointManager::waypoint_pub_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.347s]    37 |   rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr [01;35m[Kwaypoint_pub_[m[K;  // Publisher for waypoints
+[13.348s]       |                                                           [01;35m[K^~~~~~~~~~~~~[m[K
+[13.352s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/WaypointManager.cpp:14:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.352s]    14 | [01;35m[KWaypointManager[m[K::WaypointManager(std::shared_ptr<MapManager> map_manager,
+[13.352s]       | [01;35m[K^~~~~~~~~~~~~~~[m[K
+[13.677s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[13.677s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:92:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResul[m[K’ is not a member of ‘[01m[Krclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>[m[K’
+[13.677s]    46 |   rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::[01;31m[KWrappedResul[m[K::SharedPtr goal_result_sub_;  //Subscriber to the nav2 goal result client
+[13.678s]       |                                                                                            [01;31m[K^~~~~~~~~~~~[m[K
+[13.678s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.678s]    46 |   rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResul::SharedPtr [01;31m[Kgoal_result_sub_[m[K;  //Subscriber to the nav2 goal result client
+[13.678s]       |                                                                                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.678s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[13.678s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[13.679s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[13.772s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[13.772s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:54:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_result_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_result_callback[m[K’?
+[13.772s]    54 |   [01;31m[Kgoal_result_sub_[m[K = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+[13.773s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.773s]       |   [32m[Kgoal_result_callback[m[K
+[13.935s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp:3[m[K:
+[13.940s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:92:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResul[m[K’ is not a member of ‘[01m[Krclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>[m[K’
+[13.941s]    46 | alHandle<nav2_msgs::action::NavigateToPose>::[01;31m[KWrappedResul[m[K::SharedPtr goal_result_sub_;  //Subscriber to the nav2 goal result client
+[13.943s]       |                                              [01;31m[K^~~~~~~~~~~~[m[K
+[13.944s] 
+[13.946s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.946s]    46 | on::NavigateToPose>::WrappedResul::SharedPtr [01;31m[Kgoal_result_sub_[m[K;  //Subscriber to the nav2 goal result client
+[13.946s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.947s] 
+[13.947s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[13.947s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[13.947s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[15.865s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:76: CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o] Error 1
+[15.865s] gmake[2]: *** Waiting for unfinished jobs....
+[18.372s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[18.372s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[18.372s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[18.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[18.372s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:6[m[K,
+[18.373s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[18.373s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = WaypointManager; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; _Tp = WaypointManager][m[K’:
+[18.373s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = WaypointManager; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; _Tp = WaypointManager; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<WaypointManager>][m[K’
+[18.373s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; _Tp = WaypointManager; _Alloc = std::allocator<WaypointManager>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[18.374s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = WaypointManager; _Alloc = std::allocator<WaypointManager>; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[18.374s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<WaypointManager>; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; _Tp = WaypointManager; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[18.374s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<WaypointManager>; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}; _Tp = WaypointManager][m[K’
+[18.374s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = WaypointManager; _Alloc = std::allocator<WaypointManager>; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}][m[K’
+[18.375s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = WaypointManager; _Args = {std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> >, std::allocator<void> > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<void> > >}][m[K’
+[18.375s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:29:56:[m[K   required from here
+[18.375s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWaypointManager::WaypointManager(std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > > >, std::shared_ptr<rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > > >, std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >)[m[K’
+[18.375s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[18.375s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.375s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointGenerator.hpp:11[m[K,
+[18.375s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:14[m[K,
+[18.376s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[18.376s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:22:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KWaypointManager::WaypointManager(std::shared_ptr<MapManager>, rclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > >::SharedPtr, rclcpp::Publisher<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >::SharedPtr)[m[K’
+[18.376s]    22 |   [01;36m[KWaypointManager[m[K(std::shared_ptr<MapManager> map_manager,
+[18.376s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[18.376s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:22:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[27.527s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+[27.528s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[27.528s] gmake[1]: *** Waiting for unfinished jobs....
+[29.584s] [ 76%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[30.015s] [ 84%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[30.092s] [ 84%] Built target obstacle1
+[30.464s] [ 84%] Built target obstacles
+[31.751s] [ 92%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[32.013s] [ 92%] Built target obstacle2
+[32.014s] gmake: *** [Makefile:146: all] Error 2
+[32.017s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

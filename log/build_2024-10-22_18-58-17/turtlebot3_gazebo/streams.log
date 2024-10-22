@@ -1,0 +1,23 @@
+[0.021s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.103s] [ 15%] Built target obstacle1
+[0.117s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[0.117s] [ 38%] Built target obstacles
+[0.120s] [ 53%] Built target obstacle2
+[3.371s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In member function ‘[01m[Kvoid InventoryWaypointsNode::goal_result_callback(nav2_msgs::action::NavigateToPose::Result)[m[K’:
+[3.371s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:121:42:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Result[m[K’ {aka ‘[01m[Kconst nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult&[m[K’
+[3.371s]   121 |   waypoint_manager_->process_goal_result([01;31m[Kgoal_result[m[K);
+[3.371s]       |                                          [01;31m[K^~~~~~~~~~~[m[K
+[3.371s]       |                                          [01;31m[K|[m[K
+[3.371s]       |                                          [01;31m[Kconst Result {aka const nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >}[m[K
+[3.371s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointGenerator.hpp:11[m[K,
+[3.372s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:14[m[K,
+[3.372s]                  from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[3.372s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/WaypointManager.hpp:34:117:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WaypointManager::process_goal_result(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult&)[m[K’
+[3.372s]    34 | [01;36m[Ksgs::action::NavigateToPose>::WrappedResult& result[m[K);  // Processes nav2 goal result
+[3.372s]       | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[3.372s] 
+[9.806s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+[9.806s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[9.806s] gmake: *** [Makefile:146: all] Error 2
+[9.808s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

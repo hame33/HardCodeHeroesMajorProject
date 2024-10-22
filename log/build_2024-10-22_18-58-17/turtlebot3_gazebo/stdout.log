@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[ 15%] Built target obstacle1
+[ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[ 38%] Built target obstacles
+[ 53%] Built target obstacle2

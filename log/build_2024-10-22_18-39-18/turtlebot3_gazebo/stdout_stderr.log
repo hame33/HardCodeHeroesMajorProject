@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[ 30%] Built target obstacle2
+[ 30%] Built target obstacles
+[ 46%] Built target obstacle1
+[ 53%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp:3[m[K:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kstruct rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult[m[K’ does not name a type
+   46 | sgs::action::NavigateToPose>::WrappedResult::[01;31m[KSharedPtr[m[K goal_result_sub_;  // Subscriber to the nav2 goal result client  // --- ROS Services ---
+      |                                              [01;31m[K^~~~~~~~~[m[K
+
+In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kstruct rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult[m[K’ does not name a type
+   46 |   rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult::[01;31m[KSharedPtr[m[K goal_result_sub_;  // Subscriber to the nav2 goal result client  // --- ROS Services ---
+      |                                                                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:55:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_result_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_result_callback[m[K’?
+   55 |   [01;31m[Kgoal_result_sub_[m[K = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+      |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |   [32m[Kgoal_result_callback[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:76: CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
