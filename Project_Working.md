@@ -19,5 +19,6 @@
     3. ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=TRUE
     4. ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=TRUE
     5. run turtlebot3_shop_navigator and turtlebot3_shop_keeper
+    6. if i run ros2 launch nav2_bringup bringup.launch.py map:=map.yaml, thats why the localisation doesn't come up as active
 
 

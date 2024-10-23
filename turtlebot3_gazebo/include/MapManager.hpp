@@ -50,7 +50,7 @@ private:
 
   // --- Components ---
   std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
-  std::shared_ptr<WaypointManager> waypoint_manager_;  // Waypoint managing component
+  std::weak_ptr<WaypointManager> waypoint_manager_;  // Waypoint managing component
 
   // --- Data ---
   std::vector<std::pair<int, int>> frontier_pixels_;  // Vector storing frontier pixels (free space bordering unknown) 

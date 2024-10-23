@@ -12,6 +12,7 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include "SensorProcessor.hpp"
 #include "WaypointGenerator.hpp"
+#include "MotionController.hpp"
 #include "WaypointManager.hpp"
 #include "MapManager.hpp"
 #include "Constants.hpp"
@@ -51,6 +52,10 @@ private:
   std::shared_ptr<WaypointGenerator> waypoint_generator_; // Waypoint generating component
   std::shared_ptr<WaypointManager> waypoint_manager_;     // Waypoint managing component
   std::shared_ptr<MapManager> map_manager_;  // Map Managing component
+  std::shared_ptr<MotionController> motion_controller_;   // Motion control component
+
+  // --- ROS Action Clients ---
+  rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client_;  // Action client for following nav2 goals
 
   // --- TF2 Components ---
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;

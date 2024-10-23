@@ -11,59 +11,78 @@
 
 using namespace std::chrono_literals;
 
-// --- InventroyWaypointsNode class implementation ---
+// --- InventoryWaypointsNode class implementation ---
 InventoryWaypointsNode::InventoryWaypointsNode()
 : Node("inventory_waypoints_node")
 {
-  // Generalised Qos to be used
-  auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
+    // Generalized QoS to be used
+    auto qos = rclcpp::QoS(rclcpp::KeepLast(10));
 
-  std::cout << "qos defined" << std::endl;
+    std::cout << "QoS defined" << std::endl;
 
-  // Initialise TF2 components
-  tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
-  tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+    // Initialize TF2 components
+    tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-  // Initialise Components
-  sensor_processor_ = std::make_shared<SensorProcessor>();
-  map_manager_ = std::make_shared<MapManager>(sensor_processor_, waypoint_manager_);
-  waypoint_manager_ = std::make_shared<WaypointManager>(map_manager_,
-                                                        this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
-                                                        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
-                                                        this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos));
-  waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
-  // map_manager_ = std::make_shared<MapManager>(sensor_processor_);
+    // Initialise clients
+    navigator_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
 
-  std::cout << "node class components initialised" << std::endl;
+    // Initialize components
+    motion_controller_ = std::make_shared<MotionController>(navigator_client_,
+                                                          this->create_publisher<std_msgs::msg::String>("goal_result",qos));
+    sensor_processor_ = std::make_shared<SensorProcessor>();
+    waypoint_manager_ = std::make_shared<WaypointManager>(
+        nullptr, // Initially pass nullptr for map_manager_
+        motion_controller_,
+        this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
+        this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
+        this->create_publisher<geometry_msgs::msg::PoseStamped>("inventory_goals", qos)
+    );
 
-  // Initialise Subscribers
-  scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
-  "scan",
-  rclcpp::SensorDataQoS(),
-  std::bind(&InventoryWaypointsNode::scan_callback, this, std::placeholders::_1));
+    // Initialize map_manager_ with the waypoint_manager_
+    map_manager_ = std::make_shared<MapManager>(sensor_processor_, waypoint_manager_);
 
-  odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-  "odom",
-  qos,
-  std::bind(&InventoryWaypointsNode::odom_callback, this, std::placeholders::_1));
+    // Update waypoint_manager_ with map_manager_
+    waypoint_manager_->set_map_manager(map_manager_);
 
-  ocp_grid_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
-  "map", 
-  qos, 
-  std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1));
+    waypoint_generator_ = std::make_shared<WaypointGenerator>(sensor_processor_, waypoint_manager_);
 
-  goal_result_sub_ = this->create_subscription<std_msgs::msg::String>(
-    "goal_result",
-    qos,
-    std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1));
+    std::cout << "Node class components initialized" << std::endl;
 
-  // Initialise Timer
-  update_timer_ = this->create_wall_timer(
-    10ms,
-    std::bind(&InventoryWaypointsNode::waypoint_callback, this));
+    // Initialize Subscribers
+    scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+        "scan",
+        rclcpp::SensorDataQoS(),
+        std::bind(&InventoryWaypointsNode::scan_callback, this, std::placeholders::_1)
+    );
 
-  RCLCPP_INFO(this->get_logger(), "InventoryWaypointsNode has been initialized");
+    odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+        "odom",
+        qos,
+        std::bind(&InventoryWaypointsNode::odom_callback, this, std::placeholders::_1)
+    );
+
+    ocp_grid_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+        "map", 
+        qos, 
+        std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1)
+    );
+
+    goal_result_sub_ = this->create_subscription<std_msgs::msg::String>(
+        "goal_result",
+        qos,
+        std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1)
+    );
+
+    // Initialize Timer
+    update_timer_ = this->create_wall_timer(
+        10ms,
+        std::bind(&InventoryWaypointsNode::waypoint_callback, this)
+    );
+
+    RCLCPP_INFO(this->get_logger(), "InventoryWaypointsNode has been initialized");
 }
+
 
 // --- Destructor ---
 InventoryWaypointsNode::~InventoryWaypointsNode()

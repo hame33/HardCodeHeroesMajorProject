@@ -72,7 +72,8 @@ add_executable(${EXEC_NAME}
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
   src/WaypointManager.cpp
-  src/MapManager.cpp)
+  src/MapManager.cpp
+  src/MotionController.cpp)
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)

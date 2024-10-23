@@ -22,7 +22,8 @@ namespace Constants {
 
   // --- Map Parameters ---
   constexpr int MIN_PIXELS_FROM_WALL = 15;
-  constexpr int MAX_FREE_SPACE_VALUE = 60;
+  constexpr int MAX_FREE_SPACE_VALUE = 40;
+  constexpr double COMPLETED_GOAL_ERROR = 1e-4;
 
   // --- Goal Parameters ---
   enum GOAL_STATUS {  // Enum for the different goal result options
