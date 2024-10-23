@@ -1,0 +1,4 @@
+source;share/shape_detector/local_setup.bash
+source;share/shape_detector/local_setup.dsv
+source;share/shape_detector/local_setup.sh
+source;share/shape_detector/local_setup.zsh
