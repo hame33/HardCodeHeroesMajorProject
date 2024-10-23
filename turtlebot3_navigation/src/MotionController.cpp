@@ -7,8 +7,8 @@
 // --- MotionController Implementation ---
 
 // --- Constructor ---
-MotionController::MotionController(rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client)
-: Node("goal_navigator_motion_controller"), navigator_client_(navigator_client)
+MotionController::MotionController(rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr navigator_client, rclcpp::Publisher<std_msgs::msg::String>::SharedPtr goal_result_pub)
+: Node("goal_navigator_motion_controller"), navigator_client_(navigator_client), goal_result_pub_(goal_result_pub)
 {
 
 }
@@ -40,15 +40,24 @@ void MotionController::goal_follower(geometry_msgs::msg::PoseStamped goal_to_fol
 // --- goal_result_callback ---
 void MotionController::goal_result_callback(const rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult& result)
 {
-    switch (result.code) {
+  std_msgs::msg::String msg;
+
+  switch (result.code) 
+  {
     case rclcpp_action::ResultCode::SUCCEEDED:
       std::cout << "Goal reached successfully!" << std::endl;
+      msg.data = 1;
+      goal_result_pub_->publish(msg);
       break;
     case rclcpp_action::ResultCode::ABORTED:
       std::cout << "Goal was aborted." << std::endl;
+      msg.data = 2;
+      goal_result_pub_->publish(msg);
       break;
     case rclcpp_action::ResultCode::CANCELED:
       std::cout << "Goal was canceled." << std::endl;
+      msg.data = 3;
+      goal_result_pub_->publish(msg);
       break;
     default:
       std::cout << "Unknown result code." << std::endl;

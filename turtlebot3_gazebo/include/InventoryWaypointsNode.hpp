@@ -22,6 +22,7 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <nav2_msgs/action/navigate_to_pose.hpp>
 #include <rclcpp_action/rclcpp_action.hpp>
+#include <std_msgs/msg/string.hpp>
 
 // --- InventoryWaypointsNode Class Interface ---
 class InventoryWaypointsNode : public rclcpp::Node 
@@ -43,7 +44,7 @@ private:
   rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;     // Subscriber for LIDAR scan data
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;         // Subscriber for odometry data
   rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr ocp_grid_sub_;  // Subscriber to the occupancy grid topic 
-  rclcpp::Subscription<nav2_msgs::action::NavigateToPose::Result>::SharedPtr goal_result_sub_;  // Subscriber to the nav2 goal result client  //rclcpp::Service<>
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr goal_result_sub_;  // Subscriber to the nav2 goal result client  //rclcpp::Service<>
 
   // --- Components ---
   std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
@@ -63,7 +64,7 @@ private:
   void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg); // callback to handle scan data 
   void odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg); // callback to handle odom data
   void map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);  // Handles map and occupancy grid data
-  void goal_result_callback(const nav2_msgs::action::NavigateToPose::Result goal_result);  // Handles nav2 goal result data
+  void goal_result_callback(const std_msgs::msg::String goal_result);  // Handles nav2 goal result data
 };
 
 

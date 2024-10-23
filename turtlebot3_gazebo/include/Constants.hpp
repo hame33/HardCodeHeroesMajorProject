@@ -22,7 +22,14 @@ namespace Constants {
 
   // --- Map Parameters ---
   constexpr int MIN_PIXELS_FROM_WALL = 15;
+  constexpr int MAX_FREE_SPACE_VALUE = 60;
 
+  // --- Goal Parameters ---
+  enum GOAL_STATUS {  // Enum for the different goal result options
+    SUCCESS = 1,
+    ABORTED = 2,
+    CANCELED = 3
+  };
 }
 
 #endif  // CONSTANTS_HPP_

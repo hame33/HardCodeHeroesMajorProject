@@ -26,7 +26,7 @@ InventoryWaypointsNode::InventoryWaypointsNode()
 
   // Initialise Components
   sensor_processor_ = std::make_shared<SensorProcessor>();
-  map_manager_ = std::make_shared<MapManager>(sensor_processor_);
+  map_manager_ = std::make_shared<MapManager>(sensor_processor_, waypoint_manager_);
   waypoint_manager_ = std::make_shared<WaypointManager>(map_manager_,
                                                         this->create_publisher<geometry_msgs::msg::Point>("inventory_waypoints", qos),
                                                         this->create_publisher<visualization_msgs::msg::Marker>("waypoint_markers", qos),
@@ -52,8 +52,8 @@ InventoryWaypointsNode::InventoryWaypointsNode()
   qos, 
   std::bind(&InventoryWaypointsNode::map_callback, this, std::placeholders::_1));
 
-  goal_result_sub_ = this->create_subscription<nav2_msgs::action::NavigateToPose::Result>(
-    "navigate_to_pose/result",
+  goal_result_sub_ = this->create_subscription<std_msgs::msg::String>(
+    "goal_result",
     qos,
     std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1));
 
@@ -116,7 +116,7 @@ void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::Sh
 }
 
 // --- goal_result_callback ---
-void InventoryWaypointsNode::goal_result_callback(const nav2_msgs::action::NavigateToPose::Result goal_result)
+void InventoryWaypointsNode::goal_result_callback(const std_msgs::msg::String goal_result)
 {
   waypoint_manager_->process_goal_result(goal_result);
 }

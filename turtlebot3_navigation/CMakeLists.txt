@@ -28,6 +28,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 ################################################################################
 # Build
@@ -53,6 +54,7 @@ set(dependencies
   "tf2"
   "tf2_ros"
   "tf2_geometry_msgs"
+  "std_msgs"
 )
 
 set(EXEC_NAME "turtlebot3_shop_navigator")
@@ -87,5 +89,6 @@ ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2)
 ament_export_dependencies(tf2_ros)
 ament_export_dependencies(tf2_geometry_msgs)
+ament_export_dependencies(std_msgs)
 ament_package()
 

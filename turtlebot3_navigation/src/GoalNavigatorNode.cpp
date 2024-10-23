@@ -22,7 +22,8 @@ GoalNavigatorNode::GoalNavigatorNode()
   navigator_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
 
   // Initialize components
-  motion_controller_ = std::make_shared<MotionController>(navigator_client_);
+  motion_controller_ = std::make_shared<MotionController>(navigator_client_,
+                                                          this->create_publisher<std_msgs::msg::String>("goal_result",qos));
 
   // Initialize subscribers
   goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(

@@ -9,8 +9,10 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav2_msgs/action/navigate_to_pose.hpp>
 #include <rclcpp_action/rclcpp_action.hpp>
+#include <std_msgs/msg/string.hpp>
 #include <memory>
 #include <map>
+#include <vector>
 #include "Constants.hpp"
 #include "MapManager.hpp"
 
@@ -31,7 +33,10 @@ public:
   void publish_waypoints(); // Publishes waypoints 
   void publish_markers(); // Publishes waypoints as markers 
   void publish_goal();  // Publishes Nav2 goals (closest frontier becomes goal)
-  void process_goal_result(const nav2_msgs::action::NavigateToPose::Result goal_result);  // Processes nav2 goal result 
+  void process_goal_result(const std_msgs::msg::String goal_result);  // Processes nav2 goal result 
+
+  // --- Getter Methods ---
+  std::vector<std::pair<double, double>> get_completed_goals() const;
 private:
   // --- Components ---
   std::shared_ptr<MapManager> map_manager_;
@@ -44,6 +49,7 @@ private:
   // --- Data ---
   std::map<double ,geometry_msgs::msg::Point::SharedPtr> waypoints_;  // Map storing waypoints and their associated distance from bot
   std::pair<double, double> closest_frontier_goal_;  // Closest frontier pixel to robot in world coordinates
+  std::vector<std::pair<double, double>> completed_goals_; // List of completed goals, so the map manager knows not to pick one of these as the closest_frontier_
 };
 
 

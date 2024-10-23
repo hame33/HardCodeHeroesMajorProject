@@ -15,6 +15,7 @@
 #include <tf2_ros/buffer.h>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <std_msgs/msg/string.hpp>
 
 
 // --- GoalNavigatorNode Class Interface ---
@@ -34,6 +35,9 @@ public:
   geometry_msgs::msg::PoseStamped get_goal_to_follow();
 
 private:
+  // --- ROS Publishers ---
+  rclcpp::Publisher<std_msgs::msg::String>::SharedPtr goal_result_pub_; // Publisher for a string of the goal result
+
   // --- ROS Subscribers ---
   rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr goal_sub_;  // Subscriber to the inventory goals topic (PoseStamped messages)
 

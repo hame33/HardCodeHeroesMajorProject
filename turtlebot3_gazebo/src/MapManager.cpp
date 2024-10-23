@@ -1,4 +1,5 @@
 #include "MapManager.hpp"
+#include "WaypointManager.hpp"
 #include <iostream>
 #include <utility>
 #include <vector>
@@ -15,8 +16,8 @@ MapManager::MapManager(std::shared_ptr<tf2_ros::Buffer> tf_buffer, std::shared_p
   closest_frontier_pixels_ = std::make_pair(0,0);
 }
 
-MapManager::MapManager(std::shared_ptr<SensorProcessor> sensor_processor)
-: sensor_processor_(sensor_processor)
+MapManager::MapManager(std::shared_ptr<SensorProcessor> sensor_processor, std::shared_ptr<WaypointManager> waypoint_manager)
+: sensor_processor_(sensor_processor), waypoint_manager_(waypoint_manager)
 {
   robot_grid_x_pos_ = 0;
   robot_grid_y_pos_ = 0;
@@ -38,7 +39,7 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
     {
       int index = static_cast<int>(ocp_grid_msg->info.width) * row + col;
       int cell_value = ocp_grid_msg->data[index]; 
-      if (min_cell_value > 60)
+      if (min_cell_value > Constants::MAX_FREE_SPACE_VALUE)
       {
         if (cell_value <= -1)
         {
@@ -60,7 +61,7 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
         {
           std::cout << "?";
         }
-        else if (cell_value > 40)
+        else if (cell_value > Constants::MAX_FREE_SPACE_VALUE)
         {
           std::cout << "|";
         }
@@ -144,26 +145,58 @@ int MapManager::find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPt
 void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
   double shortest_distance = 0.0;
-  for (const auto& pixel : frontier_pixels_)
-  {
-    int current_x_distance = static_cast<int>(robot_grid_x_pos_) - static_cast<int>(pixel.first);
-    int current_y_distance = static_cast<int>(robot_grid_y_pos_) - static_cast<int>(pixel.second);
-    double current_distance = std::sqrt((current_x_distance * current_x_distance) + (current_y_distance * current_y_distance));
 
-    if (shortest_distance == 0.0)
-    {
-      shortest_distance = current_distance;
-    }
-    else if (current_distance < shortest_distance)
-    {
-      shortest_distance = current_distance;
-      closest_frontier_pixels_.first = pixel.first;
-      closest_frontier_pixels_.second = pixel.second;
-    }
-  }  
-  check_walls_at_frontier(ocp_grid_msg, closest_frontier_pixels_.first, closest_frontier_pixels_.second);
-  closest_frontier_.first = (closest_frontier_pixels_.first - robot_grid_x_pos_) * ocp_grid_msg->info.resolution;
-  closest_frontier_.second = (closest_frontier_pixels_.second- robot_grid_y_pos_) * ocp_grid_msg->info.resolution;
+  for (auto it = frontier_pixels_.begin(); it != frontier_pixels_.end(); )
+{
+  const auto& pixel = *it;
+
+  int current_x_distance = static_cast<int>(robot_grid_x_pos_) - static_cast<int>(pixel.first);
+  int current_y_distance = static_cast<int>(robot_grid_y_pos_) - static_cast<int>(pixel.second);
+  double current_distance = std::sqrt((current_x_distance * current_x_distance) + (current_y_distance * current_y_distance));
+
+  if (shortest_distance == 0.0)
+  {
+    shortest_distance = current_distance;
+  }
+  else if (current_distance < shortest_distance)
+  {
+    shortest_distance = current_distance;
+    closest_frontier_pixels_.first = pixel.first;
+    closest_frontier_pixels_.second = pixel.second;
+
+    check_walls_at_frontier(ocp_grid_msg, closest_frontier_pixels_.first, closest_frontier_pixels_.second);
+    closest_frontier_.first = (closest_frontier_pixels_.first - robot_grid_x_pos_) * ocp_grid_msg->info.resolution;
+    closest_frontier_.second = (closest_frontier_pixels_.second - robot_grid_y_pos_) * ocp_grid_msg->info.resolution;
+
+    // Check if closest_frontier_ is a completed goal
+    std::vector<std::pair<double, double>> completed_goals = waypoint_manager_->get_completed_goals();
+    //double epsilon = 1e-6; // Tolerance for floating-point comparison of completed goals
+
+    // auto completed_it = std::find_if(completed_goals.begin(), completed_goals.end(),
+    //     [this, epsilon](const std::pair<double, double>& c_goal) 
+    //     {
+    //         return std::abs(c_goal.first - this->closest_frontier_.first) < epsilon &&
+    //                std::abs(c_goal.second - this->closest_frontier_.second) < epsilon;
+    //     });
+
+    // if (completed_it != completed_goals.end()) 
+    // {
+    //   // Remove the current pixel from frontier_pixels_
+    //   frontier_pixels_.erase(it);
+    //   find_closest_frontier(ocp_grid_msg);
+    //   break;
+    // } 
+    // else 
+    // {
+    //   ++it;
+    // }
+  }
+  else
+  {
+    ++it;
+  }
+}
+
 }
 
 // --- check_walls_at_frontier ---

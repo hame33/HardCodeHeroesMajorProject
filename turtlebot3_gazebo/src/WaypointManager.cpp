@@ -20,6 +20,7 @@ WaypointManager::WaypointManager(std::shared_ptr<MapManager> map_manager,
   waypoints_[0] = std::make_shared<geometry_msgs::msg::Point>();
   std::cout << "Waypoint manager constructor" << std::endl;
   closest_frontier_goal_ = std::make_pair(0.0,0.0);
+  completed_goals_.push_back({0.0,0.0});
 }
 
 // --- add_waypoint - Adds waypoint to the map ---
@@ -113,11 +114,28 @@ void WaypointManager::publish_goal()
 }
 
 // --- process_goal_result ---
-void WaypointManager::process_goal_result(const nav2_msgs::action::NavigateToPose::Result goal_result)
+void WaypointManager::process_goal_result(const std_msgs::msg::String goal_result)
 {
-  std::cout << "Process_goal_result" << std::endl;
-  if (goal_result->result == nav2_msgs::action::NavigateToPose_Result::SUCCESS)
+  std::cout << goal_result.data << std::endl;
+
+  if (goal_result.data == "Success") 
   {
-    std::cout << "Success" << std::endl;
+    completed_goals_.push_back(closest_frontier_goal_);
+  } 
+  else 
+  {
+    std::cout << "Unknown goal result: " << goal_result.data << std::endl;
+    return; 
   }
+}
+
+// --- get_completed_goals_ ---
+std::vector<std::pair<double,double>> WaypointManager::get_completed_goals() const
+{
+  // if (!completed_goals_.empty()) {
+  //     std::cout << "Penis" << std::endl;
+  // } else {
+  //     std::cout << "No completed goals available." << std::endl;
+  // }  
+  return completed_goals_;
 }

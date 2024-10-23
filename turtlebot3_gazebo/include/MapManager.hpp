@@ -21,13 +21,17 @@
 #include <cmath>
 #include <vector>
 #include <utility>
+#include <algorithm>
+
+// --- Forward Declarations ---
+class WaypointManager;  // To get around circular header includes
 
 // --- MapManager Class Implementation ---
 class MapManager {
 public:
   // Constructor
   MapManager(std::shared_ptr<tf2_ros::Buffer> tf_buffer, std::shared_ptr<tf2_ros::TransformListener> tf_listener, std::shared_ptr<SensorProcessor> sensor_processor);
-  MapManager(std::shared_ptr<SensorProcessor> sensor_processor);
+  MapManager(std::shared_ptr<SensorProcessor> sensor_processor, std::shared_ptr<WaypointManager> waypoint_manager);
 
 
   // process_map_data
@@ -46,6 +50,7 @@ private:
 
   // --- Components ---
   std::shared_ptr<SensorProcessor> sensor_processor_;     // Sensor data processing component
+  std::shared_ptr<WaypointManager> waypoint_manager_;  // Waypoint managing component
 
   // --- Data ---
   std::vector<std::pair<int, int>> frontier_pixels_;  // Vector storing frontier pixels (free space bordering unknown) 
