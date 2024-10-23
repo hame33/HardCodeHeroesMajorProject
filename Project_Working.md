@@ -18,8 +18,8 @@
     2. /opt/ros/humble/share/nav2_bringup/rviz$ rviz2 -d nav2_default_view.rviz use_sim_time:=TRUE
     3. ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=TRUE
     4. ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=TRUE
-    5. run turtlebot3_shop_navigator and turtlebot3_shop_keeper
-    6. if i run ros2 launch nav2_bringup bringup.launch.py map:=map.yaml, thats why the localisation doesn't come up as active
+    5. run turtlebot3_gazebo turtlebot3_shop_keeper
+    6. if i run ros2 launch nav2_bringup bringup.launch.py map:=map.yaml, the map arg is why the localisation doesn't come up as active
 
 - I FIGURED OUT WHERE THE turtlebot3_navigation2 navigation2.launch.py params files come from - ~/turtlebot3_ws/src/turtlebot3/turlebot3_navigation2/params/burger.yaml
 

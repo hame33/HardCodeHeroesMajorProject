@@ -132,7 +132,7 @@ void MapManager::print_frontier_pixels()
 // --- find_min_cell_value ---
 int MapManager::find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
-  int min_cell_value = 100;
+  int min_cell_value = Constants::MAX_CELL_VALUE;
   for (int i = 0; i < static_cast<int>(ocp_grid_msg->info.width * ocp_grid_msg->info.height); i++)
   {
     if ((ocp_grid_msg->data[i] < min_cell_value) && (ocp_grid_msg->data[i] > -1))
@@ -210,7 +210,7 @@ void MapManager::check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::Sha
   for (int i = -1 * Constants::MIN_PIXELS_FROM_WALL;  i < Constants::MIN_PIXELS_FROM_WALL; i++)
   {
     int current_index = frontier_pixel_y * static_cast<int>(ocp_grid_msg->info.width) + frontier_pixel_x + i;
-    if (ocp_grid_msg->data[current_index] > 80)
+    if (ocp_grid_msg->data[current_index] > Constants::MAX_FREE_SPACE_VALUE)
     {
       if (i < 0)
       {
@@ -242,6 +242,69 @@ void MapManager::check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::Sha
         break;
       }
     }
+  }
+
+  bool need_adjustment = false;
+  int adjust_x = 0;
+  int adjust_y = 0;
+
+  // Define the square area to check around the frontier pixel
+  for (int dy = -Constants::MIN_PIXELS_FROM_WALL; dy <= Constants::MIN_PIXELS_FROM_WALL; dy++)
+  {
+    for (int dx = -Constants::MIN_PIXELS_FROM_WALL; dx <= Constants::MIN_PIXELS_FROM_WALL; dx++)
+    {
+      int current_x = frontier_pixel_x + dx;
+      int current_y = frontier_pixel_y + dy;
+
+      // Prevent out-of-bounds access
+      if (current_x < 0 || current_x >= static_cast<int>(ocp_grid_msg->info.width) ||
+          current_y < 0 || current_y >= static_cast<int>(ocp_grid_msg->info.height))
+      {
+        continue;
+      }
+
+      int current_index = current_y * static_cast<int>(ocp_grid_msg->info.width) + current_x;
+
+      // Check occupancy value
+      if (ocp_grid_msg->data[current_index] > Constants::MAX_FREE_SPACE_VALUE)
+      {
+        need_adjustment = true;
+
+        // Determine adjustment based on the direction of the detected wall
+        if (dx < 0)
+        {
+            adjust_x += Constants::MIN_PIXELS_FROM_WALL - std::abs(dx);
+        }
+        else if (dx > 0)
+        {
+            adjust_x -= Constants::MIN_PIXELS_FROM_WALL - std::abs(dx);
+        }
+
+        if (dy < 0)
+        {
+            adjust_y += Constants::MIN_PIXELS_FROM_WALL - std::abs(dy);
+        }
+        else if (dy > 0)
+        {
+            adjust_y -= Constants::MIN_PIXELS_FROM_WALL - std::abs(dy);
+        }
+        break;
+      }
+      break;
+    }
+  }
+
+  if (need_adjustment)
+  {
+    // Update frontier pixel positions
+    frontier_pixel_x += adjust_x;
+    frontier_pixel_y += adjust_y;
+
+    // Ensure updated positions are within bounds
+    frontier_pixel_x = std::clamp(frontier_pixel_x, 0, static_cast<int>(ocp_grid_msg->info.width) - 1);
+    frontier_pixel_y = std::clamp(frontier_pixel_y, 0, static_cast<int>(ocp_grid_msg->info.height) - 1);
+
+    std::cout << "Adjusted frontier pixel to (" << frontier_pixel_x << ", " << frontier_pixel_y << ") to maintain distance from walls." << std::endl;
   }
 }
 

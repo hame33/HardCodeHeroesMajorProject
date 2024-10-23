@@ -21,9 +21,10 @@ namespace Constants {
   constexpr double MAX_SCAN_DISTANCE = 3.5;                             // Maximum possible scan distance 
 
   // --- Map Parameters ---
-  constexpr int MIN_PIXELS_FROM_WALL = 15;
+  constexpr int MIN_PIXELS_FROM_WALL = 6; // If I want the robot to run around the map endlessly I can set this far away and the bot will loop around the maze until i tell it to stop.
   constexpr int MAX_FREE_SPACE_VALUE = 40;
   constexpr double COMPLETED_GOAL_ERROR = 1e-4;
+  constexpr int MAX_CELL_VALUE = 100;
 
   // --- Goal Parameters ---
   enum GOAL_STATUS {  // Enum for the different goal result options
