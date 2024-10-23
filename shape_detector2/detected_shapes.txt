@@ -1,0 +1,61 @@
+Pentagon, 5, Red
+Pentagon, 5, Red
+Pentagon, 5, Red
+Pentagon, 5, Red
+Pentagon, 5, Red
+Triangle, 3, Yellow
+Unidentified Shape, 14, Purple
+Octagon, 8, Blue
+Unidentified Shape, 16, Red
+Circle, 16, Red
+Circle, 0, Red
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Rectangle, 4, Blue
+Pentagon, 5, Red
+Triangle, 3, Yellow
+Circle, 16, Red
+Circle, 0, Red
+Rectangle, 4, Blue
+Triangle, 3, Yellow
+Rectangle, 4, Blue
+Unidentified Shape, 12, Blue
+Octagon, 8, Blue
+Unidentified Shape, 12, Purple
+Unidentified Shape, 14, Purple
+Unidentified Shape, 13, Purple
+Heptagon, 7, Blue
+Hexagon, 6, Blue
+Hexagon, 6, Blue
+Heptagon, 7, Purple
+Heptagon, 7, Purple
+Heptagon, 7, Purple
+Hexagon, 6, Pink
+Circle, 0, Green
+Square, 4, Purple
+Circle, 0, Green
+Square, 4, Purple
+Circle, 0, Green
+Square, 4, Blue
+Square, 4, Blue
+Circle, 0, Red
+Square, 4, Purple
+Square, 4, Yellow
+Square, 4, Yellow
+Square, 4, Yellow
+Triangle, 3, Yellow
+Triangle, 3, Yellow
+Hexagon, 6, Blue
+Square, 4, Blue
+Square, 4, Blue
+Square, 4, Blue
+Hexagon, 6, Blue
+Square, 4, Pink
+Square, 4, Pink
+Square, 4, Pink
+Circle, 0, Red
+Triangle, 3, Yellow
