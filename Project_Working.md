@@ -21,4 +21,6 @@
     5. run turtlebot3_shop_navigator and turtlebot3_shop_keeper
     6. if i run ros2 launch nav2_bringup bringup.launch.py map:=map.yaml, thats why the localisation doesn't come up as active
 
+- I FIGURED OUT WHERE THE turtlebot3_navigation2 navigation2.launch.py params files come from - ~/turtlebot3_ws/src/turtlebot3/turlebot3_navigation2/params/burger.yaml
+
 
