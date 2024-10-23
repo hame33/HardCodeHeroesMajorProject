@@ -1,0 +1,18 @@
+[100%] Built target shape_detector
+-- Install configuration: ""
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/ament_index/resource_index/package_run_dependencies/shape_detector
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/ament_index/resource_index/parent_prefix_path/shape_detector
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/environment/ament_prefix_path.sh
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/environment/path.sh
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/environment/path.dsv
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/local_setup.bash
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/local_setup.sh
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/local_setup.zsh
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/local_setup.dsv
+-- Installing: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/package.dsv
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/ament_index/resource_index/packages/shape_detector
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/cmake/shape_detectorConfig.cmake
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/cmake/shape_detectorConfig-version.cmake
+-- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/share/shape_detector/package.xml
