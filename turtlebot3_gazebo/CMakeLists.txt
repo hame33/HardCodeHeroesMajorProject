@@ -33,6 +33,7 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(std_msgs)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Core Gui)
 ################################################################################
 # Build
 ################################################################################
@@ -48,6 +49,9 @@ include_directories(
 include_directories(
   include
   ${turtlebot3_gazebo}/include
+  ${Qt5Widgets_INCLUDE_DIRS}
+  ${Qt5Core_INCLUDE_DIRS}
+  ${Qt5Gui_INCLUDE_DIRS}
 )
 
 set(dependencies
@@ -68,12 +72,14 @@ set(EXEC_NAME "turtlebot3_shop_keeper")
 
 add_executable(${EXEC_NAME} 
   src/main.cpp
+  src/MainWindow.cpp
   src/InventoryWaypointsNode.cpp
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
   src/WaypointManager.cpp
   src/MapManager.cpp
-  src/MotionController.cpp)
+  src/MotionController.cpp
+  ${MOC_HDRS})
 ament_target_dependencies(${EXEC_NAME} ${dependencies})
 
 add_library(obstacle1 SHARED models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc)
