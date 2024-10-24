@@ -1,0 +1,10 @@
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/uninstall.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/auto_rotate_uninstall.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/rotate_after_distance.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/test.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/edit_cache.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/rebuild_cache.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/list_install_components.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/install.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/install/local.dir
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate/CMakeFiles/install/strip.dir

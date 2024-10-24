@@ -1,0 +1,14 @@
+[0.013s] Invoking command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate -- -j8 -l8
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/rotate_after_distance.dir/src/rotate_after_distance.cpp.o[0m
+[0.339s] In file included from [01m[K/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/src/rotate_after_distance.cpp:11[m[K:
+[0.339s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[0.340s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[0.340s]       |  [01;35m[K^~~~~~~[m[K
+[0.356s] [01m[K/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/src/rotate_after_distance.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/srv/manage_lifecycle_nodes.hpp: No such file or directory
+[0.356s]    12 | #include [01;31m[K"nav_msgs/srv/manage_lifecycle_nodes.hpp"[m[K
+[0.356s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.356s] compilation terminated.
+[0.370s] gmake[2]: *** [CMakeFiles/rotate_after_distance.dir/build.make:76: CMakeFiles/rotate_after_distance.dir/src/rotate_after_distance.cpp.o] Error 1
+[0.370s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rotate_after_distance.dir/all] Error 2
+[0.371s] gmake: *** [Makefile:146: all] Error 2
+[0.376s] Invoked command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate -- -j8 -l8

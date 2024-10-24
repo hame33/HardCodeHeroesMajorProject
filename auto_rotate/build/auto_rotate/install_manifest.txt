@@ -1,0 +1,17 @@
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/lib/auto_rotate/rotate_after_distance
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/launch/rotate_after_distance.launch.py
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/package_run_dependencies/auto_rotate
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/parent_prefix_path/auto_rotate
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.sh
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.dsv
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.sh
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.dsv
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.bash
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.sh
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.zsh
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.dsv
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.dsv
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/packages/auto_rotate
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig.cmake
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig-version.cmake
+/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.xml

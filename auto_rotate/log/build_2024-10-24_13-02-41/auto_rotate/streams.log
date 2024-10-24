@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate -- -j8 -l8
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/rotate_after_distance.dir/src/rotate_after_distance.cpp.o[0m
+[9.410s] [100%] [32m[1mLinking CXX executable rotate_after_distance[0m
+[9.980s] [100%] Built target rotate_after_distance
+[9.993s] Invoked command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate -- -j8 -l8
+[10.035s] Invoking command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate
+[10.044s] -- Install configuration: ""
+[10.045s] -- Installing: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/lib/auto_rotate/rotate_after_distance
+[10.051s] -- Set runtime path of "/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/lib/auto_rotate/rotate_after_distance" to ""
+[10.051s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/launch
+[10.051s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/launch/rotate_after_distance.launch.py
+[10.051s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/package_run_dependencies/auto_rotate
+[10.051s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/parent_prefix_path/auto_rotate
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.sh
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.dsv
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.sh
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.dsv
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.bash
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.sh
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.zsh
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.dsv
+[10.052s] -- Installing: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.dsv
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/packages/auto_rotate
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig.cmake
+[10.052s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig-version.cmake
+[10.053s] -- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.xml
+[10.054s] Invoked command in '/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/michael/turtlebot3_ws/install/turtlebot3_teleop:/home/michael/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/build/auto_rotate

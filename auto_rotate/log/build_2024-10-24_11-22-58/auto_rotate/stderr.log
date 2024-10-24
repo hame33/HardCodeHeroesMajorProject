@@ -1,0 +1,7 @@
+[01m[K/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/src/rotate_after_distance.cpp:[m[K In constructor ‘[01m[KRotateAfterDistance::RotateAfterDistance()[m[K’:
+[01m[K/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/src/rotate_after_distance.cpp:18:36:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KRotateAfterDistance[m[K’ does not have any field named ‘[01m[Ktraveled_distance_[m[K’
+   18 |   : Node("rotate_after_distance"), [01;31m[Ktraveled_distance_[m[K(0.0), rotate_(false), rotation_complete_(false)
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/rotate_after_distance.dir/build.make:76: CMakeFiles/rotate_after_distance.dir/src/rotate_after_distance.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rotate_after_distance.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

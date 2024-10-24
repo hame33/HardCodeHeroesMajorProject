@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/rotate_after_distance.dir/src/rotate_after_distance.cpp.o[0m
+[100%] [32m[1mLinking CXX executable rotate_after_distance[0m
+[100%] Built target rotate_after_distance
+-- Install configuration: ""
+-- Installing: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/lib/auto_rotate/rotate_after_distance
+-- Set runtime path of "/home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/lib/auto_rotate/rotate_after_distance" to ""
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/launch
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/launch/rotate_after_distance.launch.py
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/package_run_dependencies/auto_rotate
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/parent_prefix_path/auto_rotate
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.sh
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.sh
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/environment/path.dsv
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.bash
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.sh
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.zsh
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/local_setup.dsv
+-- Installing: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.dsv
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/ament_index/resource_index/packages/auto_rotate
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig.cmake
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/cmake/auto_rotateConfig-version.cmake
+-- Up-to-date: /home/michael/Desktop/HardCodeHeroesMajorProject/auto_rotate/install/auto_rotate/share/auto_rotate/package.xml
