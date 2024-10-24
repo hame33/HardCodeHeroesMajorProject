@@ -4,7 +4,7 @@
 #include <QPainter>
 
 MainWindow::MainWindow(QWidget *parent)
-  : QMainWindow(parent)
+  : QMainWindow(parent), should_display_map_(true)
 {
   // Initialize ROS2 node
   node_ = rclcpp::Node::make_shared("inventory_gui_node");
@@ -47,11 +47,14 @@ MainWindow::MainWindow(QWidget *parent)
   // Connect start and stop buttons
   connect(start_button_, &QPushButton::clicked, [this]() {
     inventory_node_->start_navigation();
+    should_display_map_ = true;
   });
 
   connect(stop_button_, &QPushButton::clicked, [this]() {
     inventory_node_->stop_navigation();
   });
+
+  connect(reset_button_, &QPushButton::clicked, this, &MainWindow::resetMap);
 }
 
 MainWindow::~MainWindow()
@@ -68,19 +71,21 @@ void MainWindow::setupUi()
   map_label_->setAlignment(Qt::AlignCenter);
 
   start_button_ = new QPushButton("Start Navigation");
-  stop_button_ = new QPushButton("Stop Navigation");
+    stop_button_ = new QPushButton("Stop Navigation");
+    reset_button_ = new QPushButton("Reset Map"); // Create the reset button
 
-  QHBoxLayout *button_layout = new QHBoxLayout();
-  button_layout->addWidget(start_button_);
-  button_layout->addWidget(stop_button_);
+    QHBoxLayout *button_layout = new QHBoxLayout();
+    button_layout->addWidget(start_button_);
+    button_layout->addWidget(stop_button_);
+    button_layout->addWidget(reset_button_); // Add the reset button to the layout
 
-  main_layout_ = new QVBoxLayout();
-  main_layout_->addWidget(map_label_);
-  main_layout_->addLayout(button_layout);
+    main_layout_ = new QVBoxLayout();
+    main_layout_->addWidget(map_label_);
+    main_layout_->addLayout(button_layout);
 
-  central_widget_ = new QWidget(this);
-  central_widget_->setLayout(main_layout_);
-  setCentralWidget(central_widget_);
+    central_widget_ = new QWidget(this);
+    central_widget_->setLayout(main_layout_);
+    setCentralWidget(central_widget_);
 
   setWindowTitle("Inventory GUI");
   resize(800, 600);
@@ -95,6 +100,8 @@ void MainWindow::setupUi()
     // Stop navigation logic
     inventory_node_->stop_navigation();
   });
+
+  connect(reset_button_, &QPushButton::clicked, this, &MainWindow::resetMap);
 }
 
 void MainWindow::startRosSpin()
@@ -106,6 +113,11 @@ void MainWindow::startRosSpin()
 
 void MainWindow::updateMap()
 {
+    if (!should_display_map_) {
+        // Do not update the map if the flag is false
+        return;
+    }
+    
     if (!map_) {
         RCLCPP_INFO(node_->get_logger(), "Waiting for map data...");
         return;
@@ -156,3 +168,22 @@ void MainWindow::updateMap()
     // Display the image in the QLabel
     map_label_->setPixmap(QPixmap::fromImage(image).scaled(map_label_->size(), Qt::KeepAspectRatio));
 }
+
+void MainWindow::resetMap()
+{
+    // Clear the map data
+    map_.reset();
+
+    // Clear the frontiers data if applicable
+    frontiers_.reset();
+
+    // Clear the map display
+    map_label_->clear();
+    map_label_->setText("Map has been reset.");
+
+    inventory_node_->stop_navigation();
+
+    // Log the reset action
+    RCLCPP_INFO(node_->get_logger(), "Map has been reset.");
+}
+

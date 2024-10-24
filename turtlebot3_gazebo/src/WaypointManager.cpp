@@ -122,15 +122,15 @@ void WaypointManager::publish_goal()
 }
 
 // --- process_goal_result ---
-void WaypointManager::process_goal_result(const std_msgs::msg::String goal_result)
+void WaypointManager::process_goal_result(const std_msgs::msg::String::SharedPtr goal_result)
 {
-  if (goal_result.data == "Success") 
+  if (goal_result->data == "Success") 
   {
     std::cout << "Adding " << closest_frontier_goal_.first << " " << closest_frontier_goal_.second << " to the list of completed goals" << std::endl;
     completed_goals_.push_back(closest_frontier_goal_);
     publish_goal_check_ = 1;
   } 
-  else if (goal_result.data == "Aborted")
+  else if (goal_result->data == "Aborted")
   {
     return; 
   }

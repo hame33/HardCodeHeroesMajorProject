@@ -16,6 +16,7 @@
 #include <visualization_msgs/msg/marker.hpp>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/buffer.h>
+#include <nav_msgs/msg/grid_cells.hpp>
 
 #include "InventoryWaypointsNode.hpp"
 
@@ -29,6 +30,7 @@ public:
 
 private slots:
   void updateMap();
+  void resetMap();
 
 private:
   void setupUi();
@@ -49,6 +51,7 @@ private:
   QLabel *map_label_;
   QPushButton *start_button_;
   QPushButton *stop_button_;
+  QPushButton *reset_button_;
   QVBoxLayout *main_layout_;
   QWidget *central_widget_;
   QTimer *update_timer_;
@@ -57,6 +60,7 @@ private:
   nav_msgs::msg::OccupancyGrid::SharedPtr map_;
   geometry_msgs::msg::PoseStamped::SharedPtr robot_pose_;
   std::vector<visualization_msgs::msg::Marker> waypoints_;
+  bool should_display_map_;
 
   // ROS spin thread
   std::shared_ptr<std::thread> ros_spin_thread_;
