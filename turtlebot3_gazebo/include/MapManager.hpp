@@ -63,6 +63,7 @@ private:
   void search_for_frontiers(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int grid_cell_x, int grid_cell_y);  
   int find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
   void find_closest_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
+  void find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
   void check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int& frontier_pixel_x, int& frontier_pixel_y);
 };
 #endif // MAP_MANAGER_HPP
