@@ -72,6 +72,7 @@ set(EXEC_NAME "turtlebot3_shop_keeper")
 
 add_executable(${EXEC_NAME} 
   src/main.cpp
+  src/MainWindow.cpp
   src/InventoryWaypointsNode.cpp
   src/SensorProcessor.cpp
   src/WaypointGenerator.cpp
