@@ -1,0 +1,11 @@
+[0.007s] Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target shape_detector[0m
+[0.055s] [ 25%] [32mBuilding CXX object CMakeFiles/shape_detector.dir/src/shape_detector.cpp.o[0m
+[2.429s] [ 50%] [32m[1mLinking CXX executable shape_detector[0m
+[2.662s] [100%] Built target shape_detector
+[2.671s] Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+[2.726s] Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector
+[2.730s] -- Install configuration: ""
+[2.730s] -- Installing: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector
+[2.730s] -- Set runtime path of "/home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector" to ""
+[2.731s] Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector

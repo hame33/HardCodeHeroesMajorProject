@@ -1,0 +1,6 @@
+Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake /home/peter/turtlebot3_ws/src/shape_detector -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector
+Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake /home/peter/turtlebot3_ws/src/shape_detector -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector
+Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector
+Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector

@@ -1,0 +1,55 @@
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:3:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+    3 |     [01;31m[Krclcpp[m[K::init(argc, argv);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:9:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd[m[K’
+    9 |         if (std::[01;31m[Kstring[m[K(argv[i]) == "--clear")
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::string[m[K’ is defined in header ‘[01m[K<string>[m[K’; did you forget to ‘[01m[K#include <string>[m[K’?
+  +++ |+[32m[K#include <string>[m[K
+    1 | int main(int argc, char **argv)
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:19:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kofstream[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   19 |         std::[01;31m[Kofstream[m[K output_file("detected_shapes.txt", std::ios::out | std::ios::trunc);
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ofstream[m[K’ is defined in header ‘[01m[K<fstream>[m[K’; did you forget to ‘[01m[K#include <fstream>[m[K’?
+  +++ |+[32m[K#include <fstream>[m[K
+    1 | int main(int argc, char **argv)
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput_file[m[K’ was not declared in this scope
+   20 |         [01;31m[Koutput_file[m[K.close();
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:21:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   21 |         std::[01;31m[Kcout[m[K << "Output file cleared." << std::endl;
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+  +++ |+[32m[K#include <iostream>[m[K
+    1 | int main(int argc, char **argv)
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:21:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   21 |         std::cout << "Output file cleared." << std::[01;31m[Kendl[m[K;
+      |                                                     [01;31m[K^~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ is defined in header ‘[01m[K<ostream>[m[K’; did you forget to ‘[01m[K#include <ostream>[m[K’?
+  +++ |+[32m[K#include <ostream>[m[K
+    1 | int main(int argc, char **argv)
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+   24 |         [01;31m[Krclcpp[m[K::shutdown();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:28:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_shared[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   28 |     auto node = std::[01;31m[Kmake_shared[m[K<ShapeDetectorNode>();
+      |                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:1:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::make_shared[m[K’ is defined in header ‘[01m[K<memory>[m[K’; did you forget to ‘[01m[K#include <memory>[m[K’?
+  +++ |+[32m[K#include <memory>[m[K
+    1 | int main(int argc, char **argv)
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:28:34:[m[K [01;31m[Kerror: [m[K‘[01m[KShapeDetectorNode[m[K’ was not declared in this scope
+   28 |     auto node = std::make_shared<[01;31m[KShapeDetectorNode[m[K>();
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:28:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   28 |     auto node = std::make_shared<ShapeDetectorNode>([01;31m[K)[m[K;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+   29 |     [01;31m[Krclcpp[m[K::spin(node);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/peter/turtlebot3_ws/src/shape_detector/src/main.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+   30 |     [01;31m[Krclcpp[m[K::shutdown();
+      |     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/shape_detector.dir/build.make:104: CMakeFiles/shape_detector.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/shape_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

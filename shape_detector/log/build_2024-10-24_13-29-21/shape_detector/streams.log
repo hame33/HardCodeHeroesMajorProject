@@ -1,0 +1,7 @@
+[0.007s] Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+[0.050s] [100%] Built target shape_detector
+[0.060s] Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --build /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector -- -j20 -l20
+[0.118s] Invoking command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector
+[0.122s] -- Install configuration: ""
+[0.122s] -- Up-to-date: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector
+[0.123s] Invoked command in '/home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector' returned '0': /usr/bin/cmake --install /home/peter/turtlebot3_ws/src/shape_detector/build/shape_detector

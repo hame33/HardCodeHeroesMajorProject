@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target shape_detector[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/shape_detector.dir/src/shape_detector.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable shape_detector[0m
+[100%] Built target shape_detector
+-- Install configuration: ""
+-- Installing: /home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector
+-- Set runtime path of "/home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector" to ""
