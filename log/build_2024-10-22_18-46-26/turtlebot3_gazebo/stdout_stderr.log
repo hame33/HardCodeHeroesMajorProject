@@ -1,0 +1,43 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[ 30%] Built target obstacle1
+[ 30%] Built target obstacle2
+[ 46%] Built target obstacles
+[ 53%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:16:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Subscription<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> > >::Subscription()[m[K’
+   16 | : Node("inventory_waypoints_node"[01;31m[K)[m[K
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:6[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:130:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>::Subscription(rclcpp::node_interfaces::NodeBaseInterface*, const rosidl_message_type_support_t&, const string&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<CallbackMessageT, AllocatorT>, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, rclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>::SubscriptionTopicStatisticsSharedPtr) [with MessageT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; AllocatorT = std::allocator<void>; SubscribedT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; ROSMessageT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >, std::allocator<void> >; rosidl_message_type_support_t = rosidl_message_type_support_t; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >, std::allocator<void> > >; rclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>::SubscriptionTopicStatisticsSharedPtr = std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> > > >][m[K’
+  130 |   [01;36m[KSubscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:130:3:[m[K [01;36m[Knote: [m[K  candidate expects 8 arguments, 0 provided
+[01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:58:90:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, std::allocator<void>, rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, rclcpp::message_memory_strategy::MessageMemoryStrategy<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, std::allocator<void> > > >[m[K’)
+   58 |     std::bind(&InventoryWaypointsNode::goal_result_callback, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:6[m[K,
+                 from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:421:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>& rclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>::operator=(const rclcpp::Subscription<MessageT, AllocatorT, SubscribedT, ROSMessageT, MessageMemoryStrategyT>&) [with MessageT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; AllocatorT = std::allocator<void>; SubscribedT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; ROSMessageT = nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> >, std::allocator<void> >][m[K’ (deleted)
+  421 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Subscription)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:421:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, std::allocator<void>, rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, rclcpp::message_memory_strategy::MessageMemoryStrategy<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst rclcpp::Subscription<nav2_msgs::action::NavigateToPose_Result_<std::allocator<void> > >&[m[K’
+  421 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Subscription)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

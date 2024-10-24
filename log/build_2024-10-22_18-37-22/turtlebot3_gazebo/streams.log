@@ -1,0 +1,43 @@
+[0.021s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.136s] [ 15%] Built target obstacle1
+[0.152s] [ 30%] Built target obstacle2
+[0.155s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[0.157s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[0.161s] [ 61%] Built target obstacles
+[3.654s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp:3[m[K:
+[3.654s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:92:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResul[m[K’ is not a member of ‘[01m[Krclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>[m[K’
+[3.654s]    46 | alHandle<nav2_msgs::action::NavigateToPose>::[01;31m[KWrappedResul[m[K::SharedPtr goal_result_sub_;  //Subscriber to the nav2 goal result client
+[3.654s]       |                                              [01;31m[K^~~~~~~~~~~~[m[K
+[3.654s] 
+[3.654s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.654s]    46 | on::NavigateToPose>::WrappedResul::SharedPtr [01;31m[Kgoal_result_sub_[m[K;  //Subscriber to the nav2 goal result client
+[3.655s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.655s] 
+[3.655s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[3.655s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[3.655s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[3.684s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[3.684s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:92:[m[K [01;31m[Kerror: [m[K‘[01m[KWrappedResul[m[K’ is not a member of ‘[01m[Krclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>[m[K’
+[3.684s]    46 |   rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::[01;31m[KWrappedResul[m[K::SharedPtr goal_result_sub_;  //Subscriber to the nav2 goal result client
+[3.684s]       |                                                                                            [01;31m[K^~~~~~~~~~~~[m[K
+[3.684s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.684s]    46 |   rclcpp::Subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResul::SharedPtr [01;31m[Kgoal_result_sub_[m[K;  //Subscriber to the nav2 goal result client
+[3.684s]       |                                                                                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.684s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[3.684s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[3.684s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:116:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[3.716s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[3.716s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:55:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_result_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_result_callback[m[K’?
+[3.716s]    55 |   [01;31m[Kgoal_result_sub_[m[K = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+[3.716s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.716s]       |   [32m[Kgoal_result_callback[m[K
+[4.355s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:76: CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o] Error 1
+[4.355s] gmake[2]: *** Waiting for unfinished jobs....
+[10.220s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+[10.220s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[10.220s] gmake: *** [Makefile:146: all] Error 2
+[10.223s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

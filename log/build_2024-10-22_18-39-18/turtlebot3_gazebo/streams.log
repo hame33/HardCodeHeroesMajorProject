@@ -1,0 +1,27 @@
+[0.024s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_shop_keeper[0m
+[0.101s] [ 30%] Built target obstacle2
+[0.101s] [ 30%] Built target obstacles
+[0.111s] [ 46%] Built target obstacle1
+[0.122s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o[0m
+[0.123s] [ 61%] [32mBuilding CXX object CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o[0m
+[3.608s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/main.cpp:3[m[K:
+[3.609s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kstruct rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult[m[K’ does not name a type
+[3.609s]    46 | sgs::action::NavigateToPose>::WrappedResult::[01;31m[KSharedPtr[m[K goal_result_sub_;  // Subscriber to the nav2 goal result client  // --- ROS Services ---
+[3.609s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[3.609s] 
+[3.616s] In file included from [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:4[m[K:
+[3.616s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/include/InventoryWaypointsNode.hpp:46:86:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kstruct rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult[m[K’ does not name a type
+[3.616s]    46 |   rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult::[01;31m[KSharedPtr[m[K goal_result_sub_;  // Subscriber to the nav2 goal result client  // --- ROS Services ---
+[3.616s]       |                                                                                      [01;31m[K^~~~~~~~~[m[K
+[3.653s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:[m[K In constructor ‘[01m[KInventoryWaypointsNode::InventoryWaypointsNode()[m[K’:
+[3.653s] [01m[K/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/InventoryWaypointsNode.cpp:55:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_result_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_result_callback[m[K’?
+[3.653s]    55 |   [01;31m[Kgoal_result_sub_[m[K = this->create_subscription<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::WrappedResult>(
+[3.654s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.654s]       |   [32m[Kgoal_result_callback[m[K
+[4.327s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:76: CMakeFiles/turtlebot3_shop_keeper.dir/src/main.cpp.o] Error 1
+[4.327s] gmake[2]: *** Waiting for unfinished jobs....
+[10.218s] gmake[2]: *** [CMakeFiles/turtlebot3_shop_keeper.dir/build.make:90: CMakeFiles/turtlebot3_shop_keeper.dir/src/InventoryWaypointsNode.cpp.o] Error 1
+[10.219s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/turtlebot3_shop_keeper.dir/all] Error 2
+[10.219s] gmake: *** [Makefile:146: all] Error 2
+[10.222s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

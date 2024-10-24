@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/hamishdawson/Desktop/MTRX3760/HardCodeHeroesMajorProject/turtlebot3_gazebo/src",
+      "program": "/Users/hamishdawson/Desktop/MTRX3760/HardCodeHeroesMajorProject/turtlebot3_gazebo/src/build/Debug/outDebug"
+    }
+  ]
+}
