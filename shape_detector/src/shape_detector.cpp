@@ -73,7 +73,7 @@ void ShapeDetectorNode::image_callback(const sensor_msgs::msg::Image::ConstShare
 
             if (output_file_.is_open())
             {
-                output_file_ << shape << ", " << vertices << ", " << color << "\n";
+                output_file_ << shape << " " << vertices << " " << color << "\n";
             }
 
             // Exit after the first valid shape
