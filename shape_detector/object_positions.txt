@@ -1,0 +1,4 @@
+Object Quantity Position(x, y)
+apple  2   (1.06, 1.06)
+banana 1   (0, 2)
+milk   1   (-1, 0)
