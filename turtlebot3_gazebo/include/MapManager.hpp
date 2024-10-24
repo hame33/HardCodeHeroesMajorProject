@@ -22,6 +22,8 @@
 #include <vector>
 #include <utility>
 #include <algorithm>
+#include <queue>
+#include <limits>
 
 // --- Forward Declarations ---
 class WaypointManager;  // To get around circular header includes
@@ -64,5 +66,6 @@ private:
   int find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
   void find_closest_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
   void check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int& frontier_pixel_x, int& frontier_pixel_y);
+  void find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);
 };
 #endif // MAP_MANAGER_HPP

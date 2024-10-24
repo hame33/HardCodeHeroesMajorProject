@@ -1,0 +1,75 @@
+[0.057s] Invoking command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8
+[0.149s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.668s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.668s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.669s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.669s]   problems in calling code that expects `find_package` result variables
+[0.669s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.670s] Call Stack (most recent call first):
+[0.670s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.670s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.670s]   CMakeLists.txt:23 (find_package)
+[0.670s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.671s] [0m
+[0.729s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.830s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.847s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.857s] -- Searching for dependencies of ignition-math6
+[0.862s] -- Looking for OGRE...
+[0.884s] -- Found Ogre Ghadamon (1.9.0)
+[0.885s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.923s] -- Looking for OGRE_Paging...
+[0.923s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.923s] -- Looking for OGRE_Terrain...
+[0.923s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.924s] -- Looking for OGRE_Property...
+[0.924s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.924s] -- Looking for OGRE_RTShaderSystem...
+[0.924s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.925s] -- Looking for OGRE_Volume...
+[0.925s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.925s] -- Looking for OGRE_Overlay...
+[0.926s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.011s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.012s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.014s] -- Searching for dependencies of ignition-transport8
+[2.108s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.191s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.206s] -- Checking for module 'libzmq >= 4'
+[2.288s] --   Found libzmq , version 4.3.4
+[2.502s] -- Checking for module 'uuid'
+[2.580s] --   Found uuid, version 2.37.2
+[2.787s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.798s] -- Searching for dependencies of ignition-msgs5
+[2.925s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.952s] -- Checking for module 'tinyxml2'
+[3.032s] --   Found tinyxml2, version 9.0.0
+[3.221s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.231s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.237s] -- Searching for dependencies of ignition-common3
+[3.240s] -- Looking for dlfcn.h - found
+[3.242s] -- Looking for libdl - found
+[3.332s] -- Searching for <ignition-common3> component [graphics]
+[3.337s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.341s] -- Searching for dependencies of ignition-common3-graphics
+[3.343s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.360s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.362s] -- Searching for dependencies of ignition-fuel_tools4
+[3.630s] -- Checking for module 'jsoncpp'
+[3.714s] --   Found jsoncpp, version 1.9.5
+[3.934s] -- Checking for module 'libzip'
+[4.011s] --   Found libzip, version 1.7.3
+[4.204s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.207s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.211s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.224s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[4.227s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.388s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.408s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.448s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.574s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.975s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[5.075s] -- Found nav2_msgs: 1.1.16 (/opt/ros/humble/share/nav2_msgs/cmake)
+[5.242s] gmake: *** [Makefile:525: cmake_check_build_system] Interrupt
+[5.258s] Invoked command in '/home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_teleop:/home/lucaslapdoglinux/turtlebot3_ws/install/turtlebot3_example:/home/lucaslapdoglinux/ros2_practice_ws/install/robot_math:/home/lucaslapdoglinux/ros2_practice_ws/ros2_learners/install/robot_math:/opt/ros/humble /usr/bin/cmake --build /home/lucaslapdoglinux/major_prok_ws/HardCodeHeroesMajorProject/build/turtlebot3_gazebo -- -j8 -l8

@@ -33,47 +33,49 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
 
   int min_cell_value = find_min_cell_value(ocp_grid_msg);
 
-  for (int row = static_cast<int>(ocp_grid_msg->info.height) - 1; row > 0; row--) 
-  {
-    for (int col = 0; col < static_cast<int>(ocp_grid_msg->info.width); col++)
-    {
-      int index = static_cast<int>(ocp_grid_msg->info.width) * row + col;
-      int cell_value = ocp_grid_msg->data[index]; 
-      if (min_cell_value > Constants::MAX_FREE_SPACE_VALUE)
-      {
-        if (cell_value <= -1)
-        {
-          std::cout << "?";
-        }
-        else if (cell_value > min_cell_value)
-        {
-          std::cout << "|";
-        }
-        else
-        {
-          std::cout << " ";
-          search_for_frontiers(ocp_grid_msg, col, row);
-        }
-      }
-      else 
-      {
-        if (cell_value <= -1)
-        {
-          std::cout << "?";
-        }
-        else if (cell_value > Constants::MAX_FREE_SPACE_VALUE)
-        {
-          std::cout << "|";
-        }
-        else
-        {
-          std::cout << " ";
-          search_for_frontiers(ocp_grid_msg, col, row);
-        }
-      }
-    }
-    std::cout << std::endl;
-  }
+  // for (int row = static_cast<int>(ocp_grid_msg->info.height) - 1; row > 0; row--) 
+  // {
+  //   for (int col = 0; col < static_cast<int>(ocp_grid_msg->info.width); col++)
+  //   {
+  //     int index = static_cast<int>(ocp_grid_msg->info.width) * row + col;
+  //     int cell_value = ocp_grid_msg->data[index]; 
+  //     if (min_cell_value > Constants::MAX_FREE_SPACE_VALUE)
+  //     {
+  //       if (cell_value <= -1)
+  //       {
+  //         std::cout << "?";
+  //       }
+  //       else if (cell_value > min_cell_value)
+  //       {
+  //         std::cout << "|";
+  //       }
+  //       else
+  //       {
+  //         std::cout << " ";
+  //         //search_for_frontiers(ocp_grid_msg, col, row);
+  //         find_frontiers_with_bfs(ocp_grid_msg);
+  //       }
+  //     }
+  //     else 
+  //     {
+  //       if (cell_value <= -1)
+  //       {
+  //         std::cout << "?";
+  //       }
+  //       else if (cell_value > Constants::MAX_FREE_SPACE_VALUE)
+  //       {
+  //         std::cout << "|";
+  //       }
+  //       else
+  //       {
+  //         std::cout << " ";
+  //         //search_for_frontiers(ocp_grid_msg, col, row);
+  //         find_frontiers_with_bfs(ocp_grid_msg);
+  //       }
+  //     }
+  //   }
+  //   std::cout << std::endl;
+  // }
 
   double robot_x_pos = sensor_processor_->get_robot_x_pos();
   double robot_y_pos = sensor_processor_->get_robot_y_pos();
@@ -81,15 +83,17 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
   robot_grid_x_pos_ = std::abs(ocp_grid_msg->info.origin.position.x) / ocp_grid_msg->info.resolution;
   robot_grid_y_pos_ = std::abs(ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution;
 
+  find_frontiers_with_bfs(ocp_grid_msg);
+
   find_closest_frontier(ocp_grid_msg);
-  print_frontier_pixels();
-  // auto waypoint_manager = waypoint_manager_.lock();
-  // waypoint_manager->print_completed_goals();
+  // print_frontier_pixels();
+  // // auto waypoint_manager = waypoint_manager_.lock();
+  // // waypoint_manager->print_completed_goals();
   
-  std::cout << "Grid map origin: " << ocp_grid_msg->info.origin.position.x << " " << ocp_grid_msg->info.origin.position.y << std::endl;
-  std::cout << "Robot world coordinates: (" << robot_x_pos << "," << robot_y_pos << ")" << std::endl;
-  std::cout << "Robot grid coordinates: (" << robot_grid_x_pos_ << "," << robot_grid_y_pos_ << ")" << std::endl;
-  std::cout << "Closest Frontier: (" << closest_frontier_.first << "," << closest_frontier_.second << ")" << std::endl;
+  // std::cout << "Grid map origin: " << ocp_grid_msg->info.origin.position.x << " " << ocp_grid_msg->info.origin.position.y << std::endl;
+  // std::cout << "Robot world coordinates: (" << robot_x_pos << "," << robot_y_pos << ")" << std::endl;
+  // std::cout << "Robot grid coordinates: (" << robot_grid_x_pos_ << "," << robot_grid_y_pos_ << ")" << std::endl;
+  // std::cout << "Closest Frontier: (" << closest_frontier_.first << "," << closest_frontier_.second << ")" << std::endl;
 
   frontier_pixels_.clear();
 }
@@ -140,14 +144,23 @@ void MapManager::find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::Sha
   std::queue<std::pair<int, int>> queue;
 
   // Convert robot's position to grid coordinates
-  int robot_x = static_cast<int>((robot_world_x_pos_ - ocp_grid_msg->info.origin.position.x) / ocp_grid_msg->info.resolution);
-  int robot_y = static_cast<int>((robot_world_y_pos_ - ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution);
+  int robot_x = static_cast<int>(std::abs((ocp_grid_msg->info.origin.position.x)) / ocp_grid_msg->info.resolution);
+  int robot_y = static_cast<int>(std::abs((ocp_grid_msg->info.origin.position.y)) / ocp_grid_msg->info.resolution);
+
+  std::cout << "Robot_x " << robot_x << "Robot_y" << robot_y << std::endl; 
+  if (robot_x < 0 || robot_x >= width || robot_y < 0 || robot_y >= height) 
+  {
+    std::cerr << "Error: Robot position is outside map bounds." << std::endl;
+    return;
+  }
 
   queue.push(std::make_pair(robot_x, robot_y));
 
   while (!queue.empty()) {
     auto [x, y] = queue.front();
     queue.pop();
+
+    if (x < 0 || x >= width || y < 0 || y >= height) continue;
 
     int index = y * width + x;
 
@@ -181,8 +194,10 @@ void MapManager::find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::Sha
       if (is_frontier) break;
     }
 
+    std::cout << "is_frontier " << is_frontier << std::endl;
+
     if (is_frontier) {
-      frontier_pixels_.emplace_back(x, y);
+      frontier_pixels_.push_back({x, y});
     } else {
       // Enqueue neighboring free cells
       for (int dy = -1; dy <= 1; dy++) {
@@ -220,7 +235,7 @@ int MapManager::find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPt
 // --- find_closest_frontier ---
 void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
-  double shortest_distance = 0.0;
+  double shortest_distance = std::numeric_limits<double>::max();
 
   for (auto it = frontier_pixels_.begin(); it != frontier_pixels_.end(); )
 {
@@ -230,11 +245,7 @@ void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::Share
   int current_y_distance = static_cast<int>(robot_grid_y_pos_) - static_cast<int>(pixel.second);
   double current_distance = std::sqrt((current_x_distance * current_x_distance) + (current_y_distance * current_y_distance));
 
-  if (shortest_distance == 0.0)
-  {
-    shortest_distance = current_distance;
-  }
-  else if (current_distance < shortest_distance)
+  if (current_distance < shortest_distance)
   {
     shortest_distance = current_distance;
     closest_frontier_pixels_.first = pixel.first;
@@ -252,6 +263,7 @@ void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::Share
     auto completed_it = std::find_if(completed_goals.begin(), completed_goals.end(),
       [this, epsilon](const std::pair<double, double>& c_goal) 
       {
+
         return std::abs(c_goal.first - this->closest_frontier_.first) < epsilon &&
                std::abs(c_goal.second - this->closest_frontier_.second) < epsilon;
       });
@@ -273,6 +285,8 @@ void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::Share
     ++it;
   }
 }
+
+print_frontier_pixels();
 
 }
 
