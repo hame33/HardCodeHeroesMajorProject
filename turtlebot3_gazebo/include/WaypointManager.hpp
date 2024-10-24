@@ -35,7 +35,7 @@ public:
   void publish_waypoints(); // Publishes waypoints 
   void publish_markers(); // Publishes waypoints as markers 
   void publish_goal();  // Publishes Nav2 goals (closest frontier becomes goal)
-  void process_goal_result(const std_msgs::msg::String goal_result);  // Processes nav2 goal result 
+  void process_goal_result(const std_msgs::msg::String::SharedPtr goal_result);  // Processes nav2 goal result 
   void print_completed_goals();  // Prints out completed_goals_
 
   // --- Getter Methods ---
