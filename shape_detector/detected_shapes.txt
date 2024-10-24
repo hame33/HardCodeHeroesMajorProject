@@ -1,0 +1,9 @@
+Triangle, 3, Yellow
+Triangle, 3, Yellow
+Rectangle, 4, Purple
+Rectangle, 4, Purple
+Hexagon, 6, Blue
+Hexagon, 6, Purple
+Unidentified Shape, 11, Blue
+Circle, 0, Green
+Unidentified Shape, 11, Blue
