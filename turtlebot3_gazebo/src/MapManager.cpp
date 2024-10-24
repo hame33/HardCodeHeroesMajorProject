@@ -3,6 +3,8 @@
 #include <iostream>
 #include <utility>
 #include <vector>
+#include <queue>
+#include <limits>
 
 // --- MapManager Class Implementation ---
 
@@ -140,8 +142,8 @@ void MapManager::find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::Sha
   std::queue<std::pair<int, int>> queue;
 
   // Convert robot's position to grid coordinates
-  int robot_x = static_cast<int>((robot_world_x_pos_ - ocp_grid_msg->info.origin.position.x) / ocp_grid_msg->info.resolution);
-  int robot_y = static_cast<int>((robot_world_y_pos_ - ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution);
+  int robot_x = static_cast<int>(( ocp_grid_msg->info.origin.position.x) / ocp_grid_msg->info.resolution);
+  int robot_y = static_cast<int>(( ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution);
 
   queue.push(std::make_pair(robot_x, robot_y));
 
