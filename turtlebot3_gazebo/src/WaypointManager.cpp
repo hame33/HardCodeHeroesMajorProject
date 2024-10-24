@@ -132,7 +132,9 @@ void WaypointManager::process_goal_result(const std_msgs::msg::String goal_resul
   } 
   else if (goal_result.data == "Aborted")
   {
-    return; 
+    std::cout << "Adding " << closest_frontier_goal_.first << " " << closest_frontier_goal_.second << " to the list of completed goals" << std::endl;
+    completed_goals_.push_back(closest_frontier_goal_);
+    publish_goal_check_ = 1;
   }
   else 
   {
