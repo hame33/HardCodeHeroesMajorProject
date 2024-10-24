@@ -1,0 +1,1 @@
+/home/peter/turtlebot3_ws/src/shape_detector/install/shape_detector/lib/shape_detector/shape_detector
