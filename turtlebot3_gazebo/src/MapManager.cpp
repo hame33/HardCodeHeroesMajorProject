@@ -82,9 +82,9 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
   robot_grid_y_pos_ = std::abs(ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution;
 
   find_closest_frontier(ocp_grid_msg);
-  // print_frontier_pixels();
-  auto waypoint_manager = waypoint_manager_.lock();
-  waypoint_manager->print_completed_goals();
+  print_frontier_pixels();
+  // auto waypoint_manager = waypoint_manager_.lock();
+  // waypoint_manager->print_completed_goals();
   
   std::cout << "Grid map origin: " << ocp_grid_msg->info.origin.position.x << " " << ocp_grid_msg->info.origin.position.y << std::endl;
   std::cout << "Robot world coordinates: (" << robot_x_pos << "," << robot_y_pos << ")" << std::endl;
@@ -206,45 +206,8 @@ void MapManager::find_closest_frontier(const nav_msgs::msg::OccupancyGrid::Share
 // --- check_walls_at_frontier ---
 void MapManager::check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg, int& frontier_pixel_x, int& frontier_pixel_y)
 {
-  // Check if x is too close to wall
-  for (int i = -1 * Constants::MIN_PIXELS_FROM_WALL;  i < Constants::MIN_PIXELS_FROM_WALL; i++)
-  {
-    int current_index = frontier_pixel_y * static_cast<int>(ocp_grid_msg->info.width) + frontier_pixel_x + i;
-    if (ocp_grid_msg->data[current_index] > Constants::MAX_FREE_SPACE_VALUE)
-    {
-      if (i < 0)
-      {
-        frontier_pixel_x = frontier_pixel_x + Constants::MIN_PIXELS_FROM_WALL - std::abs(i);
-        break;
-      }
-      else if (i > 0)
-      {
-        frontier_pixel_x = frontier_pixel_x - Constants::MIN_PIXELS_FROM_WALL - std::abs(i);
-        break;
-      }
-    }
-  }
-
-  // Check if y is too close to wall
-  for (int i = -1 * Constants::MIN_PIXELS_FROM_WALL;  i < Constants::MIN_PIXELS_FROM_WALL; i++)
-  {
-    int current_index = (frontier_pixel_y + i) * static_cast<int>(ocp_grid_msg->info.width) + frontier_pixel_x;
-    if (ocp_grid_msg->data[current_index] > 80)
-    {
-      if (i < 0)
-      {
-        frontier_pixel_y = frontier_pixel_y - Constants::MIN_PIXELS_FROM_WALL - std::abs(i);
-        break;
-      }
-      else if (i > 0)
-      {
-        frontier_pixel_x = frontier_pixel_y + Constants::MIN_PIXELS_FROM_WALL - std::abs(i);
-        break;
-      }
-    }
-  }
-
-  bool need_adjustment = false;
+  int x_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::NOT_NEEDED;
+  int y_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::NOT_NEEDED;
   int adjust_x = 0;
   int adjust_y = 0;
 
@@ -266,46 +229,58 @@ void MapManager::check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::Sha
       int current_index = current_y * static_cast<int>(ocp_grid_msg->info.width) + current_x;
 
       // Check occupancy value
-      if (ocp_grid_msg->data[current_index] > Constants::MAX_FREE_SPACE_VALUE)
+      if (ocp_grid_msg->data[current_index] > Constants::WALL_CHECK_VALUE)
       {
-        need_adjustment = true;
+        // Check if adjustments have already been made
+        if (x_need_adjustment != Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED) 
+        {
+          x_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::NEEDED;
+        }
+        if (y_need_adjustment != Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED) 
+        {
+          y_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::NEEDED;
+        }
 
         // Determine adjustment based on the direction of the detected wall
-        if (dx < 0)
+        if (dx < 0 && x_need_adjustment == Constants::PIXEL_ADJUSTMENT_STATUS::NEEDED)
         {
             adjust_x += Constants::MIN_PIXELS_FROM_WALL - std::abs(dx);
+            frontier_pixel_x += adjust_x;
+            frontier_pixel_x = std::clamp(frontier_pixel_x, 0, static_cast<int>(ocp_grid_msg->info.width) - 1);
+            x_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED;
         }
-        else if (dx > 0)
+        else if (dx > 0 && x_need_adjustment == true)
         {
             adjust_x -= Constants::MIN_PIXELS_FROM_WALL - std::abs(dx);
+            frontier_pixel_x += adjust_x;
+            frontier_pixel_x = std::clamp(frontier_pixel_x, 0, static_cast<int>(ocp_grid_msg->info.width) - 1);
+            x_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED;
         }
 
-        if (dy < 0)
+        if (dy < 0 && y_need_adjustment == true)
         {
             adjust_y += Constants::MIN_PIXELS_FROM_WALL - std::abs(dy);
+            frontier_pixel_y += adjust_y;
+            frontier_pixel_y = std::clamp(frontier_pixel_y, 0, static_cast<int>(ocp_grid_msg->info.height) - 1);
+            y_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED;
         }
-        else if (dy > 0)
+        else if (dy > 0 && y_need_adjustment == true)
         {
             adjust_y -= Constants::MIN_PIXELS_FROM_WALL - std::abs(dy);
+            frontier_pixel_y += adjust_y;
+            frontier_pixel_y = std::clamp(frontier_pixel_y, 0, static_cast<int>(ocp_grid_msg->info.height) - 1);
+            y_need_adjustment = Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED;
         }
+      }
+      if (x_need_adjustment == Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED && y_need_adjustment == Constants::PIXEL_ADJUSTMENT_STATUS::COMPLETED)
+      {
         break;
       }
-      break;
     }
   }
 
-  if (need_adjustment)
-  {
-    // Update frontier pixel positions
-    frontier_pixel_x += adjust_x;
-    frontier_pixel_y += adjust_y;
-
-    // Ensure updated positions are within bounds
-    frontier_pixel_x = std::clamp(frontier_pixel_x, 0, static_cast<int>(ocp_grid_msg->info.width) - 1);
-    frontier_pixel_y = std::clamp(frontier_pixel_y, 0, static_cast<int>(ocp_grid_msg->info.height) - 1);
-
-    std::cout << "Adjusted frontier pixel to (" << frontier_pixel_x << ", " << frontier_pixel_y << ") to maintain distance from walls." << std::endl;
-  }
+  std::cout << "x pixel adjustment " << adjust_x << " y pixel adjustment " << adjust_y << std::endl;
+  std::cout << "Adjusted frontier pixel to (" << frontier_pixel_x << ", " << frontier_pixel_y << ") to maintain distance from walls." << std::endl;
 }
 
 // --- get_closest_frontier ---
