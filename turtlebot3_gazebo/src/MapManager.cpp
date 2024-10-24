@@ -129,6 +129,79 @@ void MapManager::print_frontier_pixels()
   }
 }
 
+// BFS search of frontiers
+void MapManager::find_frontiers_with_bfs(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
+{
+  int width = ocp_grid_msg->info.width;
+  int height = ocp_grid_msg->info.height;
+  int size = width * height;
+
+  std::vector<bool> visited(size, false);
+  std::queue<std::pair<int, int>> queue;
+
+  // Convert robot's position to grid coordinates
+  int robot_x = static_cast<int>((robot_world_x_pos_ - ocp_grid_msg->info.origin.position.x) / ocp_grid_msg->info.resolution);
+  int robot_y = static_cast<int>((robot_world_y_pos_ - ocp_grid_msg->info.origin.position.y) / ocp_grid_msg->info.resolution);
+
+  queue.push(std::make_pair(robot_x, robot_y));
+
+  while (!queue.empty()) {
+    auto [x, y] = queue.front();
+    queue.pop();
+
+    int index = y * width + x;
+
+    if (visited[index]) continue;
+    visited[index] = true;
+
+    int cell_value = ocp_grid_msg->data[index];
+
+    if (cell_value == -1) {
+      // Unknown cell, skip
+      continue;
+    } else if (cell_value > Constants::MAX_FREE_SPACE_VALUE) {
+      // Occupied cell, skip
+      continue;
+    }
+
+    // Check for frontier (adjacent to unknown cell)
+    bool is_frontier = false;
+    for (int dy = -1; dy <= 1; dy++) {
+      for (int dx = -1; dx <= 1; dx++) {
+        int nx = x + dx;
+        int ny = y + dy;
+        if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+
+        int neighbor_index = ny * width + nx;
+        if (ocp_grid_msg->data[neighbor_index] == -1) {
+          is_frontier = true;
+          break;
+        }
+      }
+      if (is_frontier) break;
+    }
+
+    if (is_frontier) {
+      frontier_pixels_.emplace_back(x, y);
+    } else {
+      // Enqueue neighboring free cells
+      for (int dy = -1; dy <= 1; dy++) {
+        for (int dx = -1; dx <= 1; dx++) {
+          if (dx == 0 && dy == 0) continue;
+          int nx = x + dx;
+          int ny = y + dy;
+          if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+          int neighbor_index = ny * width + nx;
+          if (!visited[neighbor_index] && ocp_grid_msg->data[neighbor_index] <= Constants::MAX_FREE_SPACE_VALUE) {
+            queue.push(std::make_pair(nx, ny));
+          }
+        }
+      }
+    }
+  }
+}
+
+
 // --- find_min_cell_value ---
 int MapManager::find_min_cell_value(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg)
 {
