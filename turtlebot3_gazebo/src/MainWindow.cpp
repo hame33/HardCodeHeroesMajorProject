@@ -149,6 +149,25 @@ void MainWindow::updateMap()
         }
     }
 
+    // Overlay Robot pose if available
+    if (robot_pose_) {
+        QPainter painter(&image);
+        painter.setPen(QPen(Qt::blue, 2));
+        painter.setBrush(Qt::blue);
+
+        // Convert world coordinates to map indices
+        double robot_x = robot_pose_->pose.position.x;
+        double robot_y = robot_pose_->pose.position.y;
+
+        int x = (robot_x - map_->info.origin.position.x) / map_->info.resolution;
+        int y = height - ((robot_y - map_->info.origin.position.y) / map_->info.resolution);
+
+        if (x >= 0 && x < width && y >= 0 && y < height) {
+            painter.drawEllipse(QPointF(x, y), 5, 5); // Draw a circle representing the robot
+        }
+        painter.end();
+    }
+
     // Overlay frontiers if available
     if (frontiers_) {
         QPainter painter(&image);
