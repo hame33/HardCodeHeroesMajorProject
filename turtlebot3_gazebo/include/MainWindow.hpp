@@ -42,6 +42,8 @@ private:
   rclcpp::Subscription<visualization_msgs::msg::Marker>::SharedPtr marker_sub_;
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
+  rclcpp::Subscription<nav_msgs::msg::GridCells>::SharedPtr frontier_sub_;
+    nav_msgs::msg::GridCells::SharedPtr frontiers_;
 
   // GUI components
   QLabel *map_label_;

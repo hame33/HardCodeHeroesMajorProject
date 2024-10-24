@@ -21,9 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
 
   // Subscribe to map, pose, and marker topics
   map_sub_ = node_->create_subscription<nav_msgs::msg::OccupancyGrid>(
-    "/map", 10,
+    "/map", rclcpp::QoS(10).transient_local(),
     [this](nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
-      map_ = msg;
+        map_ = msg;
     });
 
   pose_sub_ = node_->create_subscription<geometry_msgs::msg::PoseStamped>(
@@ -106,57 +106,53 @@ void MainWindow::startRosSpin()
 
 void MainWindow::updateMap()
 {
-  if (!map_ || !robot_pose_) {
-    RCLCPP_INFO(node_->get_logger(), "Waiting for map and robot pose data...");
-    return;
-  }
-
-  RCLCPP_INFO(node_->get_logger(), "Updating map with robot position.");
-
-  // Convert the occupancy grid to an image
-  int width = map_->info.width;
-  int height = map_->info.height;
-  QImage image(width, height, QImage::Format_RGB888);
-
-  for (int y = 0; y < height; ++y) {
-    for (int x = 0; x < width; ++x) {
-      int index = x + (height - y - 1) * width;
-      int value = map_->data[index];
-      QColor color;
-
-      if (value == -1) {
-        color = Qt::gray; // Unknown
-      } else if (value == 0) {
-        color = Qt::white; // Free space
-      } else {
-        color = Qt::black; // Occupied
-      }
-
-      image.setPixelColor(x, y, color);
+    if (!map_) {
+        RCLCPP_INFO(node_->get_logger(), "Waiting for map data...");
+        return;
     }
-  }
 
-  // Draw robot position and waypoints
-  QPainter painter(&image);
+    // Get map dimensions
+    int width = map_->info.width;
+    int height = map_->info.height;
 
-  // Draw waypoints
-  painter.setBrush(Qt::red);
-  for (const auto &marker : waypoints_) {
-    int x = (marker.pose.position.x - map_->info.origin.position.x) / map_->info.resolution;
-    int y = height - (marker.pose.position.y - map_->info.origin.position.y) / map_->info.resolution;
-    painter.drawEllipse(QPointF(x, y), 3, 3);
-  }
+    // Create a QImage to represent the map
+    QImage image(width, height, QImage::Format_RGB888);
 
-  // Draw robot position
-  painter.setBrush(Qt::blue);
-  double robot_x_m = robot_pose_->pose.position.x;
-  double robot_y_m = robot_pose_->pose.position.y;
-  int robot_x = (robot_x_m - map_->info.origin.position.x) / map_->info.resolution;
-  int robot_y = height - (robot_y_m - map_->info.origin.position.y) / map_->info.resolution;
-  painter.drawEllipse(QPointF(robot_x, robot_y), 5, 5);
+    // Iterate over the occupancy grid data
+    for (int y = 0; y < height; ++y) {
+        for (int x = 0; x < width; ++x) {
+            int index = x + (height - y - 1) * width;
+            int8_t value = map_->data[index];
+            QColor color;
 
-  painter.end();
+            if (value == -1) {
+                color = Qt::gray; // Unknown
+            } else if (value == 0) {
+                color = Qt::white; // Free space
+            } else {
+                color = Qt::black; // Occupied
+            }
 
-  // Display the image
-  map_label_->setPixmap(QPixmap::fromImage(image).scaled(map_label_->size(), Qt::KeepAspectRatio));
+            image.setPixelColor(x, y, color);
+        }
+    }
+
+    // Overlay frontiers if available
+    if (frontiers_) {
+        QPainter painter(&image);
+        painter.setPen(QPen(Qt::red, 1));
+        for (const auto& point : frontiers_->cells) {
+            // Convert world coordinates to map indices
+            int x = (point.x - map_->info.origin.position.x) / map_->info.resolution;
+            int y = height - ((point.y - map_->info.origin.position.y) / map_->info.resolution);
+
+            if (x >= 0 && x < width && y >= 0 && y < height) {
+                painter.drawPoint(x, y);
+            }
+        }
+        painter.end();
+    }
+
+    // Display the image in the QLabel
+    map_label_->setPixmap(QPixmap::fromImage(image).scaled(map_label_->size(), Qt::KeepAspectRatio));
 }
