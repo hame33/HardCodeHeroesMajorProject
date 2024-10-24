@@ -1,11 +1,35 @@
 #include <rclcpp/rclcpp.hpp>
 #include "shape_detector.hpp"
-
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    auto shape_detector_node = std::make_shared<ShapeDetectorNode>();
-    rclcpp::spin(shape_detector_node);
+
+    // Check for command line arguments to clear the output file
+    bool clear_file = false;
+    for (int i = 1; i < argc; ++i)
+    {
+        if (std::string(argv[i]) == "--clear")
+        {
+            clear_file = true;
+            break;
+        }
+    }
+
+    // Clear the output file if the flag is provided
+    if (clear_file)
+    {
+        std::ofstream output_file("detected_shapes.txt", std::ios::out | std::ios::trunc);
+        output_file.close();
+        std::cout << "Output file cleared." << std::endl;
+        
+        // Terminate the program after clearing the file
+        rclcpp::shutdown();
+        return 0; // Exit the program
+    }
+
+    auto node = std::make_shared<ShapeDetectorNode>();
+    rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
 }
+
