@@ -58,7 +58,8 @@ void ShapeDetectorNode::image_callback(const sensor_msgs::msg::Image::ConstShare
             size_t vertices = detect_shape(contours[i], shape);
 
             // Check if the detected shape is a circle
-            if (shape == "Circle") {
+            if (shape == "Circle")
+            {
                 vertices = 0; // Force vertices to 0 for circles
             }
 
@@ -83,7 +84,9 @@ void ShapeDetectorNode::image_callback(const sensor_msgs::msg::Image::ConstShare
 
         if (!shapes_found)
         {
-            RCLCPP_INFO(this->get_logger(), "No shapes found in the image.");
+            RCLCPP_INFO(this->get_logger(), "No shapes found in the image. Exiting.");
+            rclcpp::shutdown();  // Terminates the node when no shapes are found
+            return;
         }
 
         cv::imshow("Shape Detection", frame);
@@ -96,4 +99,3 @@ void ShapeDetectorNode::image_callback(const sensor_msgs::msg::Image::ConstShare
         RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
     }
 }
-
