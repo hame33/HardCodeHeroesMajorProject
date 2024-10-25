@@ -98,7 +98,7 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
   if (frontier_pixels_.empty())
   {
     auto waypoint_manager = waypoint_manager_.lock();
-    waypoint_manager_->publish_return_to_start();
+    waypoint_manager->publish_return_to_start();
     closest_frontier_.first = 0.0;
     closest_frontier_.second = 0.0;
   }

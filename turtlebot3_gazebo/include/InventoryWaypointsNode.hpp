@@ -69,7 +69,7 @@ private:
   void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan_msg); // callback to handle scan data 
   void odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg); // callback to handle odom data
   void map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr ocp_grid_msg);  // Handles map and occupancy grid data
-  void goal_result_callback(const std_msgs::msg::String goal_result);  // Handles nav2 goal result data
+  void goal_result_callback(const std_msgs::msg::String::SharedPtr goal_result);  // Handles nav2 goal result data
 };
 
 

@@ -135,7 +135,7 @@ void InventoryWaypointsNode::map_callback(const nav_msgs::msg::OccupancyGrid::Sh
 }
 
 // --- goal_result_callback ---
-void InventoryWaypointsNode::goal_result_callback(const std_msgs::msg::String goal_result)
+void InventoryWaypointsNode::goal_result_callback(const std_msgs::msg::String::SharedPtr goal_result)
 {
   waypoint_manager_->process_goal_result(goal_result);
 }
