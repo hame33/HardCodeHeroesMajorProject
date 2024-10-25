@@ -95,6 +95,14 @@ void MapManager::process_map_data(const nav_msgs::msg::OccupancyGrid::SharedPtr 
   // std::cout << "Robot grid coordinates: (" << robot_grid_x_pos_ << "," << robot_grid_y_pos_ << ")" << std::endl;
   // std::cout << "Closest Frontier: (" << closest_frontier_.first << "," << closest_frontier_.second << ")" << std::endl;
 
+  if (frontier_pixels_.empty())
+  {
+    auto waypoint_manager = waypoint_manager_.lock();
+    waypoint_manager_->publish_return_to_start();
+    closest_frontier_.first = 0.0;
+    closest_frontier_.second = 0.0;
+  }
+
   frontier_pixels_.clear();
 }
 
@@ -374,4 +382,10 @@ void MapManager::check_walls_at_frontier(const nav_msgs::msg::OccupancyGrid::Sha
 std::pair<double,double> MapManager::get_closest_frontier() const
 {
   return closest_frontier_;
+}
+
+// --- get_frontier_pixels_empty ---
+bool MapManager::get_frontier_pixels_empty() const
+{
+  return frontier_pixels_empty_;
 }
