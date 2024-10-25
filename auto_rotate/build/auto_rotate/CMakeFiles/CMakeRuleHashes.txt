@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-260596635cb5e129619a2f4ab7afd1a7 CMakeFiles/auto_rotate_uninstall
