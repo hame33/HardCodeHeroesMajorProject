@@ -114,8 +114,11 @@ void WaypointManager::publish_goal()
     if(publish_goal_check_)
     {
       goal_pub_->publish(goal);
-      std::cout << "About to send goal follow action" << std::endl;
+
+      // STOP NAV2 AND SPIN HERE //
+
       motion_controller_->goal_follower(goal);
+
       RCLCPP_INFO(this->get_logger(), "Published goal @: [%f, %f]",goal.pose.position.x, goal.pose.position.y);
       publish_goal_check_ = 0;
     }
