@@ -1,37 +1,41 @@
+// MainWindow.cpp
+
+// --- Includes ---
 #include "MainWindow.hpp"
 #include <QPixmap>
 #include <QImage>
 #include <QPainter>
 
+// --- MainWindow Implementation ---
+
+// --- Constructor ---
 MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent), should_display_map_(true)
 {
   // Initialize ROS2 node
   node_ = rclcpp::Node::make_shared("inventory_gui_node");
 
-  // Initialize tf2_ros buffer and listener
+  // Initialize TF2 components for coordinate transformations
   tf_buffer_ = std::make_shared<tf2_ros::Buffer>(node_->get_clock());
   tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-  // Initialize InventoryWaypointsNode with the shared node
+  // Initialize InventoryWaypointsNode with ROS2 node
   inventory_node_ = std::make_shared<InventoryWaypointsNode>(node_);
 
-  setupUi();
+  initializeUi();
   startRosSpin();
 
-  // Subscribe to map, pose, and marker topics
+  // Initialize subscribers
   map_sub_ = node_->create_subscription<nav_msgs::msg::OccupancyGrid>(
     "/map", rclcpp::QoS(10).transient_local(),
-    [this](nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
-        map_ = msg;
-    });
+    [this](nav_msgs::msg::OccupancyGrid::SharedPtr msg) { map_ = msg; });
 
   pose_sub_ = node_->create_subscription<geometry_msgs::msg::PoseStamped>(
-  "/robot_pose", 10,
-  [this](geometry_msgs::msg::PoseStamped::SharedPtr msg) {
-    robot_pose_ = msg;
-    RCLCPP_INFO(node_->get_logger(), "Received robot pose");
-  });
+    "/robot_pose", 10,
+    [this](geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+      robot_pose_ = msg;
+      RCLCPP_INFO(node_->get_logger(), "Received robot pose");
+    });
 
   marker_sub_ = node_->create_subscription<visualization_msgs::msg::Marker>(
     "waypoint_markers", 10,
@@ -39,12 +43,12 @@ MainWindow::MainWindow(QWidget *parent)
       waypoints_.push_back(*msg);
     });
 
-  // Update GUI periodically
+  // Initialize GUI refresh timer
   update_timer_ = new QTimer(this);
   connect(update_timer_, &QTimer::timeout, this, &MainWindow::updateMap);
-  update_timer_->start(500); // Update every 500 ms
+  update_timer_->start(500);
 
-  // Connect start and stop buttons
+  // Connect buttons to actions
   connect(start_button_, &QPushButton::clicked, [this]() {
     inventory_node_->start_navigation();
     should_display_map_ = true;
@@ -57,53 +61,45 @@ MainWindow::MainWindow(QWidget *parent)
   connect(reset_button_, &QPushButton::clicked, this, &MainWindow::resetMap);
 }
 
+// --- Destructor ---
 MainWindow::~MainWindow()
 {
   rclcpp::shutdown();
-  if (ros_spin_thread_ && ros_spin_thread_->joinable()) {
+  if (ros_spin_thread_ && ros_spin_thread_->joinable()) 
+  {
     ros_spin_thread_->join();
   }
 }
 
-void MainWindow::setupUi()
+// --- initializeUi ---
+void MainWindow::initializeUi()
 {
+  // Initialize GUI components
   map_label_ = new QLabel("Map will be displayed here.");
   map_label_->setAlignment(Qt::AlignCenter);
 
   start_button_ = new QPushButton("Start Navigation");
-    stop_button_ = new QPushButton("Stop Navigation");
-    reset_button_ = new QPushButton("Reset Map"); // Create the reset button
+  stop_button_ = new QPushButton("Stop Navigation");
+  reset_button_ = new QPushButton("Reset Map");
 
-    QHBoxLayout *button_layout = new QHBoxLayout();
-    button_layout->addWidget(start_button_);
-    button_layout->addWidget(stop_button_);
-    button_layout->addWidget(reset_button_); // Add the reset button to the layout
+  QHBoxLayout *button_layout = new QHBoxLayout();
+  button_layout->addWidget(start_button_);
+  button_layout->addWidget(stop_button_);
+  button_layout->addWidget(reset_button_);
 
-    main_layout_ = new QVBoxLayout();
-    main_layout_->addWidget(map_label_);
-    main_layout_->addLayout(button_layout);
+  main_layout_ = new QVBoxLayout();
+  main_layout_->addWidget(map_label_);
+  main_layout_->addLayout(button_layout);
 
-    central_widget_ = new QWidget(this);
-    central_widget_->setLayout(main_layout_);
-    setCentralWidget(central_widget_);
+  central_widget_ = new QWidget(this);
+  central_widget_->setLayout(main_layout_);
+  setCentralWidget(central_widget_);
 
   setWindowTitle("Inventory GUI");
   resize(800, 600);
-
-  // Connect button signals to slots
-  connect(start_button_, &QPushButton::clicked, [this]() {
-    // Start navigation logic
-    inventory_node_->start_navigation();
-  });
-
-  connect(stop_button_, &QPushButton::clicked, [this]() {
-    // Stop navigation logic
-    inventory_node_->stop_navigation();
-  });
-
-  connect(reset_button_, &QPushButton::clicked, this, &MainWindow::resetMap);
 }
 
+// --- startRosSpin ---
 void MainWindow::startRosSpin()
 {
   ros_spin_thread_ = std::make_shared<std::thread>([this]() {
@@ -111,98 +107,79 @@ void MainWindow::startRosSpin()
   });
 }
 
+// --- updateMap ---
 void MainWindow::updateMap()
 {
-    if (!should_display_map_) {
-        // Do not update the map if the flag is false
-        return;
+  if (!should_display_map_ || !map_) 
+  {
+    RCLCPP_INFO(node_->get_logger(), "Waiting for map data...");
+    return;
+  }
+
+  // Generate map image based on occupancy grid data
+  int width = map_->info.width;
+  int height = map_->info.height;
+  QImage image(width, height, QImage::Format_RGB888);
+
+  // Map occupancy grid values to colors
+  for (int y = 0; y < height; ++y) 
+  {
+    for (int x = 0; x < width; ++x) 
+    {
+      int index = x + (height - y - 1) * width;
+      int8_t value = map_->data[index];
+      QColor color = (value == -1) ? Qt::gray : (value == 0 ? Qt::white : Qt::black);
+      image.setPixelColor(x, y, color);
     }
-    
-    if (!map_) {
-        RCLCPP_INFO(node_->get_logger(), "Waiting for map data...");
-        return;
+  }
+
+  // Draw robot position if available
+  if (robot_pose_) 
+  {
+    QPainter painter(&image);
+    painter.setPen(QPen(Qt::blue, 2));
+    painter.setBrush(Qt::blue);
+
+    double robot_x = robot_pose_->pose.position.x;
+    double robot_y = robot_pose_->pose.position.y;
+    int x = (robot_x - map_->info.origin.position.x) / map_->info.resolution;
+    int y = height - ((robot_y - map_->info.origin.position.y) / map_->info.resolution);
+
+    if (x >= 0 && x < width && y >= 0 && y < height) 
+    {
+      painter.drawEllipse(QPointF(x, y), 5, 5);
     }
+    painter.end();
+  }
 
-    // Get map dimensions
-    int width = map_->info.width;
-    int height = map_->info.height;
-
-    // Create a QImage to represent the map
-    QImage image(width, height, QImage::Format_RGB888);
-
-    // Iterate over the occupancy grid data
-    for (int y = 0; y < height; ++y) {
-        for (int x = 0; x < width; ++x) {
-            int index = x + (height - y - 1) * width;
-            int8_t value = map_->data[index];
-            QColor color;
-
-            if (value == -1) {
-                color = Qt::gray; // Unknown
-            } else if (value == 0) {
-                color = Qt::white; // Free space
-            } else {
-                color = Qt::black; // Occupied
-            }
-
-            image.setPixelColor(x, y, color);
-        }
+  // Draw frontiers if available
+  if (frontiers_) 
+  {
+    QPainter painter(&image);
+    painter.setPen(QPen(Qt::red, 1));
+    for (const auto &point : frontiers_->cells) 
+    {
+      int x = (point.x - map_->info.origin.position.x) / map_->info.resolution;
+      int y = height - ((point.y - map_->info.origin.position.y) / map_->info.resolution);
+      if (x >= 0 && x < width && y >= 0 && y < height) 
+      {
+        painter.drawPoint(x, y);
+      }
     }
+    painter.end();
+  }
 
-    // Overlay Robot pose if available
-    if (robot_pose_) {
-        QPainter painter(&image);
-        painter.setPen(QPen(Qt::blue, 2));
-        painter.setBrush(Qt::blue);
-
-        // Convert world coordinates to map indices
-        double robot_x = robot_pose_->pose.position.x;
-        double robot_y = robot_pose_->pose.position.y;
-
-        int x = (robot_x - map_->info.origin.position.x) / map_->info.resolution;
-        int y = height - ((robot_y - map_->info.origin.position.y) / map_->info.resolution);
-
-        if (x >= 0 && x < width && y >= 0 && y < height) {
-            painter.drawEllipse(QPointF(x, y), 5, 5); // Draw a circle representing the robot
-        }
-        painter.end();
-    }
-
-    // Overlay frontiers if available
-    if (frontiers_) {
-        QPainter painter(&image);
-        painter.setPen(QPen(Qt::red, 1));
-        for (const auto& point : frontiers_->cells) {
-            // Convert world coordinates to map indices
-            int x = (point.x - map_->info.origin.position.x) / map_->info.resolution;
-            int y = height - ((point.y - map_->info.origin.position.y) / map_->info.resolution);
-
-            if (x >= 0 && x < width && y >= 0 && y < height) {
-                painter.drawPoint(x, y);
-            }
-        }
-        painter.end();
-    }
-
-    // Display the image in the QLabel
-    map_label_->setPixmap(QPixmap::fromImage(image).scaled(map_label_->size(), Qt::KeepAspectRatio));
+  // Display updated map image in the QLabel
+  map_label_->setPixmap(QPixmap::fromImage(image).scaled(map_label_->size(), Qt::KeepAspectRatio));
 }
 
+// --- resetMap ---
 void MainWindow::resetMap()
 {
-    // Clear the map data
-    map_.reset();
-
-    // Clear the frontiers data if applicable
-    frontiers_.reset();
-
-    // Clear the map display
-    map_label_->clear();
-    map_label_->setText("Map has been reset.");
-
-    inventory_node_->stop_navigation();
-
-    // Log the reset action
-    RCLCPP_INFO(node_->get_logger(), "Map has been reset.");
+  map_.reset();
+  frontiers_.reset();
+  map_label_->clear();
+  map_label_->setText("Map has been reset.");
+  inventory_node_->stop_navigation();
+  RCLCPP_INFO(node_->get_logger(), "Map has been reset.");
 }
-

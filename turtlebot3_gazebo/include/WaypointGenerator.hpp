@@ -13,14 +13,25 @@
 #include <array>
 
 // --- WaypointGenerator Class Interface ---
+// The WaypointGenerator class is responsible for creating waypoints on the map 
+// based on sensor data processed by SensorProcessor. This class uses scan data 
+// on distances and positions to generate relevant waypoints for navigation. 
+// It sends these waypoints to WaypointManager, facilitating seamless integration 
+// into the robot’s autonomous navigation framework.
 class WaypointGenerator
 {
 public:
-  // Constructor - Initialises WaypointGenerator class
-  WaypointGenerator(std::shared_ptr<SensorProcessor> sensor_processor, std::shared_ptr<WaypointManager> waypoint_manager);
+  // --- Constructor ---
+  WaypointGenerator(std::shared_ptr<SensorProcessor> sensor_processor, 
+                    std::shared_ptr<WaypointManager> waypoint_manager);
 
-  // create_waypoint - creates a waypoint on the map 
-  void create_waypoint(int num, std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data, std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data);
+  // --- Waypoint Generator Functions ---
+
+  // create_waypoint - Creates a waypoint for the map
+  void create_waypoint(int num, 
+                       std::array<double, 
+                       Constants::NUM_SCAN_POSITIONS> scan_distance_data, 
+                       std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data);  
 
 private:
   // --- Components --- 

@@ -1,9 +1,11 @@
 // main.cpp
 
+// --- Includes ---
 #include <QApplication>
 #include <rclcpp/rclcpp.hpp>
 #include "MainWindow.hpp"
 
+// --- Main Implementation ---
 int main(int argc, char *argv[])
 {
   // Initialize ROS2
@@ -12,11 +14,11 @@ int main(int argc, char *argv[])
   // Initialize Qt application
   QApplication app(argc, argv);
 
-  // Create an instance of your main window
+  // Create and show main window
   MainWindow window;
   window.show();
 
-  // Start the Qt event loop
+  // Start Qt event loop
   int result = app.exec();
 
   // Shutdown ROS2

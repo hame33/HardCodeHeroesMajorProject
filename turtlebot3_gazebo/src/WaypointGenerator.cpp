@@ -1,16 +1,13 @@
-// WaypointGenerator.cpp
-
 // --- Includes ---
 #include "WaypointGenerator.hpp"
 
-// --- WaypointGenerator class implementation ---
+// --- WaypointGenerator Implementation ---
 
 // --- Constructor ---
 WaypointGenerator::WaypointGenerator(std::shared_ptr<SensorProcessor> sensor_processor, std::shared_ptr<WaypointManager> waypoint_manager)
 : sensor_processor_(sensor_processor), waypoint_manager_(waypoint_manager)
 {
 }
-
 
 // --- create_waypoint ---
 void WaypointGenerator::create_waypoint(int num, std::array<double, Constants::NUM_SCAN_POSITIONS> scan_distance_data, std::array<std::pair<double, double>, Constants::NUM_SCAN_POSITIONS> scan_location_data)
