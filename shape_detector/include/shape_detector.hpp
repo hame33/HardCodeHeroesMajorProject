@@ -9,6 +9,7 @@
 #include <opencv2/opencv.hpp>
 #include <fstream>
 #include <string>
+#include <memory>
 #include "shape_detector_utils.hpp"  // Utility header for shape and color detection
 
 // --- ShapeDetectorNode Interface ---
@@ -25,15 +26,17 @@ public:
   ~ShapeDetectorNode();
 
 private:
-  // --- Data ---
-  std::ofstream output_file_;  // File stream for logging detected shape information
+  // --- Components ---
+  std::shared_ptr<ShapeDetectorUtils> shape_detector_utils_;  // Utility for shape and color detection
 
   // --- Subscribers ---
   image_transport::Subscriber image_subscriber_;  // Subscriber for receiving images
 
   // --- Callback Methods ---
   void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg);  // Processes incoming image data
+
+  // --- Data ---
+  std::ofstream output_file_;  // File stream for logging detected shape information
 };
 
 #endif  // SHAPE_DETECTOR_HPP
-
